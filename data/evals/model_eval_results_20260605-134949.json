@@ -1,0 +1,586 @@
+[
+  {
+    "model": "llama3.2",
+    "case": "Meyer v. Nebraska",
+    "question": "What liberty interest did Meyer v. Nebraska recognize under the Fourteenth Amendment?",
+    "must_include": [
+      "Fourteenth Amendment",
+      "liberty",
+      "teach",
+      "parents",
+      "education"
+    ],
+    "score": 5,
+    "max_score": 5,
+    "missing_terms": [],
+    "answer": "Meyer v. Nebraska recognized a liberty interest under the Fourteenth Amendment known as freedom of speech and association, specifically the right to teach and engage in the acquisition of knowledge.\n\nThis conclusion is based on the majority opinion in Meyer v. Nebraska [Source 1] and related cases. The Court held that the challenged statute forbidding the teaching of any subject except in English and other languages until the eighth grade was unconstitutional because it interfered with the plaintiff's right to teach and the rights of parents to instruct their children in a foreign language.\n\nThe majority opinion emphasized the importance of education and the acquisition of knowledge, stating that these are matters of \"supreme importance\" that should be diligently promoted [Source 1]. The Court also noted that the statute was arbitrary and without a reasonable relation to protecting the public interest [Source 3].\n\nThis recognized liberty interest is distinct from the due process rights related to property seizures discussed in United States v. James Daniel Good Real Property, as those cases deal with the protection of property interests under the Due Process Clause.\n\nIt is worth noting that the Court has since reaffirmed this recognition of a liberty interest in freedom of speech and association, but this conclusion relies on specific holdings from Meyer v. Nebraska and related cases [Sources 1-6].",
+    "sources": [
+      {
+        "source_number": 1,
+        "case_title": "Meyer v. Nebraska",
+        "citation": "262 U.S. 390, 43 S. Ct. 625, 67 L. Ed. 1042, 1923 U.S. LEXIS 2655, 29 A.L.R. 1446",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "unsplit_opinion",
+        "chunk_id": 8,
+        "total_chunks": 19,
+        "source_url": "https://www.courtlistener.com/opinion/100233/meyer-v-nebraska/",
+        "preview": ". S. 549 ; Truax v. Raich, 239 U. S. 33; Adams v. Tanner, 244 U. S. 590 ; New York Life Ins. Co. v. Dodge, 246 U. S. 357 ; Truax v. Corrigan, 257 U. S. 312 ; Adkins v. Children’s Hospital, 261 U. S. 525 ; Wyeth v. Cambridge Board of Health, 200 Mass. 474 . The established doctrine is that this liberty may not be inter *400 fered with, under the guise of protecting the public interest, by legislati"
+      },
+      {
+        "source_number": 2,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 64,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The Fourth Amendment was tailored explicitly for the criminal justice system, and its balance between individual and public interests always has been thought to define the 'process that is due' for seizures of person or property in criminal cases, including the detention of suspects pending trial.\" Id., at 125, n.27 (emphasis added). 87 The Gerstein Court went on to decide that while there must "
+      },
+      {
+        "source_number": 3,
+        "case_title": "Meyer v. Nebraska",
+        "citation": "262 U.S. 390, 43 S. Ct. 625, 67 L. Ed. 1042, 1923 U.S. LEXIS 2655, 29 A.L.R. 1446",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "unsplit_opinion",
+        "chunk_id": 10,
+        "total_chunks": 19,
+        "source_url": "https://www.courtlistener.com/opinion/100233/meyer-v-nebraska/",
+        "preview": ". Mere knowledge of the German language cannot reasonably be regarded as harmful. Heretofore it has been commonly looked upon as helpful and desirable. Plaintiff in error taught this language in school as part of his occupation. His right thus to teach and the right of parents to engage him so to instruct their children, we think, are within the liberty of the Amendment. The challenged statute for"
+      },
+      {
+        "source_number": 4,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 21,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Here the Government seized property not to preserve evidence of wrongdoing, but to assert ownership and control over the property itself. Our cases establish that government action of this consequence must comply with the Due Process Clauses of the Fifth and Fourteenth Amendments. 28 Though the Fourth Amendment places limits on the Government's power to seize property for purposes of forfeiture,"
+      },
+      {
+        "source_number": 5,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 17,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Exclusive reliance on the Fourth Amendment is appropriate in the arrest context, we explained, because the Amendment was \"tailored explicitly for the criminal justice system,\" and its \"balance between individual and public interests always has been thought to define the 'process that is due' for seizures of person or property in criminal cases.\" 420 U.S. at 125, n.27 . Furthermore, we noted that"
+      },
+      {
+        "source_number": 6,
+        "case_title": "Meyer v. Nebraska",
+        "citation": "262 U.S. 390, 43 S. Ct. 625, 67 L. Ed. 1042, 1923 U.S. LEXIS 2655, 29 A.L.R. 1446",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "unsplit_opinion",
+        "chunk_id": 2,
+        "total_chunks": 19,
+        "source_url": "https://www.courtlistener.com/opinion/100233/meyer-v-nebraska/",
+        "preview": ". 4. Whereas, an emergency exists, this act shall be in force from and'after its passage and approval.” The Supreme Court of the State affirmed the judgment of conviction. 107 Neb. 657 . It declared the offense charged and established was “ the direct and intentional teaching of the German language as a distinct subject to a child who had not passed the eighth grade,” in the parochial school maint"
+      },
+      {
+        "source_number": 7,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 65,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". As we said in United States v. Monsanto, 491 U.S. 600, 615-616 , 105 L. Ed. 2d 512 , 109 S. Ct. 2657 (1989): 88 \"It would be odd to conclude that the Government may not restrain property, such as the home and apartment in respondent's possession, based on a finding of probable cause, when we have held that (under appropriate circumstances), the Government may restrain persons where there is a fi"
+      },
+      {
+        "source_number": 8,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 12,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". $ 8,850, 461 U.S. 555, 562, n.12 , 103 S. Ct. 2005 , 76 L. Ed. 2d 143 (1983); Fuentes v. Shevin, 407 U.S. 67, 82 , 32 L. Ed. 2d 556 , 92 S. Ct. 1983 (1972); Sniadach v. Family Finance Corp. of Bay View,  [49] 395 U.S. 337, 342 , 23 L. Ed. 2d 349 , 89 S. Ct. 1820 (1969) (Harlan, J., concurring); Mullane v. Central Hanover Bank & Trust Co., 339 U.S. 306, 313 , 94 L. Ed. 865 , 70 S. Ct. 652 (1950)."
+      }
+    ]
+  },
+  {
+    "model": "llama3.2",
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What balancing test did the Court apply in United States v. James Daniel Good Real Property?",
+    "must_include": [
+      "Mathews v. Eldridge",
+      "private interest",
+      "risk of erroneous deprivation",
+      "Government's interest"
+    ],
+    "score": 2,
+    "max_score": 4,
+    "missing_terms": [
+      "risk of erroneous deprivation",
+      "Government's interest"
+    ],
+    "answer": "Based on the provided context, the Court applied a three-factor balancing test for evaluating procedural due process claims set out in Mathews v. Eldridge (424 U.S. 319, 47 L. Ed. 2d 18, 96 S. Ct. 893, 1976).\n\nThis test balances: \n\n1) The private interest affected by the government's action\n2) The likelihood of erroneous deprivation of that interest\n3) The potential impact on the individual",
+    "sources": [
+      {
+        "source_number": 1,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 68,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". W. Goldsmith, Jr.-Grant Co. v. United States, 254 U.S. 505, 510-511 , 65 L. Ed. 376 , 41 S. Ct. 189 (1921) (forfeiture not a denial of procedural due process despite the absence of preseizure notice and opportunity for a hearing)). 91 The Court acknowledges the long history of ex parte seizures of real property through civil forfeiture, see Phillips v. Commissioner, 283 U.S. 589 , 75 L. Ed. 1289"
+      },
+      {
+        "source_number": 2,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 59,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The Court today departs from longstanding historical precedent and concludes that the ex parte warrant requirement under the Fourth Amendment  [66]  fails to afford adequate due process protection to property owners who have been convicted of a crime that renders their real property susceptible to civil forfeiture under 21 U. S. C. § 881 (a)(7). It reaches this conclusion although no such advers"
+      },
+      {
+        "source_number": 3,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 11,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Id., at 1382. 16 We granted certiorari, 507 U.S. 983 (1993), to resolve a conflict among the Courts of Appeals on the constitutional question presented. Compare United States v. Premises and Real Property at 4492 South Livonia Road, 889 F.2d 1258 (CA2 1989), with United States v. A Single Family Residence and Real Property, 803 F.2d 625 (CA11 1986). We now affirm    the due process ruling and re"
+      },
+      {
+        "source_number": 4,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 65,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". As we said in United States v. Monsanto, 491 U.S. 600, 615-616 , 105 L. Ed. 2d 512 , 109 S. Ct. 2657 (1989): 88 \"It would be odd to conclude that the Government may not restrain property, such as the home and apartment in respondent's possession, based on a finding of probable cause, when we have held that (under appropriate circumstances), the Government may restrain persons where there is a fi"
+      },
+      {
+        "source_number": 5,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 36,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See also United States v. Von Neumann, 474 U.S. 242, 251 , 88 L. Ed. 2d 587 , 106 S. Ct. 610 (1986) (no preseizure hearing is required when customs officials seize an automobile at the border). Neither of these factors is present when the target of forfeiture is real property. 47 Because real property cannot abscond, the court's jurisdiction can be preserved without prior seizure. It is true tha"
+      },
+      {
+        "source_number": 6,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 6,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". . 8 \"The following shall be subject to forfeiture to the United States and no property right shall exist in them: 9 \"(7) All real property, including any right, title, and interest (including any leasehold interest) in the whole of any lot or tract of land and any appurtenances or improvements, which is used, or intended to be used, in any manner or part, to commit, or to facilitate the commissi"
+      },
+      {
+        "source_number": 7,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 70,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". There the Court said: 92 \"The right of the United States to    collect its internal revenue by summary administrative proceedings has  [70]  long been settled. Where, as here, adequate opportunity is afforded for a later judicial determination of the legal rights, summary proceedings to secure prompt performance of pecuniary obligations to the government have been consistently sustained.\" 283 U."
+      },
+      {
+        "source_number": 8,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 41,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See Fed. Rule Civ. Proc. 65; United States v. Premises  [59]  and Real Property at 4492 South Livonia Road, 889 F.2d 1258, 1265 (CA2 1989). The Government's policy of leaving occupants in possession of real property under an occupancy agreement pending the final forfeiture ruling demonstrates that there is no serious concern about destruction in the ordinary case. See Brief for United States 13,"
+      }
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "case": "Meyer v. Nebraska",
+    "question": "What liberty interest did Meyer v. Nebraska recognize under the Fourteenth Amendment?",
+    "must_include": [
+      "Fourteenth Amendment",
+      "liberty",
+      "teach",
+      "parents",
+      "education"
+    ],
+    "score": 5,
+    "max_score": 5,
+    "missing_terms": [],
+    "answer": "The liberty interest recognized by Meyer v. Nebraska under the Fourteenth Amendment is the right to teach and learn any language, as part of the freedom to acquire knowledge and education.\n\nThis conclusion is supported by [Source 3], where the Court states: \"His right thus to teach and the right of parents to engage him so to instruct their children, we think, are within the liberty of the Amendment.\"\n\nAdditionally, in [Source 6] , the Court explains that the statute at issue prohibits teaching any language other than English until a pupil has attained and successfully passed the eighth grade, which is not usually accomplished before the age of twelve. The Supreme Court of the State had held that \"the so-called ancient or dead languages\" are not \"within the spirit or the purpose of the act.\" Latin, Greek, Hebrew are not proscribed; but German, French, Spanish, Italian and every other alien speech are within the ban.\n\nTherefore, Meyer v. Nebraska recognized a liberty interest in the right to teach and learn any language as part of the freedom to acquire knowledge and education under the Fourteenth Amendment.",
+    "sources": [
+      {
+        "source_number": 1,
+        "case_title": "Meyer v. Nebraska",
+        "citation": "262 U.S. 390, 43 S. Ct. 625, 67 L. Ed. 1042, 1923 U.S. LEXIS 2655, 29 A.L.R. 1446",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "unsplit_opinion",
+        "chunk_id": 8,
+        "total_chunks": 19,
+        "source_url": "https://www.courtlistener.com/opinion/100233/meyer-v-nebraska/",
+        "preview": ". S. 549 ; Truax v. Raich, 239 U. S. 33; Adams v. Tanner, 244 U. S. 590 ; New York Life Ins. Co. v. Dodge, 246 U. S. 357 ; Truax v. Corrigan, 257 U. S. 312 ; Adkins v. Children’s Hospital, 261 U. S. 525 ; Wyeth v. Cambridge Board of Health, 200 Mass. 474 . The established doctrine is that this liberty may not be inter *400 fered with, under the guise of protecting the public interest, by legislati"
+      },
+      {
+        "source_number": 2,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 64,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The Fourth Amendment was tailored explicitly for the criminal justice system, and its balance between individual and public interests always has been thought to define the 'process that is due' for seizures of person or property in criminal cases, including the detention of suspects pending trial.\" Id., at 125, n.27 (emphasis added). 87 The Gerstein Court went on to decide that while there must "
+      },
+      {
+        "source_number": 3,
+        "case_title": "Meyer v. Nebraska",
+        "citation": "262 U.S. 390, 43 S. Ct. 625, 67 L. Ed. 1042, 1923 U.S. LEXIS 2655, 29 A.L.R. 1446",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "unsplit_opinion",
+        "chunk_id": 10,
+        "total_chunks": 19,
+        "source_url": "https://www.courtlistener.com/opinion/100233/meyer-v-nebraska/",
+        "preview": ". Mere knowledge of the German language cannot reasonably be regarded as harmful. Heretofore it has been commonly looked upon as helpful and desirable. Plaintiff in error taught this language in school as part of his occupation. His right thus to teach and the right of parents to engage him so to instruct their children, we think, are within the liberty of the Amendment. The challenged statute for"
+      },
+      {
+        "source_number": 4,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 21,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Here the Government seized property not to preserve evidence of wrongdoing, but to assert ownership and control over the property itself. Our cases establish that government action of this consequence must comply with the Due Process Clauses of the Fifth and Fourteenth Amendments. 28 Though the Fourth Amendment places limits on the Government's power to seize property for purposes of forfeiture,"
+      },
+      {
+        "source_number": 5,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 17,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Exclusive reliance on the Fourth Amendment is appropriate in the arrest context, we explained, because the Amendment was \"tailored explicitly for the criminal justice system,\" and its \"balance between individual and public interests always has been thought to define the 'process that is due' for seizures of person or property in criminal cases.\" 420 U.S. at 125, n.27 . Furthermore, we noted that"
+      },
+      {
+        "source_number": 6,
+        "case_title": "Meyer v. Nebraska",
+        "citation": "262 U.S. 390, 43 S. Ct. 625, 67 L. Ed. 1042, 1923 U.S. LEXIS 2655, 29 A.L.R. 1446",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "unsplit_opinion",
+        "chunk_id": 2,
+        "total_chunks": 19,
+        "source_url": "https://www.courtlistener.com/opinion/100233/meyer-v-nebraska/",
+        "preview": ". 4. Whereas, an emergency exists, this act shall be in force from and'after its passage and approval.” The Supreme Court of the State affirmed the judgment of conviction. 107 Neb. 657 . It declared the offense charged and established was “ the direct and intentional teaching of the German language as a distinct subject to a child who had not passed the eighth grade,” in the parochial school maint"
+      },
+      {
+        "source_number": 7,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 65,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". As we said in United States v. Monsanto, 491 U.S. 600, 615-616 , 105 L. Ed. 2d 512 , 109 S. Ct. 2657 (1989): 88 \"It would be odd to conclude that the Government may not restrain property, such as the home and apartment in respondent's possession, based on a finding of probable cause, when we have held that (under appropriate circumstances), the Government may restrain persons where there is a fi"
+      },
+      {
+        "source_number": 8,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 12,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". $ 8,850, 461 U.S. 555, 562, n.12 , 103 S. Ct. 2005 , 76 L. Ed. 2d 143 (1983); Fuentes v. Shevin, 407 U.S. 67, 82 , 32 L. Ed. 2d 556 , 92 S. Ct. 1983 (1972); Sniadach v. Family Finance Corp. of Bay View,  [49] 395 U.S. 337, 342 , 23 L. Ed. 2d 349 , 89 S. Ct. 1820 (1969) (Harlan, J., concurring); Mullane v. Central Hanover Bank & Trust Co., 339 U.S. 306, 313 , 94 L. Ed. 865 , 70 S. Ct. 652 (1950)."
+      }
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What balancing test did the Court apply in United States v. James Daniel Good Real Property?",
+    "must_include": [
+      "Mathews v. Eldridge",
+      "private interest",
+      "risk of erroneous deprivation",
+      "Government's interest"
+    ],
+    "score": 1,
+    "max_score": 4,
+    "missing_terms": [
+      "private interest",
+      "risk of erroneous deprivation",
+      "Government's interest"
+    ],
+    "answer": "The Court applied the three-factor balancing test for evaluating procedural due process claims set out in Mathews v. Eldridge, 424 U.S. 319 (1976), as noted in Source 3 and reiterated in Source 2, to reach its holding in United States v. James Daniel Good Real Property.",
+    "sources": [
+      {
+        "source_number": 1,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 68,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". W. Goldsmith, Jr.-Grant Co. v. United States, 254 U.S. 505, 510-511 , 65 L. Ed. 376 , 41 S. Ct. 189 (1921) (forfeiture not a denial of procedural due process despite the absence of preseizure notice and opportunity for a hearing)). 91 The Court acknowledges the long history of ex parte seizures of real property through civil forfeiture, see Phillips v. Commissioner, 283 U.S. 589 , 75 L. Ed. 1289"
+      },
+      {
+        "source_number": 2,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 59,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The Court today departs from longstanding historical precedent and concludes that the ex parte warrant requirement under the Fourth Amendment  [66]  fails to afford adequate due process protection to property owners who have been convicted of a crime that renders their real property susceptible to civil forfeiture under 21 U. S. C. § 881 (a)(7). It reaches this conclusion although no such advers"
+      },
+      {
+        "source_number": 3,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 11,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Id., at 1382. 16 We granted certiorari, 507 U.S. 983 (1993), to resolve a conflict among the Courts of Appeals on the constitutional question presented. Compare United States v. Premises and Real Property at 4492 South Livonia Road, 889 F.2d 1258 (CA2 1989), with United States v. A Single Family Residence and Real Property, 803 F.2d 625 (CA11 1986). We now affirm    the due process ruling and re"
+      },
+      {
+        "source_number": 4,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 65,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". As we said in United States v. Monsanto, 491 U.S. 600, 615-616 , 105 L. Ed. 2d 512 , 109 S. Ct. 2657 (1989): 88 \"It would be odd to conclude that the Government may not restrain property, such as the home and apartment in respondent's possession, based on a finding of probable cause, when we have held that (under appropriate circumstances), the Government may restrain persons where there is a fi"
+      },
+      {
+        "source_number": 5,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 36,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See also United States v. Von Neumann, 474 U.S. 242, 251 , 88 L. Ed. 2d 587 , 106 S. Ct. 610 (1986) (no preseizure hearing is required when customs officials seize an automobile at the border). Neither of these factors is present when the target of forfeiture is real property. 47 Because real property cannot abscond, the court's jurisdiction can be preserved without prior seizure. It is true tha"
+      },
+      {
+        "source_number": 6,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 6,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". . 8 \"The following shall be subject to forfeiture to the United States and no property right shall exist in them: 9 \"(7) All real property, including any right, title, and interest (including any leasehold interest) in the whole of any lot or tract of land and any appurtenances or improvements, which is used, or intended to be used, in any manner or part, to commit, or to facilitate the commissi"
+      },
+      {
+        "source_number": 7,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 70,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". There the Court said: 92 \"The right of the United States to    collect its internal revenue by summary administrative proceedings has  [70]  long been settled. Where, as here, adequate opportunity is afforded for a later judicial determination of the legal rights, summary proceedings to secure prompt performance of pecuniary obligations to the government have been consistently sustained.\" 283 U."
+      },
+      {
+        "source_number": 8,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 41,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See Fed. Rule Civ. Proc. 65; United States v. Premises  [59]  and Real Property at 4492 South Livonia Road, 889 F.2d 1258, 1265 (CA2 1989). The Government's policy of leaving occupants in possession of real property under an occupancy agreement pending the final forfeiture ruling demonstrates that there is no serious concern about destruction in the ordinary case. See Brief for United States 13,"
+      }
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "case": "Meyer v. Nebraska",
+    "question": "What liberty interest did Meyer v. Nebraska recognize under the Fourteenth Amendment?",
+    "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)"
+  },
+  {
+    "model": "qwen3:8b",
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What balancing test did the Court apply in United States v. James Daniel Good Real Property?",
+    "must_include": [
+      "Mathews v. Eldridge",
+      "private interest",
+      "risk of erroneous deprivation",
+      "Government's interest"
+    ],
+    "score": 1,
+    "max_score": 4,
+    "missing_terms": [
+      "private interest",
+      "risk of erroneous deprivation",
+      "Government's interest"
+    ],
+    "answer": "The Court applied the **three-factor balancing test from *Mathews v. Eldridge*, 424 U.S. 319, 47 L. Ed. 2d 18, 96 S. Ct. 893 (1976)**, to evaluate procedural due process claims in *United States v. James Daniel Good Real Property*. The majority explicitly cited this framework to justify its conclusion that the ex parte seizure of real property did not violate due process, despite the absence of a preseizure hearing [Source 2]. The dissenting opinion criticized this application as expansive but did not dispute the majority’s reliance on the Mathews test [Source 2].",
+    "sources": [
+      {
+        "source_number": 1,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 68,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". W. Goldsmith, Jr.-Grant Co. v. United States, 254 U.S. 505, 510-511 , 65 L. Ed. 376 , 41 S. Ct. 189 (1921) (forfeiture not a denial of procedural due process despite the absence of preseizure notice and opportunity for a hearing)). 91 The Court acknowledges the long history of ex parte seizures of real property through civil forfeiture, see Phillips v. Commissioner, 283 U.S. 589 , 75 L. Ed. 1289"
+      },
+      {
+        "source_number": 2,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 59,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The Court today departs from longstanding historical precedent and concludes that the ex parte warrant requirement under the Fourth Amendment  [66]  fails to afford adequate due process protection to property owners who have been convicted of a crime that renders their real property susceptible to civil forfeiture under 21 U. S. C. § 881 (a)(7). It reaches this conclusion although no such advers"
+      },
+      {
+        "source_number": 3,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 11,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Id., at 1382. 16 We granted certiorari, 507 U.S. 983 (1993), to resolve a conflict among the Courts of Appeals on the constitutional question presented. Compare United States v. Premises and Real Property at 4492 South Livonia Road, 889 F.2d 1258 (CA2 1989), with United States v. A Single Family Residence and Real Property, 803 F.2d 625 (CA11 1986). We now affirm    the due process ruling and re"
+      },
+      {
+        "source_number": 4,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 65,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". As we said in United States v. Monsanto, 491 U.S. 600, 615-616 , 105 L. Ed. 2d 512 , 109 S. Ct. 2657 (1989): 88 \"It would be odd to conclude that the Government may not restrain property, such as the home and apartment in respondent's possession, based on a finding of probable cause, when we have held that (under appropriate circumstances), the Government may restrain persons where there is a fi"
+      },
+      {
+        "source_number": 5,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 36,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See also United States v. Von Neumann, 474 U.S. 242, 251 , 88 L. Ed. 2d 587 , 106 S. Ct. 610 (1986) (no preseizure hearing is required when customs officials seize an automobile at the border). Neither of these factors is present when the target of forfeiture is real property. 47 Because real property cannot abscond, the court's jurisdiction can be preserved without prior seizure. It is true tha"
+      },
+      {
+        "source_number": 6,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 6,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". . 8 \"The following shall be subject to forfeiture to the United States and no property right shall exist in them: 9 \"(7) All real property, including any right, title, and interest (including any leasehold interest) in the whole of any lot or tract of land and any appurtenances or improvements, which is used, or intended to be used, in any manner or part, to commit, or to facilitate the commissi"
+      },
+      {
+        "source_number": 7,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 70,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". There the Court said: 92 \"The right of the United States to    collect its internal revenue by summary administrative proceedings has  [70]  long been settled. Where, as here, adequate opportunity is afforded for a later judicial determination of the legal rights, summary proceedings to secure prompt performance of pecuniary obligations to the government have been consistently sustained.\" 283 U."
+      },
+      {
+        "source_number": 8,
+        "case_title": "United States v. James Daniel Good Real Property",
+        "citation": "",
+        "document_type": "supreme_court_opinion",
+        "opinion_role": "court_opinion",
+        "section_label": "opinion_before_separate_writings",
+        "chunk_id": 41,
+        "total_chunks": 78,
+        "source_url": "https://www.courtlistener.com/opinion/145121/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See Fed. Rule Civ. Proc. 65; United States v. Premises  [59]  and Real Property at 4492 South Livonia Road, 889 F.2d 1258, 1265 (CA2 1989). The Government's policy of leaving occupants in possession of real property under an occupancy agreement pending the final forfeiture ruling demonstrates that there is no serious concern about destruction in the ordinary case. See Brief for United States 13,"
+      }
+    ]
+  }
+]

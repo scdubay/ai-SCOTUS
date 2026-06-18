@@ -1,0 +1,12 @@
+[
+  {
+    "case": "Meyer v. Nebraska",
+    "question": "What liberty interest did Meyer v. Nebraska recognize under the Fourteenth Amendment?",
+    "must_include": ["liberty", "Fourteenth Amendment", "teach", "education"]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What balancing test did the Court apply in United States v. James Daniel Good Real Property?",
+    "must_include": ["Mathews v. Eldridge", "private interest", "risk of erroneous deprivation", "Government's interest"]
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "case_dossier_id": "courtlistener_cluster_100233",
+  "source_system": "CourtListener",
+  "source_url": "https://www.courtlistener.com/opinion/100233/meyer-v-nebraska/",
+  "query": "Meyer v. Nebraska 262 U.S. 390",
+  "case_title": "Meyer v. Nebraska",
+  "case_title_full": "Meyer v. State of Nebraska",
+  "court": "Supreme Court of the United States",
+  "court_id": "scotus",
+  "citations": [
+    "262 U.S. 390",
+    "43 S. Ct. 625",
+    "67 L. Ed. 1042",
+    "1923 U.S. LEXIS 2655",
+    "29 A.L.R. 1446"
+  ],
+  "cluster_id": 100233,
+  "docket_id": 634142,
+  "docket_number": "325",
+  "date_filed": "1923-06-04",
+  "date_argued": null,
+  "scdb_id": "1922-203",
+  "cite_count": 3362,
+  "judge": "McReynolds, Holmes, Sutheeland",
+  "attorney": "Mr. Charles E. Sandall, with whom Mr. I. L. Albert, Mr. Arthur G. Wray and Mr. August Wagner were on the briefs, for plaintiff in error., Mr. Mason Wheeler and Mr. O. S. Spillman, with whom Mr. Clarence A. Davis, Attorney General of the State of Nebraska, and Mr. Hugh La Master were on the brief, for defendant in error., Mr. William D. Guthrie and Mr. Bernard Hershkopf, by leave of court, filed a brief as amici curice.",
+  "procedural_history": "",
+  "posture": "",
+  "status": "Published",
+  "opinion_ids": [
+    100233
+  ],
+  "opinion_records": [
+    {
+      "author_id": 2195,
+      "cites": [
+        88661,
+        91158,
+        91704,
+        92826,
+        93817,
+        94631,
+        96276,
+        96885,
+        97368,
+        98542,
+        98999,
+        99132,
+        99887,
+        100181
+      ],
+      "download_url": null,
+      "id": 100233,
+      "joined_by_ids": [],
+      "local_path": null,
+      "meta": {
+        "timestamp": "2025-10-23T23:50:06.061386Z",
+        "date_created": "2010-04-28T16:48:21Z"
+      },
+      "ordering_key": null,
+      "per_curiam": false,
+      "sha1": "c258be3d85a296d58b21299c586bfffd3a44282f",
+      "snippet": "\n262 U.S. 390 (1923)\nMEYER\nv.\nSTATE OF NEBRASKA.\nNo. 325.\nSupreme Court of United States.\nArgued February 23, 1923.\nDecided June 4, 1923.\nERROR TO THE SUPREME COURT OF THE STATE OF NEBRASKA.\n*391 Mr. Charles E. Sandall, with whom Mr. I.L. Albert, Mr. Arthur G. Wray and Mr. August Wagner were o",
+      "type": "combined-opinion"
+    }
+  ],
+  "components": {
+    "opinions": "seeded",
+    "briefs": "pending",
+    "oral_arguments": "pending",
+    "docket_entries": "pending",
+    "lower_court_history": "pending",
+    "party_records": "pending",
+    "attorney_records": "partial",
+    "citation_network": "partial"
+  }
+}

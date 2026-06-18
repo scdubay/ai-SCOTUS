@@ -1,0 +1,69 @@
+{
+  "case_dossier_id": "courtlistener_cluster_105312",
+  "source_system": "CourtListener",
+  "source_url": "https://www.courtlistener.com/opinion/105312/brown-v-board-of-education/",
+  "query": "Brown v. Board of Education 347 U.S. 483",
+  "case_title": "Brown v. Board of Education",
+  "case_title_full": "BROWN Et Al. v. BOARD OF EDUCATION OF TOPEKA Et Al.",
+  "court": "Supreme Court of the United States",
+  "court_id": "scotus",
+  "citations": [
+    "99 L. Ed. 2d 1083",
+    "75 S. Ct. 753",
+    "349 U.S. 294",
+    "1955 U.S. LEXIS 734",
+    "71 Ohio Law. Abs. 584",
+    "99 L. Ed. 1083",
+    "57 Ohio Op. 253"
+  ],
+  "cluster_id": 105312,
+  "docket_id": 408847,
+  "docket_number": "NO 1",
+  "date_filed": "1955-05-31",
+  "date_argued": null,
+  "scdb_id": "1954-085",
+  "cite_count": 1416,
+  "judge": "Warren",
+  "attorney": "Robert L. Carter argued the cause for appellants in No. 1. Spottswood W. Robinson, III, argued the causes for appellants in Nos. 2 and 3. George E. C. Hayes and James M. Nabrit, Jr. argued the cause for petitioners in No. 4. Louis L. Redding argued the cause for respondents in No. 5. Thurgood Marshall argued the causes for appellants in Nos. 1, 2 and 3, petitioners in No. 4 and respondents in No. 5., On the briefs were Harold Boulware, Robert L. Carter, Jack Greenberg, Oliver W. Hill, Thurgood Marshall, Louis L. Redding, Spottswood W. Robinson, III, Charles S. Scott, William T. Coleman, Jr., Charles T. Duncan, George E. C. Hayes, Loren Miller, William R. Ming, Jr., Constance Baker Motley, James M. Nabrit, Jr., Louis H. Poliak and Frank D. Reeves for appellants in Nos. 1, 2 and 3, and respondents in No: 5; and George E. C. Hayes, James M. Nabrit, Jr., George M. Johnson, Charles W. Quick, Herbert 0. Reid, Thurgood Marshall and Robert L. Carter for petitioners in No. 4., Harold R. Fatzer, Attorney General of Kansas, argued the cause for appellees in No. 1. With him on the brief was Paul E. Wilson, Assistant Attorney General. Peter F. Caldwell filed a brief for the Board of Education of Topeka, Kansas, appellee., S. E. Rogers and Robert McC. Figg, Jr. argued the cause and filed a brief for appellees in No. 2., J. Lindsay Almond, Jr., Attorney General of Virginia, and Archibald G. Robertson argued the cause for appellees in No. 3. With them on the brief were Henry T. Wick-ham, Special Assistant to the Attorney General, T. Justin Moore, John W. Riely and T. Justin Moore, Jr., Milton D. Korman argued the cause for respondents in No. 4. With him on the brief were Vernon E. West, Chester H. Gray and Lyman J. Umstead., Joseph Donald Craven, Attorney General of Delaware, argued the cause for petitioners in No. 5. On the brief were H. Albert Young, then Attorney General, Clarence W. Taylor, Deputy Attorney General, and Andrew D. Christie, Special Deputy to the Attorney General., In response to the Court’s invitation, 347 U. S. 483,495-496, Solicitor General Sobeloff participated in the oral argument for the United States. With him on the brief were Attorney General Brownell, Assistant Attorney General Rankin, Philip Elman, Ralph S. Spritzer and Alan S. Rosenthal., By invitation of the Court, 347 U. S. 483, 496, the following State officials presented their views orally as amici curiae: Thomas J. Gentry, Attorney General of Arkansas, with whom on the brief were James L. Sloan, Assistant Attorney General, and Richard B. McCulloch, Special Assistant Attorney General. Richard W. Ervin, Attorney General of Florida, and Ralph E. Odum, Assistant Attorney General, both of whom were also on a brief. C. Ferdinand Sybert, Attorney General of Maryland, with whom on the brief were Edward D. E. Rollins, then Attorney General, W. Giles Parker, Assistant Attorney General, and James H. Norris, Jr., Special-Assistant Attorney General. I. Beverly Lake, Assistant Attorney General of North Carolina, with whom on the brief were Harry McMullan, Attorney General, and T. Wade Bruton, Ralph Moody and Claude L. Love, Assistant Attorneys General. Mac Q. Williamson, Attorney General of Oklahoma, who also filed a brief. John Ben Shepperd, Attorney General of Texas, and Burnell Waldrep, Assistant Attorney General, with whom on the brief were Billy E. Lee, J. A. Amis, Jr., L. P. Lollar, J. Fred Jones, John Davenport, John Reeves and Will Davis., Phineas Indritz filed a brief for the American Veterans Committee, Inc., as amicus curiae.",
+  "procedural_history": "",
+  "posture": "",
+  "status": "Published",
+  "opinion_ids": [
+    105312
+  ],
+  "opinion_records": [
+    {
+      "author_id": 3376,
+      "cites": [
+        102508,
+        103944,
+        104961,
+        105221,
+        105222
+      ],
+      "download_url": null,
+      "id": 105312,
+      "joined_by_ids": [],
+      "local_path": null,
+      "meta": {
+        "timestamp": "2025-10-24T01:33:12.947676Z",
+        "date_created": "2010-04-28T16:55:25Z"
+      },
+      "ordering_key": null,
+      "per_curiam": false,
+      "sha1": "cb732686a1a3ef5089fee801abe4f24869587796",
+      "snippet": "\n349 U.S. 294 (1955)\nBROWN ET AL.\nv.\nBOARD OF EDUCATION OF TOPEKA ET AL.\nNO. 1.\nSupreme Court of United States.\nReargued on the question of relief April 11-14, 1955.\nOpinion and judgments announced May 31, 1955.\nAPPEAL FROM THE UNITED STATES DISTRICT COURT FOR THE DISTRICT OF KANSAS.[*]*296 Robert L.",
+      "type": "combined-opinion"
+    }
+  ],
+  "components": {
+    "opinions": "seeded",
+    "briefs": "pending",
+    "oral_arguments": "pending",
+    "docket_entries": "pending",
+    "lower_court_history": "pending",
+    "party_records": "pending",
+    "attorney_records": "partial",
+    "citation_network": "partial"
+  }
+}

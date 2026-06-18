@@ -1,0 +1,57 @@
+{
+  "case_dossier_id": "courtlistener_cluster_9242552",
+  "source_system": "CourtListener",
+  "source_url": "https://www.courtlistener.com/opinion/9242552/brown-v-columbus-board-of-education/",
+  "query": "Brown v. Board of Education",
+  "case_title": "Brown v. Columbus Board of Education",
+  "case_title_full": "Brown v. Columbus Board of Education",
+  "court": "Supreme Court of the United States",
+  "court_id": "scotus",
+  "citations": [
+    "565 U.S. 838"
+  ],
+  "cluster_id": 9242552,
+  "docket_id": 66509614,
+  "docket_number": "No. 10-10495",
+  "date_filed": "2011-10-03",
+  "date_argued": null,
+  "scdb_id": "",
+  "cite_count": 0,
+  "judge": "",
+  "attorney": "",
+  "procedural_history": "",
+  "posture": "",
+  "status": "Published",
+  "opinion_ids": [
+    9237365
+  ],
+  "opinion_records": [
+    {
+      "author_id": null,
+      "cites": [],
+      "download_url": null,
+      "id": 9237365,
+      "joined_by_ids": [],
+      "local_path": null,
+      "meta": {
+        "timestamp": "2024-06-25T06:50:03.707511Z",
+        "date_created": "2022-11-28T18:14:47.947638Z"
+      },
+      "ordering_key": null,
+      "per_curiam": false,
+      "sha1": "",
+      "snippet": "\nC. A. 6th Cir. Certiorari denied.\n",
+      "type": "lead-opinion"
+    }
+  ],
+  "components": {
+    "opinions": "seeded",
+    "briefs": "pending",
+    "oral_arguments": "pending",
+    "docket_entries": "pending",
+    "lower_court_history": "pending",
+    "party_records": "pending",
+    "attorney_records": "partial",
+    "citation_network": "partial"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "case_dossier_id": "courtlistener_cluster_84759",
+  "source_system": "CourtListener",
+  "source_url": "https://www.courtlistener.com/opinion/84759/marbury-v-madison/",
+  "query": "Marbury v. Madison 5 U.S. 137",
+  "case_title": "Marbury v. Madison",
+  "case_title_full": "WILLIAM MARBURY v. JAMES MADISON, Secretary of State of the United States",
+  "court": "Supreme Court of the United States",
+  "court_id": "scotus",
+  "citations": [
+    "5 U.S. 137",
+    "2 L. Ed. 60",
+    "1 Cranch 137",
+    "1803 U.S. LEXIS 352"
+  ],
+  "cluster_id": 84759,
+  "docket_id": 198164,
+  "docket_number": "",
+  "date_filed": "1803-02-24",
+  "date_argued": null,
+  "scdb_id": "1803-005",
+  "cite_count": 5990,
+  "judge": "",
+  "attorney": "Mr. Lee, in support of the rule,, Mr. Daniel Brent testified, Mr. Lincoln, attorney general,, Mr. Lee, in reply,, Mr. Lee replied,",
+  "procedural_history": "",
+  "posture": "",
+  "status": "Published",
+  "opinion_ids": [
+    84759
+  ],
+  "opinion_records": [
+    {
+      "author_id": null,
+      "cites": [],
+      "download_url": null,
+      "id": 84759,
+      "joined_by_ids": [],
+      "local_path": null,
+      "meta": {
+        "timestamp": "2025-10-23T16:52:37.495362Z",
+        "date_created": "2010-04-28T15:59:28Z"
+      },
+      "ordering_key": null,
+      "per_curiam": false,
+      "sha1": "951addf3f6ff1324cdc4203c5e26635a91071dd8",
+      "snippet": "\n5 U.S. 137 (____)\n1 Cranch 137\nWILLIAM MARBURY\nv.\nJAMES MADISON, SECRETARY OF STATE OF THE UNITED STATES.\nSupreme Court of United States.\n\n*153 Opinion of the Court.\nAt the last term on the affidavits then read and filed with the clerk, a rule was granted in this case, requiring the secretary of state to show cause ",
+      "type": "combined-opinion"
+    }
+  ],
+  "components": {
+    "opinions": "seeded",
+    "briefs": "pending",
+    "oral_arguments": "pending",
+    "docket_entries": "pending",
+    "lower_court_history": "pending",
+    "party_records": "pending",
+    "attorney_records": "partial",
+    "citation_network": "partial"
+  }
+}

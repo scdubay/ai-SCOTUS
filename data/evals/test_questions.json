@@ -1,0 +1,144 @@
+[
+  {
+    "case": "Meyer v. Nebraska",
+    "category": "holding",
+    "question": "What liberty interest did Meyer v. Nebraska recognize under the Fourteenth Amendment?",
+    "expected_terms": [
+      "liberty",
+      "education",
+      "teacher",
+      "German"
+    ]
+  },
+
+  {
+    "case": "Meyer v. Nebraska",
+    "category": "parents_rights",
+    "question": "What right of parents did Meyer v. Nebraska recognize?",
+    "expected_terms": [
+      "parents",
+      "children",
+      "education",
+      "control"
+    ]
+  },
+
+  {
+    "case": "Meyer v. Nebraska",
+    "category": "holding",
+    "question": "Why did the Court strike down the Nebraska statute?",
+    "expected_terms": [
+      "unreasonable",
+      "liberty",
+      "Fourteenth Amendment",
+      "German"
+    ]
+  },
+
+  {
+    "case": "Meyer v. Nebraska",
+    "category": "police_power",
+    "question": "How did the Court evaluate Nebraska's exercise of police power?",
+    "expected_terms": [
+      "reasonable relation",
+      "police power",
+      "arbitrary",
+      "liberty"
+    ]
+  },
+
+  {
+    "case": "Meyer v. Nebraska",
+    "category": "precedent",
+    "question": "What precedents did Meyer v. Nebraska rely upon?",
+    "expected_terms": [
+      "Truax",
+      "Adkins",
+      "Slaughter-House"
+    ]
+  },
+
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "category": "due_process",
+    "question": "What balancing test did the Court apply in United States v. James Daniel Good Real Property?",
+    "expected_terms": [
+      "Mathews",
+      "private interest",
+      "erroneous deprivation",
+      "Government"
+    ]
+  },
+
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "category": "holding",
+    "question": "Why did the Court require notice and a hearing before seizure of real property?",
+    "expected_terms": [
+      "notice",
+      "hearing",
+      "real property",
+      "due process"
+    ]
+  },
+
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "category": "exception",
+    "question": "When may the Government seize real property without prior notice and hearing?",
+    "expected_terms": [
+      "exigent circumstances",
+      "seizure",
+      "notice",
+      "hearing"
+    ]
+  },
+
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "category": "real_property",
+    "question": "Why did the Court distinguish real property from personal property?",
+    "expected_terms": [
+      "real property",
+      "cannot abscond",
+      "jurisdiction",
+      "seizure"
+    ]
+  },
+
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "category": "government_interest",
+    "question": "What government interests did the Court consider insufficient to justify seizure without notice?",
+    "expected_terms": [
+      "administrative",
+      "Government",
+      "interest",
+      "notice"
+    ]
+  },
+
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "category": "precedent",
+    "question": "What precedents did the Court rely upon in United States v. James Daniel Good Real Property?",
+    "expected_terms": [
+      "Mathews",
+      "Fuentes",
+      "Doehr",
+      "Calero-Toledo"
+    ]
+  },
+
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "category": "dissent",
+    "question": "What was Justice O'Connor's primary criticism of the majority opinion?",
+    "expected_terms": [
+      "Mathews",
+      "historical precedent",
+      "majority",
+      "due process"
+    ]
+  }
+]

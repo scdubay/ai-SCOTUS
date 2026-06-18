@@ -1,0 +1,57 @@
+{
+  "case_dossier_id": "courtlistener_cluster_8976604",
+  "source_system": "CourtListener",
+  "source_url": "https://www.courtlistener.com/opinion/8976604/miranda-v-arizona/",
+  "query": "Miranda v. Arizona",
+  "case_title": "Miranda v. Arizona",
+  "case_title_full": "Miranda v. Arizona",
+  "court": "Supreme Court of the United States",
+  "court_id": "scotus",
+  "citations": [
+    "396 U.S. 868"
+  ],
+  "cluster_id": 8976604,
+  "docket_id": 66242820,
+  "docket_number": "No. 314",
+  "date_filed": "1969-10-13",
+  "date_argued": null,
+  "scdb_id": "",
+  "cite_count": 47,
+  "judge": "Consideration, Took",
+  "attorney": "John P. Frank and John J. Flynn for petitioner. Gary K. Nelson, Attorney General of Arizona, and Carl Waag, Assistant Attorney General, for respondent.",
+  "procedural_history": "",
+  "posture": "",
+  "status": "Published",
+  "opinion_ids": [
+    8968349
+  ],
+  "opinion_records": [
+    {
+      "author_id": null,
+      "cites": [],
+      "download_url": null,
+      "id": 8968349,
+      "joined_by_ids": [],
+      "local_path": null,
+      "meta": {
+        "timestamp": "2024-06-25T05:44:35.994123Z",
+        "date_created": "2022-11-27T10:21:04.021751Z"
+      },
+      "ordering_key": null,
+      "per_curiam": false,
+      "sha1": "",
+      "snippet": "\nSup. Ct. Ariz. Certiorari denied.\nMr. Justice Marshall took no part in the consideration or decision of this petition.\n",
+      "type": "lead-opinion"
+    }
+  ],
+  "components": {
+    "opinions": "seeded",
+    "briefs": "pending",
+    "oral_arguments": "pending",
+    "docket_entries": "pending",
+    "lower_court_history": "pending",
+    "party_records": "pending",
+    "attorney_records": "partial",
+    "citation_network": "partial"
+  }
+}

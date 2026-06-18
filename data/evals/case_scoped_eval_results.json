@@ -1,0 +1,897 @@
+[
+  {
+    "case": "Meyer v. Nebraska",
+    "question": "What liberty interest did Meyer v. Nebraska recognize under the Fourteenth Amendment?",
+    "expected_terms": [
+      "liberty",
+      "education",
+      "teacher",
+      "German"
+    ],
+    "max_score": 4,
+    "resolved_case": "Meyer v. Nebraska",
+    "routing_method": "lexical",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "liberty",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "education",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "teacher",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "German",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "McReynolds",
+        "chunk_id": null,
+        "preview": "Mr. Justice McReynolds delivered the opinion of the Court. Plaintiff in error was tried and convicted in the District Court for Hamilton County, Nebraska, under an information which charged that on May 25, 1920, while an instructor in Zion Parochial School, he unlawfully taught the subject of readin"
+      }
+    ]
+  },
+  {
+    "case": "Meyer v. Nebraska",
+    "question": "What right of parents did Meyer v. Nebraska recognize?",
+    "expected_terms": [
+      "parents",
+      "children",
+      "education",
+      "control"
+    ],
+    "max_score": 4,
+    "resolved_case": "Meyer v. Nebraska",
+    "routing_method": "lexical",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "parents",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "children",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "education",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "control",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "McReynolds",
+        "chunk_id": null,
+        "preview": "Mr. Justice McReynolds delivered the opinion of the Court. Plaintiff in error was tried and convicted in the District Court for Hamilton County, Nebraska, under an information which charged that on May 25, 1920, while an instructor in Zion Parochial School, he unlawfully taught the subject of readin"
+      }
+    ]
+  },
+  {
+    "case": "Meyer v. Nebraska",
+    "question": "Why did the Court strike down the Nebraska statute?",
+    "expected_terms": [
+      "unreasonable",
+      "liberty",
+      "Fourteenth Amendment",
+      "German"
+    ],
+    "max_score": 4,
+    "resolved_case": "Meyer v. Nebraska",
+    "routing_method": "lexical",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "unreasonable",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "liberty",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "Fourteenth Amendment",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "German",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "McReynolds",
+        "chunk_id": null,
+        "preview": "Mr. Justice McReynolds delivered the opinion of the Court. Plaintiff in error was tried and convicted in the District Court for Hamilton County, Nebraska, under an information which charged that on May 25, 1920, while an instructor in Zion Parochial School, he unlawfully taught the subject of readin"
+      }
+    ]
+  },
+  {
+    "case": "Meyer v. Nebraska",
+    "question": "How did the Court evaluate Nebraska's exercise of police power?",
+    "expected_terms": [
+      "reasonable relation",
+      "police power",
+      "arbitrary",
+      "liberty"
+    ],
+    "max_score": 4,
+    "resolved_case": "Meyer v. Nebraska",
+    "routing_method": "lexical",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "reasonable relation",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "police power",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "arbitrary",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "liberty",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "McReynolds",
+        "chunk_id": null,
+        "preview": "Mr. Justice McReynolds delivered the opinion of the Court. Plaintiff in error was tried and convicted in the District Court for Hamilton County, Nebraska, under an information which charged that on May 25, 1920, while an instructor in Zion Parochial School, he unlawfully taught the subject of readin"
+      }
+    ]
+  },
+  {
+    "case": "Meyer v. Nebraska",
+    "question": "What precedents did Meyer v. Nebraska rely upon?",
+    "expected_terms": [
+      "Truax",
+      "Adkins",
+      "Slaughter-House"
+    ],
+    "max_score": 3,
+    "resolved_case": "Meyer v. Nebraska",
+    "routing_method": "lexical",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 3,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "Truax",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "Adkins",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      },
+      {
+        "term": "Slaughter-House",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "Meyer v. Nebraska"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "McReynolds",
+        "chunk_id": null,
+        "preview": "Mr. Justice McReynolds delivered the opinion of the Court. Plaintiff in error was tried and convicted in the District Court for Hamilton County, Nebraska, under an information which charged that on May 25, 1920, while an instructor in Zion Parochial School, he unlawfully taught the subject of readin"
+      }
+    ]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What balancing test did the Court apply in United States v. James Daniel Good Real Property?",
+    "expected_terms": [
+      "Mathews",
+      "private interest",
+      "erroneous deprivation",
+      "Government"
+    ],
+    "max_score": 4,
+    "resolved_case": "United States v. James Daniel Good Real Property",
+    "routing_method": "lexical",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "Mathews",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "private interest",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "erroneous deprivation",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "Government",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": null,
+        "preview": "*46 Justice Kennedy delivered the opinion of the Court. The principal question presented is whether, in the absence of exigent circumstances, the Due Process Clause of the Fifth Amendment prohibits the Government in a civil forfeiture case from seizing real property without first affording the owner"
+      },
+      {
+        "segment": 2,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": null,
+        "preview": "JUSTICE THOMAS, concurring in part and dissenting in part. Two fundamental considerations seem to motivate the Court's due process ruling: first, a desire to protect the *81 rights incident to the ownership of real property, especially residences, and second, a more implicitly expressed distrust of "
+      },
+      {
+        "segment": 3,
+        "role": "concurrence_dissent",
+        "author": "Rehnquist",
+        "chunk_id": null,
+        "preview": "Chief Justice Rehnquist, with whom Justice Scalia joins, and with whom Justice O’Connor joins as to Parts II and III, concurring in part and dissenting in part. I concur in Parts I and III of the Court’s opinion and dissent with respect to Part II. The Court today departs from longstanding historica"
+      },
+      {
+        "segment": 4,
+        "role": "concurrence_dissent",
+        "author": "O'Connor",
+        "chunk_id": null,
+        "preview": "Justice O’Connor, concurring in part and dissenting in part. Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress. On the facts of this case, however, I am unable to c"
+      }
+    ]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "Why did the Court require notice and a hearing before seizure of real property?",
+    "expected_terms": [
+      "notice",
+      "hearing",
+      "real property",
+      "due process"
+    ],
+    "max_score": 4,
+    "resolved_case": "United States v. James Daniel Good Real Property",
+    "routing_method": "similarity",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "notice",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "hearing",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "real property",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "due process",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": null,
+        "preview": "*46 Justice Kennedy delivered the opinion of the Court. The principal question presented is whether, in the absence of exigent circumstances, the Due Process Clause of the Fifth Amendment prohibits the Government in a civil forfeiture case from seizing real property without first affording the owner"
+      },
+      {
+        "segment": 2,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": null,
+        "preview": "JUSTICE THOMAS, concurring in part and dissenting in part. Two fundamental considerations seem to motivate the Court's due process ruling: first, a desire to protect the *81 rights incident to the ownership of real property, especially residences, and second, a more implicitly expressed distrust of "
+      },
+      {
+        "segment": 3,
+        "role": "concurrence_dissent",
+        "author": "Rehnquist",
+        "chunk_id": null,
+        "preview": "Chief Justice Rehnquist, with whom Justice Scalia joins, and with whom Justice O’Connor joins as to Parts II and III, concurring in part and dissenting in part. I concur in Parts I and III of the Court’s opinion and dissent with respect to Part II. The Court today departs from longstanding historica"
+      },
+      {
+        "segment": 4,
+        "role": "concurrence_dissent",
+        "author": "O'Connor",
+        "chunk_id": null,
+        "preview": "Justice O’Connor, concurring in part and dissenting in part. Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress. On the facts of this case, however, I am unable to c"
+      }
+    ]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "When may the Government seize real property without prior notice and hearing?",
+    "expected_terms": [
+      "exigent circumstances",
+      "seizure",
+      "notice",
+      "hearing"
+    ],
+    "max_score": 4,
+    "resolved_case": "United States v. James Daniel Good Real Property",
+    "routing_method": "similarity",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "exigent circumstances",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "seizure",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "notice",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "hearing",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": null,
+        "preview": "*46 Justice Kennedy delivered the opinion of the Court. The principal question presented is whether, in the absence of exigent circumstances, the Due Process Clause of the Fifth Amendment prohibits the Government in a civil forfeiture case from seizing real property without first affording the owner"
+      },
+      {
+        "segment": 2,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": null,
+        "preview": "JUSTICE THOMAS, concurring in part and dissenting in part. Two fundamental considerations seem to motivate the Court's due process ruling: first, a desire to protect the *81 rights incident to the ownership of real property, especially residences, and second, a more implicitly expressed distrust of "
+      },
+      {
+        "segment": 3,
+        "role": "concurrence_dissent",
+        "author": "Rehnquist",
+        "chunk_id": null,
+        "preview": "Chief Justice Rehnquist, with whom Justice Scalia joins, and with whom Justice O’Connor joins as to Parts II and III, concurring in part and dissenting in part. I concur in Parts I and III of the Court’s opinion and dissent with respect to Part II. The Court today departs from longstanding historica"
+      },
+      {
+        "segment": 4,
+        "role": "concurrence_dissent",
+        "author": "O'Connor",
+        "chunk_id": null,
+        "preview": "Justice O’Connor, concurring in part and dissenting in part. Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress. On the facts of this case, however, I am unable to c"
+      }
+    ]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "Why did the Court distinguish real property from personal property?",
+    "expected_terms": [
+      "real property",
+      "cannot abscond",
+      "jurisdiction",
+      "seizure"
+    ],
+    "max_score": 4,
+    "resolved_case": "United States v. James Daniel Good Real Property",
+    "routing_method": "similarity",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "real property",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "cannot abscond",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "jurisdiction",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "seizure",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": null,
+        "preview": "*46 Justice Kennedy delivered the opinion of the Court. The principal question presented is whether, in the absence of exigent circumstances, the Due Process Clause of the Fifth Amendment prohibits the Government in a civil forfeiture case from seizing real property without first affording the owner"
+      },
+      {
+        "segment": 2,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": null,
+        "preview": "JUSTICE THOMAS, concurring in part and dissenting in part. Two fundamental considerations seem to motivate the Court's due process ruling: first, a desire to protect the *81 rights incident to the ownership of real property, especially residences, and second, a more implicitly expressed distrust of "
+      },
+      {
+        "segment": 3,
+        "role": "concurrence_dissent",
+        "author": "Rehnquist",
+        "chunk_id": null,
+        "preview": "Chief Justice Rehnquist, with whom Justice Scalia joins, and with whom Justice O’Connor joins as to Parts II and III, concurring in part and dissenting in part. I concur in Parts I and III of the Court’s opinion and dissent with respect to Part II. The Court today departs from longstanding historica"
+      },
+      {
+        "segment": 4,
+        "role": "concurrence_dissent",
+        "author": "O'Connor",
+        "chunk_id": null,
+        "preview": "Justice O’Connor, concurring in part and dissenting in part. Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress. On the facts of this case, however, I am unable to c"
+      }
+    ]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What government interests did the Court consider insufficient to justify seizure without notice?",
+    "expected_terms": [
+      "administrative",
+      "Government",
+      "interest",
+      "notice"
+    ],
+    "max_score": 4,
+    "resolved_case": "United States v. James Daniel Good Real Property",
+    "routing_method": "similarity",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "administrative",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "Government",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "interest",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "notice",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": null,
+        "preview": "*46 Justice Kennedy delivered the opinion of the Court. The principal question presented is whether, in the absence of exigent circumstances, the Due Process Clause of the Fifth Amendment prohibits the Government in a civil forfeiture case from seizing real property without first affording the owner"
+      },
+      {
+        "segment": 2,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": null,
+        "preview": "JUSTICE THOMAS, concurring in part and dissenting in part. Two fundamental considerations seem to motivate the Court's due process ruling: first, a desire to protect the *81 rights incident to the ownership of real property, especially residences, and second, a more implicitly expressed distrust of "
+      },
+      {
+        "segment": 3,
+        "role": "concurrence_dissent",
+        "author": "Rehnquist",
+        "chunk_id": null,
+        "preview": "Chief Justice Rehnquist, with whom Justice Scalia joins, and with whom Justice O’Connor joins as to Parts II and III, concurring in part and dissenting in part. I concur in Parts I and III of the Court’s opinion and dissent with respect to Part II. The Court today departs from longstanding historica"
+      },
+      {
+        "segment": 4,
+        "role": "concurrence_dissent",
+        "author": "O'Connor",
+        "chunk_id": null,
+        "preview": "Justice O’Connor, concurring in part and dissenting in part. Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress. On the facts of this case, however, I am unable to c"
+      }
+    ]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What precedents did the Court rely upon in United States v. James Daniel Good Real Property?",
+    "expected_terms": [
+      "Mathews",
+      "Fuentes",
+      "Doehr",
+      "Calero-Toledo"
+    ],
+    "max_score": 4,
+    "resolved_case": "United States v. James Daniel Good Real Property",
+    "routing_method": "lexical",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 1.0,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "Mathews",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "Fuentes",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "Doehr",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "Calero-Toledo",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": null,
+        "preview": "*46 Justice Kennedy delivered the opinion of the Court. The principal question presented is whether, in the absence of exigent circumstances, the Due Process Clause of the Fifth Amendment prohibits the Government in a civil forfeiture case from seizing real property without first affording the owner"
+      },
+      {
+        "segment": 2,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": null,
+        "preview": "JUSTICE THOMAS, concurring in part and dissenting in part. Two fundamental considerations seem to motivate the Court's due process ruling: first, a desire to protect the *81 rights incident to the ownership of real property, especially residences, and second, a more implicitly expressed distrust of "
+      },
+      {
+        "segment": 3,
+        "role": "concurrence_dissent",
+        "author": "Rehnquist",
+        "chunk_id": null,
+        "preview": "Chief Justice Rehnquist, with whom Justice Scalia joins, and with whom Justice O’Connor joins as to Parts II and III, concurring in part and dissenting in part. I concur in Parts I and III of the Court’s opinion and dissent with respect to Part II. The Court today departs from longstanding historica"
+      },
+      {
+        "segment": 4,
+        "role": "concurrence_dissent",
+        "author": "O'Connor",
+        "chunk_id": null,
+        "preview": "Justice O’Connor, concurring in part and dissenting in part. Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress. On the facts of this case, however, I am unable to c"
+      }
+    ]
+  },
+  {
+    "case": "United States v. James Daniel Good Real Property",
+    "question": "What was Justice O'Connor's primary criticism of the majority opinion?",
+    "expected_terms": [
+      "Mathews",
+      "historical precedent",
+      "majority",
+      "due process"
+    ],
+    "max_score": 4,
+    "resolved_case": "United States v. James Daniel Good Real Property",
+    "routing_method": "similarity",
+    "routed_correct": true,
+    "mode": "read_whole",
+    "context_score": 4,
+    "context_missing_terms": [],
+    "mrr": 0.7083333333333333,
+    "hit_at_5": true,
+    "hit_at_10": true,
+    "hit_at_20": true,
+    "all_terms_hit_at_5": true,
+    "all_terms_hit_at_10": true,
+    "all_terms_hit_at_20": true,
+    "term_positions": [
+      {
+        "term": "Mathews",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "historical precedent",
+        "found": true,
+        "first_rank": 3,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "majority",
+        "found": true,
+        "first_rank": 2,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      },
+      {
+        "term": "due process",
+        "found": true,
+        "first_rank": 1,
+        "first_chunk": null,
+        "first_case": "United States v. James Daniel Good Real Property"
+      }
+    ],
+    "segments": [
+      {
+        "segment": 1,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": null,
+        "preview": "*46 Justice Kennedy delivered the opinion of the Court. The principal question presented is whether, in the absence of exigent circumstances, the Due Process Clause of the Fifth Amendment prohibits the Government in a civil forfeiture case from seizing real property without first affording the owner"
+      },
+      {
+        "segment": 2,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": null,
+        "preview": "JUSTICE THOMAS, concurring in part and dissenting in part. Two fundamental considerations seem to motivate the Court's due process ruling: first, a desire to protect the *81 rights incident to the ownership of real property, especially residences, and second, a more implicitly expressed distrust of "
+      },
+      {
+        "segment": 3,
+        "role": "concurrence_dissent",
+        "author": "Rehnquist",
+        "chunk_id": null,
+        "preview": "Chief Justice Rehnquist, with whom Justice Scalia joins, and with whom Justice O’Connor joins as to Parts II and III, concurring in part and dissenting in part. I concur in Parts I and III of the Court’s opinion and dissent with respect to Part II. The Court today departs from longstanding historica"
+      },
+      {
+        "segment": 4,
+        "role": "concurrence_dissent",
+        "author": "O'Connor",
+        "chunk_id": null,
+        "preview": "Justice O’Connor, concurring in part and dissenting in part. Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress. On the facts of this case, however, I am unable to c"
+      }
+    ]
+  }
+]
