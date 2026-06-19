@@ -18,9 +18,12 @@ from pathlib import Path
 from typing import List, Tuple
 
 import requests
+from dotenv import load_dotenv
 from langchain_core.documents import Document
 from langchain_core.embeddings import Embeddings
 from langchain_community.vectorstores import FAISS
+
+load_dotenv()
 
 VECTORSTORE_PATH = os.getenv(
     "SCOTUS_VECTORSTORE_PATH",
@@ -30,6 +33,31 @@ EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 GEN_MODEL = os.getenv("OLLAMA_GEN_MODEL", "llama3.2")
 OLLAMA_EMBED_ENDPOINT = os.getenv("OLLAMA_EMBED_ENDPOINT", "http://localhost:11434/api/embed")
 OLLAMA_GENERATE_ENDPOINT = os.getenv("OLLAMA_GENERATE_ENDPOINT", "http://localhost:11434/api/generate")
+
+# Generation backend switch: "ollama" (default, existing behavior) or "anthropic".
+BACKEND = os.getenv("BACKEND", "ollama").lower()
+ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
+ANTHROPIC_MAX_TOKENS = int(os.getenv("ANTHROPIC_MAX_TOKENS", "4096"))
+
+_anthropic_client = None
+
+
+def _get_anthropic_client():
+    global _anthropic_client
+    if _anthropic_client is None:
+        import anthropic
+        _anthropic_client = anthropic.Anthropic()
+    return _anthropic_client
+
+
+def anthropic_generate(prompt: str) -> str:
+    """Send the same single-prompt structure used for Ollama to the Anthropic Messages API."""
+    response = _get_anthropic_client().messages.create(
+        model=ANTHROPIC_MODEL,
+        max_tokens=ANTHROPIC_MAX_TOKENS,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return "".join(block.text for block in response.content if block.type == "text").strip()
 
 
 class OllamaEmbeddings(Embeddings):
@@ -283,6 +311,9 @@ Context:
 
 Answer:
 """.strip()
+
+    if BACKEND == "anthropic":
+        return anthropic_generate(prompt)
 
     response = requests.post(
         OLLAMA_GENERATE_ENDPOINT,

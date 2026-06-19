@@ -6,7 +6,7 @@
     "routing_method": "lexical",
     "routed_correct": true,
     "mode": "read_whole",
-    "answer": "# Meyer v. Nebraska: Liberty Interest Recognized\n\nUnder the Fourteenth Amendment's Due Process Clause, Meyer v. Nebraska recognized a liberty interest that encompasses:\n\n1. **The right to teach**: A teacher's right to teach a modern language (such as German) as part of his occupation.\n\n2. **The right of parents to control their children's education**: The right of parents to engage teachers to instruct their children in foreign languages.\n\n3. **The right to acquire knowledge**: The opportunity of pupils to acquire useful knowledge, including knowledge of languages other than English.\n\nThe Court stated that liberty \"denotes not merely freedom from bodily restraint but also the right of the individual to contract, to engage in any of the common occupations of life, to acquire useful knowledge, to marry, establish a home and bring up children, to worship God according to the dictates of his own conscience, and generally to enjoy those privileges long recognized at common law as essential to the orderly pursuit of happiness by free men.\"\n\nThe Court held that \"the right thus to teach and the right of parents to engage him so to instruct their children . . . are within the liberty of the Amendment,\" and that Nebraska's statute forbidding the teaching of foreign languages to children before the eighth grade arbitrarily infringed upon these fundamental rights without reasonable relation to a legitimate state purpose.",
+    "answer": "Under the Fourteenth Amendment, Meyer v. Nebraska recognized a liberty interest that includes \"the right of the individual to contract, to engage in any of the common occupations of life, to acquire useful knowledge, to marry, establish a home and bring up children, to worship God according to the dictates of his own conscience, and generally to enjoy those privileges long recognized at common law as essential to the orderly pursuit of happiness by free men.\"\n\nMore specifically, the Court held that this liberty encompasses:\n\n1. **The right of parents to control the education of their children** — including their power to engage teachers to instruct their children in subjects of their choosing.\n\n2. **The right of individuals to teach their occupation** — specifically, the right of a teacher to teach the German language as part of his calling.\n\n3. **The right of children to acquire useful knowledge** — including knowledge of foreign languages.\n\nThe Court stated: \"His right thus to teach and the right of parents to engage him so to instruct their children, we think, are within the liberty of the Amendment.\"\n\nThe Court struck down Nebraska's statute prohibiting the teaching of any modern language to children before the eighth grade as an arbitrary and unreasonable infringement of these liberty interests, finding that \"mere knowledge of the German language cannot reasonably be regarded as harmful\" and that no adequate reason justified the prohibition in peacetime.",
     "expected_terms": [
       "liberty",
       "education",
@@ -44,7 +44,7 @@
     "routing_method": "lexical",
     "routed_correct": true,
     "mode": "read_whole",
-    "answer": "Meyer v. Nebraska recognized the right of parents to control the education of their own children, including the right to engage teachers to instruct their children in subjects such as foreign languages.\n\nSpecifically, Justice McReynolds stated that the right of parents to engage a teacher to instruct their children in German language instruction \"are within the liberty of the Amendment\" protected by the Fourteenth Amendment's Due Process Clause. The Court identified this as part of the fundamental liberty interest that \"denotes not merely freedom from bodily restraint but also the right of the individual to contract, to engage in any of the common occupations of life, to acquire useful knowledge, to marry, establish a home and bring up children\" and to enjoy privileges essential to the pursuit of happiness. The Court emphasized that \"it is the natural duty of the parent to give his children education suitable to their station in life.\"\n\nThe Court struck down Nebraska's statute forbidding the teaching of modern foreign languages to children who had not completed the eighth grade, finding it an arbitrary and unreasonable interference with parental rights to direct their children's education.",
+    "answer": "Based on the provided case material, Meyer v. Nebraska recognized the **right of parents to control the education of their own children**, including the right to engage teachers to instruct their children in foreign languages.\n\nSpecifically, Justice McReynolds stated: \"His right thus to teach and the right of parents to engage him so to instruct their children, we think, are within the liberty of the Amendment.\"\n\nThe Court grounded this parental right within the liberty protected by the Fourteenth Amendment's Due Process Clause, which the Court described as encompassing \"the right of the individual to contract, to engage in any of the common occupations of life, to acquire useful knowledge, to marry, establish a home and bring up children, to worship God according to the dictates of his own conscience, and generally to enjoy those privileges long recognized at common law as essential to the orderly pursuit of happiness by free men.\"\n\nThe Court also noted \"the natural duty of the parent to give his children education suitable to their station in life\" and recognized that parents have fundamental rights in directing their children's education that cannot be arbitrarily infringed by the state.",
     "expected_terms": [
       "parents",
       "children",
@@ -82,7 +82,7 @@
     "routing_method": "lexical",
     "routed_correct": true,
     "mode": "read_whole",
-    "answer": "The Court struck down the Nebraska statute because it was arbitrary and without reasonable relation to any legitimate state purpose, thus violating the liberty guaranteed by the Fourteenth Amendment's Due Process Clause.\n\nJustice McReynolds's opinion provides the following main reasons:\n\n1. **Liberty Interest**: The right to teach modern languages and the rights of parents to engage teachers to instruct their children in such languages fall within the liberty protected by the Fourteenth Amendment. The Court noted that knowledge of German cannot reasonably be regarded as harmful and has historically been viewed as helpful and desirable.\n\n2. **Overbreadth and Arbitrary Classification**: The statute arbitrarily prohibited modern languages (German, French, Spanish, Italian) while exempting ancient or dead languages (Latin, Greek, Hebrew). This distinction lacked rational justification.\n\n3. **Insufficient Justification**: Although the State's stated purpose—to promote civic development and homogeneity by ensuring English becomes the mother tongue—was understandable, particularly given post-war sentiments, the Court found \"no adequate reason\" for the prohibition \"in time of peace and domestic tranquility.\"\n\n4. **Lack of Necessity**: There was no emergency rendering knowledge of a language other than English \"so clearly harmful as to justify its inhibition.\" Experience showed that early instruction in a foreign language was not injurious to the child's health, morals, or understanding.\n\n5. **Conflict with Fundamental Rights**: The Court held that the State cannot achieve desirable ends through means that conflict with the Constitution and fundamental individual rights.",
+    "answer": "The Court struck down the Nebraska statute because it violated the liberty protected by the Fourteenth Amendment's Due Process Clause.\n\n**Main reasons for the holding:**\n\n1. **Protected Liberty Interest:** The Court held that the liberty guaranteed by the Fourteenth Amendment includes \"the right of the individual to contract, to engage in any of the common occupations of life, to acquire useful knowledge\" and \"the power of parents to control the education of their own.\" Teaching modern languages is within this protected liberty, as is parents' right to engage teachers for such instruction.\n\n2. **Arbitrary and Unreasonable Means:** The Court established that \"liberty may not be interfered with, under the guise of protecting the public interest, by legislative action which is arbitrary or without reasonable relation to some purpose within the competency of the State to effect.\" The Court found the statute arbitrary because it prohibited only modern languages (German, French, Spanish, Italian) while leaving ancient languages (Latin, Greek, Hebrew) untouched, thereby materially interfering with the calling of modern language teachers.\n\n3. **Insufficient Justification:** Although the State's goal of promoting civic development and creating a homogeneous people with American ideals was understandable, the Court concluded that \"no adequate reason therefor in time of peace and domestic tranquility has been shown.\" Knowledge of a foreign language \"cannot reasonably be regarded as harmful\" and is \"not injurious to the health, morals or understanding of the ordinary child.\"\n\n4. **Fundamental Rights Cannot Be Sacrificed:** The Court emphasized that \"the individual has certain fundamental rights which must be respected\" and that \"a desirable end cannot be promoted by prohibited means.\"",
     "expected_terms": [
       "unreasonable",
       "liberty",
@@ -91,8 +91,8 @@
     ],
     "context_terms_present": 3,
     "context_term_rate": 0.75,
-    "answer_terms_present": 3,
-    "answer_term_rate": 0.75,
+    "answer_terms_present": 4,
+    "answer_term_rate": 1.0,
     "forbidden_terms": [],
     "forbidden_hits": [],
     "faithfulness": {
@@ -120,7 +120,7 @@
     "routing_method": "lexical",
     "routed_correct": true,
     "mode": "read_whole",
-    "answer": "The Court evaluated Nebraska's exercise of police power by applying a reasonableness test under the Fourteenth Amendment's Due Process Clause.\n\n**The Court's Standard:**\n\nThe Court established that while the legislature may exercise police power broadly, \"this liberty may not be interfered with, under the guise of protecting the public interest, by legislative action which is arbitrary or without reasonable relation to some purpose within the competency of the State to effect.\" The Court further noted that \"Determination by the legislature of what constitutes proper exercise of police power is not final or conclusive but is subject to supervision by the courts.\"\n\n**The Court's Application:**\n\nAlthough the Court acknowledged that Nebraska's stated purpose—promoting civic development and fostering a homogeneous people with American ideals—was understandable, particularly given experiences during World War I, the Court found the statute failed the reasonableness test. The Court concluded that:\n\n1. Mere knowledge of the German language cannot reasonably be regarded as harmful and has historically been viewed as helpful and desirable.\n\n2. No emergency existed that rendered knowledge of a language other than English \"so clearly harmful as to justify its inhibition with the consequent infringement of rights long freely enjoyed.\"\n\n3. The statute's interference with teaching modern languages while leaving ancient languages (Latin, Greek, Hebrew) untouched revealed no adequate foundation for the restriction.\n\nThe Court held the statute \"arbitrary and without reasonable relation to any end within the competency of the State,\" thereby striking down Nebraska's exercise of police power as unconstitutional.",
+    "answer": "The Court evaluated Nebraska's exercise of police power by applying a reasonableness standard subject to judicial supervision. Justice McReynolds established that while the legislature has broad police power to improve citizens' quality, this power is not absolute. The Court held that \"the individual has certain fundamental rights which must be respected\" and that \"liberty may not be interfered with, under the guise of protecting the public interest, by legislative action which is arbitrary or without reasonable relation to some purpose within the competency of the State to effect.\"\n\nApplying this standard, the Court found Nebraska's statute unreasonable in several respects:\n\n1. **Lack of adequate justification**: Although the State's purpose—promoting civic development and making English the mother tongue—was understandable, \"no adequate reason therefor in time of peace and domestic tranquility has been shown.\"\n\n2. **Insufficient harm to justify prohibition**: The Court found that \"mere knowledge of the German language cannot reasonably be regarded as harmful\" and that \"no emergency has arisen which renders knowledge by a child of some language other than English so clearly harmful as to justify its inhibition.\"\n\n3. **Overbreadth and arbitrariness**: The statute's distinction between ancient languages (Latin, Greek, Hebrew) and modern foreign languages lacked rational foundation, suggesting the legislation was arbitrary rather than reasonably related to a legitimate state purpose.\n\nThe Court concluded: \"We are constrained to conclude that the statute as applied is arbitrary and without reasonable relation to any end within the competency of the State.\"",
     "expected_terms": [
       "reasonable relation",
       "police power",
@@ -158,7 +158,7 @@
     "routing_method": "lexical",
     "routed_correct": true,
     "mode": "read_whole",
-    "answer": "Based on the provided case material, Meyer v. Nebraska relied upon the following precedents:\n\n1. Slaughter-House Cases, 16 Wall. 36\n2. Butchers' Union Co. v. Crescent City Co., 111 U.S. 746\n3. Yick Wo v. Hopkins, 118 U.S. 356\n4. Minnesota v. Barber, 136 U.S. 313\n5. Allgeyer v. Louisiana, 165 U.S. 578\n6. Lochner v. New York, 198 U.S. 45\n7. Twining v. New Jersey, 211 U.S. 78\n8. Chicago, Burlington & Quincy R.R. Co. v. McGuire, 219 U.S. 549\n9. Truax v. Raich, 239 U.S. 33\n10. Adams v. Tanner, 244 U.S. 590\n11. New York Life Ins. Co. v. Dodge, 246 U.S. 357\n12. Truax v. Corrigan, 257 U.S. 312\n13. Adkins v. Children's Hospital, 261 U.S. 525\n14. Wyeth v. Cambridge Board of Health, 200 Mass. 474\n15. Lawton v. Steele, 152 U.S. 133\n16. Nebraska District of Evangelical Lutheran Synod v. McKelvie, 187 N.W. 927\n17. Ordinance of 1787\n\nThe Court also cited two state cases referenced in the Nebraska Supreme Court's opinion: Pohl v. State, 132 N.E. (Ohio) 20 and State v. Bartels, 181 N.W. (Ia.) 508.",
+    "answer": "Based on the provided case material, Meyer v. Nebraska relied upon the following precedents:\n\n1. Slaughter-House Cases, 16 Wall. 36\n2. Butchers' Union Co. v. Crescent City Co., 111 U.S. 746\n3. Yick Wo v. Hopkins, 118 U.S. 356\n4. Minnesota v. Barber, 136 U.S. 313\n5. Allgeyer v. Louisiana, 165 U.S. 578\n6. Lochner v. New York, 198 U.S. 45\n7. Twining v. New Jersey, 211 U.S. 78\n8. Chicago, Burlington & Quincy R.R. Co. v. McGuire, 219 U.S. 549\n9. Truax v. Raich, 239 U.S. 33\n10. Adams v. Tanner, 244 U.S. 590\n11. New York Life Ins. Co. v. Dodge, 246 U.S. 357\n12. Truax v. Corrigan, 257 U.S. 312\n13. Adkins v. Children's Hospital, 261 U.S. 525\n14. Wyeth v. Cambridge Board of Health, 200 Mass. 474\n15. Lawton v. Steele, 152 U.S. 133\n16. Nebraska District of Evangelical Lutheran Synod v. McKelvie, 187 N.W. 927\n\nThese cases were cited primarily to establish the scope of liberty protected by the Fourteenth Amendment's Due Process Clause and the limitations on state police power.",
     "expected_terms": [
       "Truax",
       "Adkins",
@@ -195,17 +195,17 @@
     "routing_method": "lexical",
     "routed_correct": true,
     "mode": "within_case",
-    "answer": "The provided case material does not include sufficient segments from the majority opinion authored by Justice Kennedy to identify the specific balancing test the Court applied in its holding. \n\nThe material shows that Chief Justice Rehnquist's dissent rejected the majority's application of the *Mathews v. Eldridge* three-factor balancing test for procedural due process claims. However, the segments do not contain the majority's reasoning explaining which balancing test it actually applied or the Court's rationale for applying it. The available portions of Justice Kennedy's majority opinion address the case's facts and some Fourth Amendment principles, but do not present the complete explanation of the balancing methodology the Court used to reach its holding.\n\nTo answer this question accurately, the full text of the majority opinion would be needed.",
+    "answer": "The Court applied the **three-part balancing test from *Mathews v. Eldridge*, 424 U.S. 319 (1976)**.\n\nThe *Mathews* analysis requires consideration of:\n\n1. **The private interest affected by the official action** — Good's right to maintain control over his home and be free from governmental interference, characterized as a private interest of historic and continuing importance;\n\n2. **The risk of an erroneous deprivation of that interest through the procedures used, as well as the probable value of additional safeguards** — examining the adequacy of existing procedures and whether additional procedural protections would reduce the risk of error; and\n\n3. **The Government's interest, including the administrative burden that additional procedural requirements would impose** — the Government's interest in the property and the costs of additional procedures.\n\nThe Court applied this test to determine whether the seizure of real property for civil forfeiture purposes justified an exception to the general requirement of pre-deprivation notice and hearing.",
     "expected_terms": [
       "Mathews",
       "private interest",
       "erroneous deprivation",
       "Government"
     ],
-    "context_terms_present": 2,
-    "context_term_rate": 0.5,
-    "answer_terms_present": 1,
-    "answer_term_rate": 0.25,
+    "context_terms_present": 4,
+    "context_term_rate": 1.0,
+    "answer_terms_present": 4,
+    "answer_term_rate": 1.0,
     "forbidden_terms": [],
     "forbidden_hits": [],
     "faithfulness": {
@@ -352,12 +352,75 @@
       },
       {
         "segment": 16,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 3,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The Fourth Amendment strikes a balance between the people's security in their persons, houses, papers, and effects and the public interest in effecting searches and seizures for law enforcement purposes. Zurcher v. Stanford Daily, 436 U. S. 547, 559 (1978); see also Maryland v. Buie, 494 U. S. 325"
+      },
+      {
+        "segment": 17,
         "role": "court_opinion",
         "author": "Kennedy",
         "chunk_id": 2,
         "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
         "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
         "preview": ". The United States sought forfeiture under 21 U. S. C. § 881 (a)(7), on the ground that the property had been used to commit or facilitate the commission of a federal drug offense. 1 *47 On August 18, 1989, in an ex parte proceeding, a United States Magistrate Judge found that the Government had es"
+      },
+      {
+        "segment": 18,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 1,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The search uncovered about 89 pounds of marijuana, marijuana seeds, vials containing hashish oil, and drug paraphernalia. About six months later, Good pleaded guilty to promoting a harmful drug in the second degree, in violation of Hawaii law. Haw. Rev. Stat. § 712-1245 (l)(b) (1985). He was sente"
+      },
+      {
+        "segment": 19,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 3,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". At the time of the seizure, Good was renting his home to tenants for $900 per month. The Government permitted the tenants to remain on the premises subject to an occupancy agreement, but directed the payment of future rents to the United States Marshal. Good filed a claim for the property and an a"
+      },
+      {
+        "segment": 20,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 19,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S. 371, 379 (1971)); United States v. $8,850, 461 U. S., at 562, n. 12 . Whether the seizure of real property for purposes of civil forfeiture justifies such an exception requires an examination of the competing interests at stake, along with the promptness and adequacy of later proceedings. The t"
+      },
+      {
+        "segment": 21,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 18,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". It was not until 1984, 10 years later, that Congress amended § 881 to authorize the forfeiture of real property. See 21 U. S. C. § 881 (a)(7); Pub. L. 98-473, § 306 , 98 Stat. 2050 . The right to prior notice and a hearing is central to the Constitution's command of due process. \"The purpose of th"
+      },
+      {
+        "segment": 22,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 20,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Cf. United States v. Karo, 468 U. S. 705, 714-715 (1984); Payton v. New York, 445 U. S. 573, 590 (1980). The seizure deprived Good of valuable rights of ownership, including the right of sale, the right of occupancy, the right to unrestricted use and enjoyment, and the right to receive rents. All "
+      },
+      {
+        "segment": 23,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 19,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S. 371, 379 (1971)); United States v. $8,850, 461 U. S., at 562, n. 12 . Whether the seizure of real property for purposes of civil forfeiture justifies such an exception requires an examination of the competing interests at stake, along with the promptness and adequacy of later proceedings. The t"
       }
     ]
   },
@@ -368,7 +431,7 @@
     "routing_method": "similarity",
     "routed_correct": true,
     "mode": "within_case",
-    "answer": "According to Justice Kennedy's majority opinion, the Court required notice and a hearing before seizure of real property based on the following reasons:\n\n**Constitutional Due Process Principle:**\nThe right to prior notice and a hearing is central to the Constitution's command of due process. Its purpose is to protect the individual's use and possession of property from arbitrary encroachment and to minimize substantively unfair or mistaken deprivations of property.\n\n**Application of the Mathews v. Eldridge Test:**\nThe Court applied a three-part due process analysis considering:\n\n1. **Private Interest:** Good's right to maintain control over his home and be free from governmental interference is a private interest of historic and continuing importance.\n\n2. **Risk of Erroneous Deprivation:** The procedures used presented a risk of erroneous deprivation, and additional safeguards (predeprivation notice and hearing) had probable value.\n\n3. **Government's Interest and Administrative Burden:** Requiring the Government to postpone seizure until after an adversary hearing creates no significant administrative burden. A claimant is already entitled to an adversary hearing before a final judgment of forfeiture, so no extra hearing would be required in the typical case. The Government can wait until after the forfeiture judgment to seize the property. Any harm from delay is minimal compared to the injury from erroneous seizure.\n\n**Distinguishing Real Property from Personal Property:**\nReal property, by its very nature, can be neither moved nor concealed, unlike personal property. Therefore, the urgency rationale that justified ex parte seizure in earlier cases involving revenue collection or personal property did not apply.",
+    "answer": "According to the Court's opinion, Justice Kennedy articulated the constitutional rationale for requiring notice and a hearing before seizure of real property:\n\n**The Due Process Clause Foundation:**\nThe right to prior notice and a hearing is central to the Constitution's command of due process. The purpose is \"not only to ensure abstract fair play to the individual. Its purpose, more particularly, is to protect his use and possession of property from arbitrary encroachment—to minimize substantively unfair or mistaken deprivations of property.\"\n\n**Application to Real Property:**\nThe Court applied the three-part *Mathews v. Eldridge* test, which examines: (1) the private interest affected; (2) the risk of erroneous deprivation and value of additional safeguards; and (3) the Government's interest and administrative burden.\n\nRegarding the private interest, \"Good's right to maintain control over his home, and to be free from governmental interference, is a private interest of historic and continuing importance.\"\n\n**Why Real Property Is Different:**\nUnlike personal property, real property \"by its very nature, can be neither moved nor concealed.\" Therefore, the \"special need for very prompt action\" that justified postponing notice and hearing in personal property cases does not apply to real property. The Government can protect its interests through alternative means short of seizure, such as search warrants and occupancy agreements. Requiring postponement of seizure until after an adversary hearing creates \"no significant administrative burden\" and \"any harm that results from delay is minimal in comparison to the injury occasioned by erroneous seizure.\"",
     "expected_terms": [
       "notice",
       "hearing",
@@ -526,11 +589,74 @@
       {
         "segment": 16,
         "role": "court_opinion",
-        "author": "Kennedy",
-        "chunk_id": 38,
+        "author": "Thomas",
+        "chunk_id": 8,
         "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
         "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
-        "preview": ". See 26 U. S. C. §§6212 , 6213, 6851, 6861. Just as the urgencies that justified summary seizure of property in the 19th century had dissipated by the time of Phillips , neither is there a plausible claim of urgency today to justify the summary seizure of real property under § 881(a)(7). Although t"
+        "preview": ". Moreover, such a hearing would be unhelpful to the property owner. As a practical matter, it is difficult to see what purpose it would serve. Notice, of course, is provided by the conviction itself. In my view, seizure of the property without more formalized notice and an opportunity to be heard i"
+      },
+      {
+        "segment": 17,
+        "role": "concurrence_dissent",
+        "author": "Thomas",
+        "chunk_id": 7,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Cf. Ashwander v. TVA, 297 U. S. 288, 347 (1936) (Brandéis, J., concurring). The Court’s overreaching is particularly unfortunate in this case because the Court’s solicitude is so clearly misplaced: Good is not an “innocent owner”; he is a convicted drug offender. Like Justice O’Connor, I cannot ag"
+      },
+      {
+        "segment": 18,
+        "role": "dissent",
+        "author": "Thomas",
+        "chunk_id": 9,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". While I sympathize with the impulses motivating the Court’s decision, I disagree with the Court’s due process analysis. Accordingly, I respectfully dissent. Other courts have suggested that Government agents, and the statutes under which they operate, have gone too far in the civil forfeiture cont"
+      },
+      {
+        "segment": 19,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 7,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S. 306, 313 (1950). The Government does not, and could not, dispute that the seizure of Good’s home and 4-acre parcel deprived him of property interests protected by the Due Process Clause. By the Government’s own submission, the seizure gave it the right to charge rent, to condition occupancy, an"
+      },
+      {
+        "segment": 20,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 6,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". 2d 625 (CA11 1986). We now affirm the due process ruling and reverse the ruling on the timeliness question. II The Due Process Clause of the Fifth Amendment guarantees that “[n]o person shall ... be deprived of life, liberty, or property, without due process of law.” Our precedents establish the g"
+      },
+      {
+        "segment": 21,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 8,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". In the alternative, it argues that the seizure of real property under the drug forfeiture laws justifies an exception to the usual due process requirement of preseizure notice and hearing. We turn to these issues. A The Government argues that because civil forfeiture serves a “law enforcement purp"
+      },
+      {
+        "segment": 22,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 18,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". I would reverse the decision of the Court of Appeals in toto. Ironically, courts and commentators have debated whether even a warrant should be required for civil forfeiture seizures, not whether notice and a preseizure hearing should apply. See, e. g., Nelson, Should the Ranch Go Free Because the"
+      },
+      {
+        "segment": 23,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 49,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": "is apparent from a 1990 memo, in which the Attorney General urged United States Attorneys to increase the volume of forfeitures in order to meet the Department of Justice’s annual budget target: “We must significantly increase production to reach our budget target. “"
       }
     ]
   },
@@ -541,7 +667,7 @@
     "routing_method": "similarity",
     "routed_correct": true,
     "mode": "within_case",
-    "answer": "Based on the Court's holding in this case, the Government may seize real property without prior notice and hearing only when **exigent circumstances** are present.\n\nTo establish exigent circumstances, the Government must demonstrate that less restrictive measures—such as a *lis pendens*, restraining order, or bond—would not suffice to protect the Government's interests in:\n- Preventing the sale of the real property\n- Preventing its destruction\n- Preventing its continued unlawful use\n\nThe Court held that \"the seizure of real property under § 881(a)(7) is not one of those extraordinary instances that justify the postponement of notice and hearing\" absent exigent circumstances. The Court emphasized that the Due Process Clause requires the Government to afford notice and a meaningful opportunity to be heard before seizing real property subject to civil forfeiture, unless exigent circumstances are established.\n\nThe Court rejected the Government's arguments that Fourth Amendment compliance alone suffices or that drug forfeiture laws justify a blanket exception to the preseizure notice and hearing requirement.",
+    "answer": "According to the Court's holding in this case, the Government may seize real property without prior notice and hearing only when **exigent circumstances are present**.\n\nTo establish exigent circumstances, the Government must show that **less restrictive measures—such as a lis pendens, restraining order, or bond—would not suffice to protect the Government's interests in preventing the sale, destruction, or continued unlawful use of the real property**.\n\nThe Court stated: \"Unless exigent circumstances are present, the Due Process Clause requires the Government to afford notice and a meaningful opportunity to be heard before seizing real property subject to civil forfeiture.\"\n\nThe Court further held that \"the seizure of real property under § 881(a)(7) is not one of those extraordinary instances that justify the postponement of notice and hearing,\" and found that no showing of exigent circumstances had been made in the case before it.\n\nThe Court rejected the Government's arguments for an exception to preseizure notice and hearing requirements in drug forfeiture cases, holding that the importance of private interests in real property and the absence of countervailing Government needs in the typical case preclude such an exception.",
     "expected_terms": [
       "exigent circumstances",
       "seizure",
@@ -700,6 +826,69 @@
         "segment": 16,
         "role": "court_opinion",
         "author": "Kennedy",
+        "chunk_id": 33,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". There is no reason to take the additional step of asserting control over the property without first affording notice and an adversary hearing. Requiring the Government to postpone seizure until after an adversary hearing creates no significant administrative burden. A claimant is already entitled "
+      },
+      {
+        "segment": 17,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 32,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See Fed. Rule Civ. Proc. 65; United States v. Prem *59 ises and Real Property at 4492 South Livonia Road, 889 F. 2d 1258, 1265 (CA2 1989). The Government’s policy of leaving occupants in possession of real property under an occupancy agreement pending the final forfeiture ruling demonstrates that "
+      },
+      {
+        "segment": 18,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 34,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See, e. g., Springer v. United States, 102 U. S. 586, 593-594 (1881); Murray’s Lessee v. Hoboken Land & Improvement Co., 18 How. 272 (1856). Without revisiting these cases, it suffices to say that their apparent rationale — like that for allowing summary seizures during wartime, see Stoehr v. Wall"
+      },
+      {
+        "segment": 19,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 16,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". . . ,” 416 U. S., at 679 — are both met in the present *72 case. And while not capable of being moved or concealed, the real property at issue here surely could be destroyed or damaged. Several dwellings are located on the property that was seized from respondent Good, and these buildings could ea"
+      },
+      {
+        "segment": 20,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 15,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". But this is one of the three reasons given by the Court for upholding the summary forfeiture in that case: The other two — “fostering the public interest in preventing continued illicit use of the property,” and the fact that the “seizure is not initiated by self-interested private parties; rather"
+      },
+      {
+        "segment": 21,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 17,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Although the Court has found some owners entitled to an immediate postseizure administrative hearing, see, e.g., Mitchell v. W. T. Grant Co., supra, not until the majority adopted the Court of Appeals ruling have we held that the Constitution demanded notice and a preseizure hearing to satisfy due"
+      },
+      {
+        "segment": 22,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 16,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S., at 679are both met in the present *72 case. And while not capable of being moved or concealed, the real property at issue here surely could be destroyed or damaged. Several dwellings are located on the property that was seized from respondent Good, and these buildings could easily be destroye"
+      },
+      {
+        "segment": 23,
+        "role": "court_opinion",
+        "author": "Kennedy",
         "chunk_id": 49,
         "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
         "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
@@ -714,15 +903,15 @@
     "routing_method": "similarity",
     "routed_correct": true,
     "mode": "within_case",
-    "answer": "Based on the provided case material, the Court did not distinguish real property from personal property to support a constitutional distinction. Rather, Justice O'Connor's majority opinion rejected the distinction as constitutionally irrelevant.\n\nThe Court's reasoning for declining to distinguish between real and personal property was:\n\n1. **Historical precedent**: The Court cited *Springer* for the principle that Congress may apply the power to distrain and sell real property just as it does personal property for tax enforcement, characterizing it as \"only the further legitimate exercise of the same power for the same purpose.\"\n\n2. **Identical statutory nexus**: The required connection between property and crime—that it be used to commit or facilitate a drug offense—is the same for both real and personal property under the relevant forfeiture statutes (comparing 21 U.S.C. § 881(a)(4) with § 881(a)(7)).\n\n3. **Long historical recognition**: Forfeiture of real property used to facilitate crimes has long been upheld, citing cases such as *Dobbins's Distillery v. United States* (forfeiture of real estate used in illegal distilling) and *United States v. Stowell* (forfeiture of land and buildings used in illegal brewery).\n\n4. **Executive urgency applies equally**: The Court noted that like all forfeiture cases, this case involved executive urgency, which had justified summary seizure in prior cases involving personal property.\n\nThe Court's conclusion was that \"there is no basis for distinguishing between real and personal property in the context of forfeiture of property used for criminal purposes.\"",
+    "answer": "The Court distinguished real property from personal property to reject an argument that real property deserved different constitutional treatment in forfeiture cases.\n\nJustice O'Connor, writing for the Court, held that no constitutional distinction exists between real and personal property in forfeiture cases. The Court found no basis for treating them differently because: (1) the required nexus between the property and the crime—that it be used to commit or facilitate a drug offense—is identical for both real and personal property under the relevant statutes; (2) forfeiture of real property under similar circumstances has long been recognized historically; and (3) the Court's prior precedents, including *Springer*, had already rejected this same distinction in the context of tax forfeiture, holding that Congress could apply forfeiture power to realty as well as personalty \"for the same purpose.\"\n\nThe Court noted that the distinction between real and personal property \"has never been considered constitutionally relevant in our forfeiture cases.\" The Court's analysis proceeded instead under the *Mathews v. Eldridge* framework, which examines the private interest affected, the risk of erroneous deprivation, and the Government's interest—without regard to whether the property was real or personal. The Court held that the seizure of real property under § 881(a)(7) requires notice and a hearing based on the significance of the property interest at stake and the absence of countervailing Government needs, not because of the property's real (as opposed to personal) character.",
     "expected_terms": [
       "real property",
       "cannot abscond",
       "jurisdiction",
       "seizure"
     ],
-    "context_terms_present": 2,
-    "context_term_rate": 0.5,
+    "context_terms_present": 3,
+    "context_term_rate": 0.75,
     "answer_terms_present": 2,
     "answer_term_rate": 0.5,
     "forbidden_terms": [],
@@ -868,6 +1057,69 @@
         "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
         "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
         "preview": ". There was already an ex parte hearing before a magistrate to determine whether there was probable cause to believe that Good’s property had been used in connection with a drug trafficking offense. That hearing ensured that the probable validity of the claim had been established. Cf. Sniadach v. Fa"
+      },
+      {
+        "segment": 16,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 38,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See 26 U. S. C. §§ 6212 , 6213, 6851, 6861. Just as the urgencies that justified summary seizure of property in the 19th century had dissipated by the time of Phillips , neither is there a plausible claim of urgency today to justify the summary seizure of real property under § 881(a)(7). Although "
+      },
+      {
+        "segment": 17,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 37,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". . . . These provisions amply protect the [taxpayer] against improper administrative action.\" Id. , at 598-599; see also Commissioner v. Shapiro, 424 U. S. 614, 631 (1976) (\"[In] the Phillips case . . . the taxpayer's assets could not have been taken or frozen . . . until he had either had, or waiv"
+      },
+      {
+        "segment": 18,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 39,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". That said, the case before us well illustrates an essential principle: Individual freedom finds tangible expression in property rights. At stake in this and many other forfeiture cases are the security and privacy of the home and those who take shelter within it. *62 Finally, the suggestion that t"
+      },
+      {
+        "segment": 19,
+        "role": "court_opinion",
+        "author": "O'Connor",
+        "chunk_id": 13,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Cf. Gerstein v. Pugh, 420 U. S. 103, 121-122 (1975). And we have already held that property owners have a due process right to a prompt posiseizure hearing, which is sufficient to protect the owner’s interests. See $8,850, supra, at 564-565; Von Neumann, 474 U. S., at 249 . The Government’s intere"
+      },
+      {
+        "segment": 20,
+        "role": "court_opinion",
+        "author": "O'Connor",
+        "chunk_id": 14,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Seizure allowed the Government to protect its inchoate interest in the property itself. Cf. Mitchell v. W T. Grant Co., 416 U. S. 600, 608-609 (1974). Seizure also permitted the Government “to assert in rem jurisdiction over the property in order to conduct forfeiture proceedings, thereby fosterin"
+      },
+      {
+        "segment": 21,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 2,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". I therefore respectfully dissent from Part II of the Court's opinion; I also join Parts II and III of the opinion of THE CHIEF JUSTICE. II My first disagreement is with the Court's holding that the Government must give notice and a hearing before seizing any real property prior to forfeiting it. T"
+      },
+      {
+        "segment": 22,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 14,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S. 478, 486 (1988)). The Court concluded that, absent exigent circumstances, the private party’s interest in attaching the property did not justify the burdening of the private property owner’s rights without a hearing to determine the likelihood of recovery. 501 U. S., at 18 . In the present case"
       }
     ]
   },
@@ -878,7 +1130,7 @@
     "routing_method": "similarity",
     "routed_correct": true,
     "mode": "within_case",
-    "answer": "Based on the provided case material, the Court considered the following government interests insufficient to justify seizure without notice:\n\n1. **Administrative burden**: The Court found that requiring the Government to postpone seizure until after an adversary hearing creates no significant administrative burden, since the Government can wait until after the forfeiture judgment to seize the property, and from an administrative standpoint it makes little difference whether the hearing is held before or after seizure.\n\n2. **Risk of property destruction**: The Government's own policy of leaving occupants in possession of real property under occupancy agreements pending final forfeiture ruling demonstrated there was no serious concern about destruction in the ordinary case.\n\n3. **Prevention of further illegal activity**: The Government has various means short of seizure to protect its interests, including search and arrest warrants obtained in the ordinary course.\n\nThe Court's core holding was that the Government's interest in seizing real property before a forfeiture hearing—characterized as seeking \"a pressing need for prompt action\"—was not sufficiently weighty to justify ex parte seizure in civil forfeiture cases involving real property. The Court explicitly stated: \"We find no pressing need here,\" distinguishing the case from situations involving executive urgency (such as tax collection vital to government existence or seizure during wartime).",
+    "answer": "According to the Court, the following government interests were considered insufficient to justify seizure without notice:\n\n1. **Revenue collection and law enforcement expense defraying**: Although the Government relied on forfeitures as a means of defraying law enforcement expenses, the Court stated it \"does not, and we think could not, justify the pre-hearing seizure of forfeitable real property as necessary for the protection of its revenues.\" The Court found that unlike 19th-century tax collection cases where the urgency related to government existence, \"neither is there a plausible claim of urgency today to justify the summary seizure of real property under § 881(a)(7).\"\n\n2. **General interest in property forfeiture**: The Court distinguished between \"some general interest in forfeiting property\" and a \"specific interest in seizing real property before the forfeiture hearing,\" finding no pressing need for immediate seizure in the civil forfeiture context.\n\n3. **Concerns about property destruction or illegal use**: The Government's own policy of leaving occupants in possession under occupancy agreements pending final forfeiture \"demonstrates that there is no serious concern about destruction in the ordinary case.\" Additionally, the Court noted the Government could use search and arrest warrants to forestall further illegal activity, making seizure unnecessary for these purposes.\n\nThe Court concluded: \"We find no pressing need here.\"",
     "expected_terms": [
       "administrative",
       "Government",
@@ -887,8 +1139,8 @@
     ],
     "context_terms_present": 4,
     "context_term_rate": 1.0,
-    "answer_terms_present": 4,
-    "answer_term_rate": 1.0,
+    "answer_terms_present": 3,
+    "answer_term_rate": 0.75,
     "forbidden_terms": [],
     "forbidden_hits": [],
     "faithfulness": {
@@ -1035,12 +1287,66 @@
       },
       {
         "segment": 16,
-        "role": "concurrence_dissent",
-        "author": "",
-        "chunk_id": 6,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 39,
         "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
         "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
-        "preview": ". S. C. § 881 (d) to forfeiture actions brought pursuant to § 881(a)(7). See, e. g., 19 U. S. C. §§ 1602 , 1605 (authorizing seizure prior to adversary proceedings). We should avoid reaching beyond the question presented in order to fashion a broad constitutional rule when doing so is unnecessary fo"
+        "preview": ". That said, the case before us well illustrates an essential principle: Individual freedom finds tangible expression in property rights. At stake in this and many other forfeiture cases are the security and privacy of the home and those who take shelter within it. *62 Finally, the suggestion that t"
+      },
+      {
+        "segment": 17,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 38,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See 26 U. S. C. §§6212 , 6213, 6851, 6861. Just as the urgencies that justified summary seizure of property in the 19th century had dissipated by the time of Phillips , neither is there a plausible claim of urgency today to justify the summary seizure of real property under § 881(a)(7). Although t"
+      },
+      {
+        "segment": 18,
+        "role": "court_opinion",
+        "author": "Kennedy",
+        "chunk_id": 40,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Unless exigent circumstances are present, the Due Process Clause requires the Government to afford notice and a meaningful opportunity to be heard before seizing real property subject to civil forfeiture. 3 To establish exigent circumstances, the Government must show that less restrictive measures"
+      },
+      {
+        "segment": 19,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 39,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". That said, the case before us well illustrates an essential principle: Individual freedom finds tangible expression in property rights. At stake in this and many other forfeiture cases are the security and privacy of the home and those who take shelter within it. *62 Finally, the suggestion that t"
+      },
+      {
+        "segment": 20,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 38,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". See 26 U. S. C. §§ 6212 , 6213, 6851, 6861. Just as the urgencies that justified summary seizure of property in the 19th century had dissipated by the time of Phillips , neither is there a plausible claim of urgency today to justify the summary seizure of real property under § 881(a)(7). Although "
+      },
+      {
+        "segment": 21,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 40,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Unless exigent circumstances are present, the Due Process Clause requires the Government to afford notice and a meaningful opportunity to be heard before seizing real property subject to civil forfeiture. [3] To establish exigent circumstances, the Government must show that less restrictive measur"
+      },
+      {
+        "segment": 22,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 27,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Two essential considerations informed our ruling in that case: First, immediate seizure was necessary to establish the court's jurisdiction over the property, 416 U. S., at 679, and second, the yacht might have disappeared had the Government given advance warning of the forfeiture action, ibid. Se"
       }
     ]
   },
@@ -1051,7 +1357,7 @@
     "routing_method": "lexical",
     "routed_correct": true,
     "mode": "within_case",
-    "answer": "Based on the provided case material, the Court relied upon the following precedents in United States v. James Daniel Good Real Property:\n\n1. *Gerstein v. Pugh*, 420 U.S. 103 (1975)\n2. *United States v. $8,850*, 461 U.S. 555 (1983)\n3. *Von Neumann*, 474 U.S. 249\n4. *United States v. Parcel of Rumson, N.J., Land*, 507 U.S. 111 (1993)\n5. *Connecticut v. Doehr*, 501 U.S. 1 (1991)\n6. *Mitchell v. W.T. Grant Co.*, 416 U.S. 600 (1974)\n7. *Calero-Toledo v. Pearson Yacht Leasing Co.*, 416 U.S. 663 (1974)\n8. *Fuentes*, 407 U.S. 91\n9. *Ownbey v. Morgan*, 256 U.S. 94 (1921)\n10. *J.W. Goldsmith, Jr.-Grant Co. v. United States*, 254 U.S. 505 (1921)\n11. *Phillips v. Commissioner*, 283 U.S. 589 (1931)\n12. *Springer v. United States*, 102 U.S. 586 (1881)\n13. *Murray's Lessee v. Hoboken Land & Improvement Co.*, 18 How. 272 (1856)\n14. *United States v. Stowell*, 133 U.S. 1 (1890)\n15. *Dobbins's Distillery v. United States*, 96 U.S. 395 (1878)\n16. *Soldal v. Cook County*, 506 U.S. 56 (1992)\n17. *United States v. Karo*, 468 U.S. 705 (1984)\n18. *Payton v. New York*, 445 U.S. 573 (1980)\n19. *Mathews v. Eldridge*, 424 U.S. 319 (1976)\n20. *Medina v. California*, 505 U.S. 437 (1992)\n21. *Sniadach v. Family Finance Corp. of Bay View*, 395 U.S. 337 (1969)",
+    "answer": "Based on the provided case material, the Court relied upon the following precedents in United States v. James Daniel Good Real Property:\n\n**Due Process and Property Deprivation:**\n- *Mathews v. Eldridge*, 424 U.S. 319 (1976)\n- *Fuentes v. Shevin*, 407 U.S. 67 (1972)\n- *Boddie v. Connecticut*, 401 U.S. 371 (1971)\n- *Connecticut v. Doehr*, 501 U.S. 1 (1991)\n- *United States v. $8,850*, 461 U.S. 555 (1983)\n\n**Fourth Amendment:**\n- *Soldal v. Cook County*, 506 U.S. 56 (1992)\n- *United States v. Karo*, 468 U.S. 705 (1984)\n- *Payton v. New York*, 445 U.S. 573 (1980)\n\n**Civil Forfeiture:**\n- *Calero-Toledo v. Pearson Yacht Leasing Co.*, 416 U.S. 663 (1974)\n- *United States v. Parcel of Rumson, N.J., Land*, 507 U.S. 111 (1993)\n- *Austin v. United States*, 509 U.S. 602 (1993)\n\n**Historical Forfeiture Precedents:**\n- *Phillips v. Commissioner*, 283 U.S. 589 (1931)\n- *Springer v. United States*, 102 U.S. 586 (1881)\n- *Murray's Lessee v. Hoboken Land & Improvement Co.*, 18 How. 272 (1856)\n- *United States v. Stowell*, 133 U.S. 1 (1890)\n- *Dobbins's Distillery v. United States*, 96 U.S. 395 (1878)\n- *J.W. Goldsmith, Jr.-Grant Co. v. United States*, 254 U.S. 505 (1921)\n- *Ownbey v. Morgan*, 256 U.S. 94 (1921)\n- *Sniadach v. Family Finance Corp. of Bay View*, 395 U.S. 337 (1969)\n\n**Procedural:**\n- *Ashwander v. TVA*, 297 U.S. 288 (1936)",
     "expected_terms": [
       "Mathews",
       "Fuentes",
@@ -1065,9 +1371,11 @@
     "forbidden_terms": [],
     "forbidden_hits": [],
     "faithfulness": {
-      "flagged": false,
+      "flagged": true,
       "unsupported_justices": [],
-      "unsupported_cases": [],
+      "unsupported_cases": [
+        "fuentes v. shevin"
+      ],
       "role_conflicts": []
     },
     "sources": [
@@ -1218,11 +1526,74 @@
       {
         "segment": 17,
         "role": "court_opinion",
+        "author": "O'Connor",
+        "chunk_id": 11,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". But that observation confuses the Fourth and the Fifth Amendments. The “sanctity of the home” recognized by this Court’s cases, e. g., Payton v. New York, 445 U. S. 573, 601 (1980), is founded on a concern with governmental intrusion into the owner’s possessory or privacy interests — the domain of"
+      },
+      {
+        "segment": 18,
+        "role": "court_opinion",
+        "author": "O'Connor",
+        "chunk_id": 5,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The required nexus between the property and the crime — that it be used to commit, or facilitate the commission of, a drug offense — is the same for forfeiture of real and personal property. Compare 21 U. S. C. § 881 (a)(4) with § 881(a)(7); see Austin v. United States, 509 U. S. 602, 619-622 (199"
+      },
+      {
+        "segment": 19,
+        "role": "court_opinion",
+        "author": "O'Connor",
+        "chunk_id": 4,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". But that distinction has never been considered constitutionally relevant in our forfeiture cases. Indeed, this Court rejected precisely the same distinction in a case in which we were presented with a due process challenge to the forfeiture of real property for back taxes: *75 “The power to distra"
+      },
+      {
+        "segment": 20,
+        "role": "court_opinion",
+        "author": "O'Connor",
+        "chunk_id": 6,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". But this case, like all forfeiture cases, also involves executive urgency. Indeed, the Court in CaleroToledo relied on the same cases the Court disparages: *76 The Court says that there is no “plausible claim of urgency today to justify the summary seizure of real property under § 881(a)(7).” Ante"
+      },
+      {
+        "segment": 21,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 19,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S. 371, 379 (1971)); United States v. $8,850, 461 U. S., at 562, n. 12 . Whether the seizure of real property for purposes of civil forfeiture justifies such an exception requires an examination of the competing interests at stake, along with the promptness and adequacy of later proceedings. The t"
+      },
+      {
+        "segment": 22,
+        "role": "court_opinion",
+        "author": "",
+        "chunk_id": 18,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". It was not until 1984, 10 years later, that Congress amended § 881 to authorize the forfeiture of real property. See 21 U. S. C. § 881 (a)(7); Pub. L. 98-473, § 306 , 98 Stat. 2050 . The right to prior notice and a hearing is central to the Constitution's command of due process. \"The purpose of th"
+      },
+      {
+        "segment": 23,
+        "role": "court_opinion",
         "author": "",
         "chunk_id": 20,
         "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
         "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
         "preview": ". Cf. United States v. Karo, 468 U. S. 705, 714-715 (1984); Payton v. New York, 445 U. S. 573, 590 (1980). The seizure deprived Good of valuable rights of ownership, including the right of sale, the right of occupancy, the right to unrestricted use and enjoyment, and the right to receive rents. All "
+      },
+      {
+        "segment": 24,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 6,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S. C. § 881 (d) to forfeiture actions brought pursuant to § 881(a)(7). See, e. g., 19 U. S. C. §§ 1602 , 1605 (authorizing seizure prior to adversary proceedings). We should avoid reaching beyond the question presented in order to fashion a broad constitutional rule when doing so is unnecessary fo"
       }
     ]
   },
@@ -1233,7 +1604,7 @@
     "routing_method": "similarity",
     "routed_correct": true,
     "mode": "within_case",
-    "answer": "Based on the provided case material, Justice O'Connor's primary criticism of the majority opinion was that the Court improperly exercised judicial power to declare unconstitutional an Executive action taken with prior judicial approval and in full compliance with Congress's laws, when the remedy for any deficiency lay with Congress, not the courts.\n\nJustice O'Connor stated: \"Today the Court declares unconstitutional an act of the Executive Branch taken with the prior approval of a Federal Magistrate Judge in full compliance with the laws enacted by Congress.\" She disagreed with the majority's conclusion that there was a due process violation, particularly on the facts of this case where: (1) the property owner had been previously convicted of a drug offense involving the property; (2) the Government obtained a warrant before seizing it; and (3) the residents were not dispossessed.\n\nJustice O'Connor invoked *Springer v. United States* for the proposition that \"If the laws here in question involved any wrong or unnecessary harshness, it was for Congress, or the people who make congresses, to see that the evil was corrected. The remedy does not lie with the judicial branch of the government.\"\n\nAdditionally, she argued that notice was effectively provided by the conviction itself, and that seizure without more formalized notice and an opportunity to be heard was simply \"one of the many unpleasant collateral consequences that follows from conviction of a serious drug offense.\"",
+    "answer": "Based on the provided case material, Justice O'Connor's primary criticism of the majority opinion was that the Court overreached by declaring unconstitutional executive action taken with prior judicial approval and in full compliance with congressional law, when the appropriate remedy for any harshness in the forfeiture statutes lay with Congress, not the courts.\n\nMore specifically, Justice O'Connor could not agree that there was a due process violation on the facts of the case—where the property owner was previously convicted of a drug offense involving the property, the Government obtained a warrant before seizing it, and the residents were not dispossessed—simply because Good did not receive preseizure notice and an opportunity to be heard. She argued that seizure of the property without more formalized notice and an opportunity to be heard was simply one of the many unpleasant collateral consequences following from conviction of a serious drug offense.\n\nAdditionally, Justice O'Connor agreed with the dissent's criticism that the Ninth Circuit improperly \"converted a set of housekeeping rules for the government into statutory protection for the property of malefactors\" regarding the timeliness requirement issue.",
     "expected_terms": [
       "Mathews",
       "historical precedent",
@@ -1390,6 +1761,69 @@
       },
       {
         "segment": 16,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 10,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Kelley, Attorney General of Michigan, Mike Moore, Attorney General of Mississippi, Joseph P. Mazurek, Attorney General of Montana, Don Stenberg, Attorney General of Nebraska, Jeffrey R. Howard, Attorney General of New Hampshire, Tom Udall, Attorney General of New Mexico, Heidi Heitkamp, Attorney G"
+      },
+      {
+        "segment": 17,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 9,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". The Court goes on to note that the passage of the Sixteenth Amendment alleviated the Government’s reliance on liquor, customs, and tobacco taxes as sources of operating revenue. Whatever the merits of this novel distinction, it fails entirely to distinguish the leading case in the field, Phillips "
+      },
+      {
+        "segment": 18,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 8,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". W. Goldsmith, Jr.-Grant Co. v. United States, 254 U. S. 505, 510-511 (1921) (forfeiture not a denial of procedural due process despite the absence of preseizure notice and opportunity for a hearing)). The Court acknowledges the long history of ex parte seizures of real property through civil forfe"
+      },
+      {
+        "segment": 19,
+        "role": "court_opinion",
+        "author": "Rehnquist",
+        "chunk_id": 10,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". There the Court said: “The right of the United States to collect its internal revenue by summary administrative proceedings has *70 long been settled. Where, as here, adequate opportunity is afforded for a later judicial determination of the legal rights, summary proceedings to secure prompt perfo"
+      },
+      {
+        "segment": 20,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 2,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". A strong argument can be made, however, that § 881(a)(7) is so broad that it differs not only in degree, but in kind, from its historical antecedents. See, e. g., Brief for Respondents 19-21. Indeed, it is unclear whether the central theory behind in rem forfeiture, the fiction \"that the thing is "
+      },
+      {
+        "segment": 21,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 7,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". Cf. Ashwander v. TVA, 297 U. S. 288, 347 (1936) (Brandeis, J., concurring). The Court's overreaching is particularly unfortunate in this case because the Court's solicitude is so clearly misplaced: Good is not an \"innocent owner\"; he is a convicted drug offender. Like JUSTICE O'CONNOR, I cannot ag"
+      },
+      {
+        "segment": 22,
+        "role": "concurrence_dissent",
+        "author": "",
+        "chunk_id": 6,
+        "citation": "126 L. Ed. 2d 490, 114 S. Ct. 492, 510 U.S. 43, 1993 U.S. LEXIS 7941, 7 Fla. L. Weekly Fed. S 665, 93 Daily Journal DAR 15706, 93 Cal. Daily Op. Serv. 9143, 62 U.S.L.W. 4013, 1993 WL 505539",
+        "source": "https://www.courtlistener.com/opinion/112914/united-states-v-james-daniel-good-real-property/",
+        "preview": ". S. C. § 881 (d) to forfeiture actions brought pursuant to § 881(a)(7). See, e. g., 19 U. S. C. §§ 1602 , 1605 (authorizing seizure prior to adversary proceedings). We should avoid reaching beyond the question presented in order to fashion a broad constitutional rule when doing so is unnecessary fo"
+      },
+      {
+        "segment": 23,
         "role": "court_opinion",
         "author": "",
         "chunk_id": 1,

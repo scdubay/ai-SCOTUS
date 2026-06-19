@@ -31,9 +31,11 @@ from query_demo_clean import (
     VECTORSTORE_PATH,
     GEN_MODEL,
     OLLAMA_GENERATE_ENDPOINT,
+    BACKEND,
     OllamaEmbeddings,
     rerank_docs,
     normalize_text,
+    anthropic_generate,
 )
 
 # Budgets. llama3.2 via Ollama defaults to a SMALL context window (num_ctx)
@@ -472,6 +474,9 @@ Case material:
 
 Answer:
 """.strip()
+
+    if BACKEND == "anthropic":
+        return _clean_generated_answer(anthropic_generate(prompt))
 
     payload = {
         "model": GEN_MODEL,
