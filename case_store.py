@@ -45,6 +45,14 @@ NUM_CTX = int(os.getenv("OLLAMA_NUM_CTX", "8192"))
 READ_WHOLE_CHAR_BUDGET = int(os.getenv("READ_WHOLE_CHAR_BUDGET", "18000"))
 WITHIN_CASE_CHAR_BUDGET = int(os.getenv("WITHIN_CASE_CHAR_BUDGET", "14000"))
 
+# Minimum FAISS distance (lower = closer) the single nearest chunk must clear
+# before resolve_case()'s similarity fallback is trusted. Without this, the
+# fallback always returns *some* case -- even for questions with no real
+# connection to any indexed case -- because nearest-neighbor search has no
+# concept of "no good match." Calibrated empirically: genuine in-corpus
+# matches land ~0.5-0.72; off-topic/meta-ish questions land ~1.0-1.2.
+SIMILARITY_MAX_DISTANCE = float(os.getenv("SIMILARITY_MAX_DISTANCE", "0.9"))
+
 # Tokens that don't help identify a case (parties/structure words common to many).
 GENERIC_TITLE_TOKENS = {
     "v", "vs", "the", "of", "and", "in", "re", "ex", "rel",
@@ -248,17 +256,20 @@ def resolve_case(
             return top_title, "lexical", {"lexical": lexical_scores}
 
     # Similarity fallback: which case do the nearest chunks belong to?
+    # Only trust this when the single nearest chunk is genuinely close --
+    # see SIMILARITY_MAX_DISTANCE above for why the threshold exists.
     if vectorstore is not None:
         nearest = vectorstore.similarity_search_with_score(question, k=10)
-        tally = defaultdict(float)
-        for doc, score in nearest:
-            title = doc.metadata.get("case_title")
-            if title:
-                # Closer chunks (lower FAISS distance) count for more.
-                tally[title] += 1.0 / (1.0 + max(float(score), 0.0))
-        if tally:
-            best = max(tally.items(), key=lambda kv: kv[1])[0]
-            return best, "similarity", {"lexical": lexical_scores, "similarity": dict(tally)}
+        if nearest and float(nearest[0][1]) <= SIMILARITY_MAX_DISTANCE:
+            tally = defaultdict(float)
+            for doc, score in nearest:
+                title = doc.metadata.get("case_title")
+                if title:
+                    # Closer chunks (lower FAISS distance) count for more.
+                    tally[title] += 1.0 / (1.0 + max(float(score), 0.0))
+            if tally:
+                best = max(tally.items(), key=lambda kv: kv[1])[0]
+                return best, "similarity", {"lexical": lexical_scores, "similarity": dict(tally)}
 
     # Last resort: best lexical even if weak.
     if ranked and ranked[0][1] > 0:
