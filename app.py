@@ -25,10 +25,13 @@ from datetime import datetime, timezone
 from typing import Optional
 
 import streamlit as st
-from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
 
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 import faithfulness
 from query_demo_clean import (
@@ -340,13 +343,23 @@ OVERVIEW_SYSTEM_PROMPT = (
 )
 
 _CLASSIFY_SYSTEM_PROMPT = (
-    "Classify the following question as exactly one of these types:\n"
-    "META — about this app, who built it, how RAG works, why it exists\n"
-    "OVERVIEW — general question about one or more Supreme Court cases, "
-    "asking for summaries, overviews, or case descriptions\n"
-    "RESEARCH — specific legal question requiring precise retrieval "
-    "from opinion text\n"
-    "Reply with only the single word: META, OVERVIEW, or RESEARCH."
+    "You are a router for a legal research app about U.S. Supreme Court cases.\n"
+    "Classify the user's question into exactly one of three categories:\n\n"
+    "META — the question is about the app itself, its purpose, who built it, \n"
+    "how it works, what it can do, what cases it covers, or anything about \n"
+    "the system rather than about legal content. Examples: questions about \n"
+    "purpose, capabilities, design, creator, scope, or how to use the app.\n\n"
+    "OVERVIEW — the question asks for a general summary, description, or \n"
+    "comparison of one or more Supreme Court cases without requiring precise \n"
+    "retrieval of specific legal text. Examples: summarize a case, describe \n"
+    "what happened, compare two cases, give an overview of cases on a topic.\n\n"
+    "RESEARCH — the question asks about specific legal holdings, tests, \n"
+    "reasoning, precedents, dissents, or doctrine that requires searching \n"
+    "the actual opinion text. Examples: what standard did the Court apply, \n"
+    "what did Justice X argue, what were the exact holdings.\n\n"
+    "When in doubt between META and OVERVIEW, choose META.\n"
+    "When in doubt between OVERVIEW and RESEARCH, choose RESEARCH.\n\n"
+    "Reply with exactly one word: META, OVERVIEW, or RESEARCH."
 )
 
 _VALID_CLASSES = ("META", "OVERVIEW", "RESEARCH")
