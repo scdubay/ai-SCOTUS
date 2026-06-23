@@ -25,14 +25,34 @@ from datetime import datetime, timezone
 from typing import Optional
 
 import streamlit as st
-from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings
 
 try:
     from dotenv import load_dotenv
     load_dotenv()
 except ImportError:
     pass
+
+
+def get_config(key, default=None):
+    try:
+        return st.secrets[key]
+    except (KeyError, FileNotFoundError, st.errors.StreamlitSecretNotFoundError):
+        return os.getenv(key, default)
+
+
+# BACKEND and ANTHROPIC_MODEL are read via plain os.getenv() inside
+# query_demo_clean.py at import time, and ANTHROPIC_API_KEY is read directly
+# by the anthropic SDK's client constructor -- none of those know about
+# st.secrets. Seed them into os.environ here, before query_demo_clean (or
+# the anthropic client) is ever imported/constructed, so a value set only in
+# Streamlit Cloud's secrets still reaches both.
+for _key in ("BACKEND", "ANTHROPIC_MODEL", "ANTHROPIC_API_KEY"):
+    _val = get_config(_key)
+    if _val is not None:
+        os.environ[_key] = str(_val)
+
+from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
 
 import faithfulness
 from query_demo_clean import (
@@ -55,8 +75,8 @@ from case_store import (
 # Config
 # ---------------------------------------------------------------------------
 
-ACCESS_KEY = os.getenv("ACCESS_KEY", "")
-DAILY_COST_CAP = float(os.getenv("DAILY_COST_CAP", "2.00"))
+ACCESS_KEY = get_config("ACCESS_KEY", "")
+DAILY_COST_CAP = float(get_config("DAILY_COST_CAP", "2.00"))
 
 SESSION_LIMIT_ANON = 20
 SESSION_LIMIT_KEYED = 100
