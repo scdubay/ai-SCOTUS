@@ -17,8 +17,9 @@ import json
 from pathlib import Path
 
 from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
 
-from query_demo_clean import VECTORSTORE_PATH, OllamaEmbeddings
+from query_demo_clean import VECTORSTORE_PATH, HF_EMBED_MODEL
 
 # Reuse the EXACT metric definitions from the prior eval for apples-to-apples.
 from test_retreival import (
@@ -44,7 +45,7 @@ def main():
     print("🔎 Loading vector store...")
     vectorstore = FAISS.load_local(
         VECTORSTORE_PATH,
-        OllamaEmbeddings(),
+        HuggingFaceEmbeddings(model_name=HF_EMBED_MODEL),
         allow_dangerous_deserialization=True,
     )
     case_index = build_case_index(vectorstore)

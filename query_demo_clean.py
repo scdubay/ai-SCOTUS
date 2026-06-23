@@ -22,6 +22,7 @@ from dotenv import load_dotenv
 from langchain_core.documents import Document
 from langchain_core.embeddings import Embeddings
 from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
 
 load_dotenv()
 
@@ -29,6 +30,14 @@ VECTORSTORE_PATH = os.getenv(
     "SCOTUS_VECTORSTORE_PATH",
     "data/vectors/rag_vectorstore_courtlistener_demo",
 )
+# Query-time/index-time embedding model. Switched from Ollama's nomic-embed-text
+# (required a local Ollama server reachable at OLLAMA_EMBED_ENDPOINT, which does
+# not exist on Streamlit Cloud) to a HuggingFace model that runs in-process on
+# CPU. BAAI/bge-small-en-v1.5: 384 dims, ~130MB, chosen over larger 768-dim
+# options (mpnet, bge-base) specifically so the FAISS index stays small as the
+# corpus grows toward 100-500 cases / tens of thousands of chunks on a
+# memory-constrained free-tier deploy.
+HF_EMBED_MODEL = os.getenv("HF_EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 GEN_MODEL = os.getenv("OLLAMA_GEN_MODEL", "llama3.2")
 OLLAMA_EMBED_ENDPOINT = os.getenv("OLLAMA_EMBED_ENDPOINT", "http://localhost:11434/api/embed")
@@ -348,7 +357,7 @@ def print_sources(docs: List[Document]) -> None:
 
 def main() -> None:
     print("🔎 Loading vector store...")
-    embeddings = OllamaEmbeddings()
+    embeddings = HuggingFaceEmbeddings(model_name=HF_EMBED_MODEL)
     vectorstore = FAISS.load_local(
         VECTORSTORE_PATH,
         embeddings,
@@ -406,7 +415,7 @@ def run_batch(
     print("🔎 Loading vector store...")
     vectorstore = FAISS.load_local(
         VECTORSTORE_PATH,
-        OllamaEmbeddings(),
+        HuggingFaceEmbeddings(model_name=HF_EMBED_MODEL),
         allow_dangerous_deserialization=True,
     )
     case_index = build_case_index(vectorstore)

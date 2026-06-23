@@ -26,6 +26,7 @@ from typing import Optional
 
 import streamlit as st
 from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
 
 try:
     from dotenv import load_dotenv
@@ -38,7 +39,7 @@ from query_demo_clean import (
     VECTORSTORE_PATH,
     BACKEND,
     ANTHROPIC_MODEL,
-    OllamaEmbeddings,
+    HF_EMBED_MODEL,
     rerank_docs,
     format_context,
     generate_answer,
@@ -96,7 +97,7 @@ EXAMPLE_QUESTIONS = [
 def load_resources():
     vectorstore = FAISS.load_local(
         VECTORSTORE_PATH,
-        OllamaEmbeddings(),
+        HuggingFaceEmbeddings(model_name=HF_EMBED_MODEL),
         allow_dangerous_deserialization=True,
     )
     case_index = build_case_index(vectorstore)
