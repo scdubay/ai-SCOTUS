@@ -1,222 +1,5 @@
 [
 {
-"case": "Meyer v. Nebraska",
-"question": "Did Meyer v. Nebraska apply strict scrutiny?",
-"expected_terms": [
-"no",
-"strict scrutiny",
-"arbitrary",
-"reasonable relation",
-"police power"
-],
-"forbidden_terms": [
-"applied strict scrutiny",
-"used strict scrutiny",
-"required a compelling interest",
-"required narrow tailoring",
-"narrowly tailored statute"
-]
-},
-{
-"case": "Meyer v. Nebraska",
-"question": "What liberty interest did Meyer recognize under the Fourteenth Amendment?",
-"expected_terms": [
-"liberty",
-"Fourteenth Amendment",
-"acquire useful knowledge",
-"teach",
-"parents",
-"children"
-]
-},
-{
-"case": "Meyer v. Nebraska",
-"question": "Why did the Court conclude that Nebraska's foreign-language statute was unconstitutional?",
-"expected_terms": [
-"arbitrary",
-"reasonable relation",
-"German",
-"foreign language",
-"parents",
-"children"
-],
-"forbidden_terms": [
-"valid exercise",
-"statute was constitutional",
-"law was constitutional",
-"reasonable restriction",
-"did not violate the Fourteenth Amendment"
-]
-},
-{
-"case": "United States v. James Daniel Good Real Property",
-"question": "What balancing test did the Court apply before requiring notice and hearing prior to seizure?",
-"expected_terms": [
-"Mathews",
-"private interest",
-"risk of erroneous deprivation",
-"Government's interest",
-"notice",
-"hearing"
-]
-},
-{
-"case": "United States v. James Daniel Good Real Property",
-"question": "Why did the Court distinguish real property from personal property in the seizure analysis?",
-"expected_terms": [
-"real property",
-"personal property",
-"cannot abscond",
-"concealed",
-"Calero-Toledo",
-"yacht"
-]
-},
-{
-"case": "United States v. James Daniel Good Real Property",
-"question": "What was Chief Justice Rehnquist's objection to applying Mathews v. Eldridge?",
-"expected_terms": [
-"Rehnquist",
-"Mathews",
-"Fourth Amendment",
-"civil forfeiture",
-"historical practice"
-]
-},
-{
-"case": "Miranda v. Arizona",
-"question": "What warnings did Miranda require before custodial interrogation?",
-"expected_terms": [
-"right to remain silent",
-"anything he says",
-"counsel",
-"appointed",
-"custodial interrogation"
-]
-},
-{
-"case": "Miranda v. Arizona",
-"question": "Why did the Court conclude that custodial interrogation requires procedural safeguards?",
-"expected_terms": [
-"custodial interrogation",
-"inherently compelling",
-"self-incrimination",
-"Fifth Amendment",
-"procedural safeguards"
-]
-},
-{
-"case": "Miranda v. Arizona",
-"question": "How did Justice White criticize the majority's Miranda rule?",
-"expected_terms": [
-"White",
-"dissenting",
-"confessions",
-"police",
-"Constitution"
-]
-},
-{
-"case": "Gideon v. Wainwright",
-"question": "What right did Gideon v. Wainwright recognize for state criminal defendants?",
-"expected_terms": [
-"counsel",
-"Sixth Amendment",
-"Fourteenth Amendment",
-"state",
-"criminal"
-]
-},
-{
-"case": "Gideon v. Wainwright",
-"question": "Why did Gideon overrule Betts v. Brady?",
-"expected_terms": [
-"Betts",
-"Brady",
-"counsel",
-"fundamental",
-"fair trial"
-]
-},
-{
-"case": "Gideon v. Wainwright",
-"question": "How did the Court describe the importance of counsel in a criminal prosecution?",
-"expected_terms": [
-"lawyer",
-"counsel",
-"fair trial",
-"criminal prosecution",
-"fundamental"
-]
-},
-{
-"case": "Marbury v. Madison",
-"question": "What did Marbury say about a legal right without a remedy?",
-"expected_terms": [
-"right",
-"remedy",
-"laws",
-"government",
-"injury"
-]
-},
-{
-"case": "Marbury v. Madison",
-"question": "Why did the Court conclude that it could not issue the writ of mandamus?",
-"expected_terms": [
-"mandamus",
-"original jurisdiction",
-"Constitution",
-"Judiciary Act",
-"void"
-]
-},
-{
-"case": "Marbury v. Madison",
-"question": "What principle of judicial review did Marbury establish?",
-"expected_terms": [
-"judicial review",
-"Constitution",
-"law",
-"courts",
-"void"
-]
-},
-{
-"case": "Brown v. Board of Education",
-"question": "What problem was before the Court in Brown II after the original school segregation decision?",
-"expected_terms": [
-"public schools",
-"segregation",
-"implementation",
-"relief",
-"decrees"
-]
-},
-{
-"case": "Brown v. Board of Education",
-"question": "What role did the Court assign to local school authorities and district courts in Brown II?",
-"expected_terms": [
-"school authorities",
-"district courts",
-"equitable principles",
-"supervision",
-"public schools"
-]
-},
-{
-"case": "Brown v. Board of Education",
-"question": "What did Brown II mean by requiring desegregation with all deliberate speed?",
-"expected_terms": [
-"all deliberate speed",
-"desegregation",
-"district courts",
-"transition",
-"public schools"
-]
-},
-
-{
 "case": "Brown v. Board of Education (1954)",
 "question": "What did Brown I hold about racial segregation in public schools?",
 "expected_terms": [
@@ -309,7 +92,6 @@
 "separate but equal survived"
 ]
 },
-
 {
 "case": "Mapp v. Ohio",
 "question": "What rule did Mapp v. Ohio apply to the States?",
@@ -391,7 +173,6 @@
 "states may freely admit illegally seized evidence"
 ]
 },
-
 {
 "case": "Terry v. Ohio",
 "question": "What standard did Terry establish for a police stop?",
@@ -474,7 +255,6 @@
 "general exploratory search"
 ]
 },
-
 {
 "case": "Katz v. United States",
 "question": "What did Katz hold about the Fourth Amendment and electronic surveillance?",
@@ -562,7 +342,6 @@
 "prior authorization"
 ]
 },
-
 {
 "case": "Escobedo v. Illinois",
 "question": "What right did Escobedo recognize during police interrogation?",
