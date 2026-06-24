@@ -52,3 +52,12 @@ Thumbs.db
 
 # Scratch files
 tree.txt
+_pw_*.py
+_mock_*.py
+
+# Stray root-level experiment artifacts (anchored to repo root --
+# do NOT use a bare "rag_vectorstore_*/" here, it would also match the
+# intentionally-tracked data/vectors/rag_vectorstore_*/ versions)
+/rag_vectorstore_*/
+*.zip
+*.gz
