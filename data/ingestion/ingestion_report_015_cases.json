@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-06-24T21:19:33.514951+00:00",
+  "vectorstore_path": "data\\vectors\\rag_vectorstore_scotus_015_cases",
+  "previous_vectorstore_path": "data/vectors/rag_vectorstore_scotus_011_cases",
+  "cases_requested": [
+    "Brown v. Board of Education (1954)",
+    "Mapp v. Ohio",
+    "Terry v. Ohio",
+    "Katz v. United States",
+    "Escobedo v. Illinois",
+    "Weeks v. United States",
+    "Schmerber v. California",
+    "Kyllo v. United States",
+    "Riley v. California"
+  ],
+  "cases_added": [
+    "Weeks v. United States",
+    "Schmerber v. California",
+    "Kyllo v. United States",
+    "Riley v. California"
+  ],
+  "cases_skipped": [
+    "Brown v. Board of Education (1954)",
+    "Mapp v. Ohio",
+    "Terry v. Ohio",
+    "Katz v. United States",
+    "Escobedo v. Illinois"
+  ],
+  "cases_failed": [],
+  "details": [
+    {
+      "title": "Brown v. Board of Education (1954)",
+      "citation_expected": "347 U.S. 483",
+      "citation_found": null,
+      "year_expected": 1954,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Brown v. Board of Education (1954)' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Mapp v. Ohio",
+      "citation_expected": "367 U.S. 643",
+      "citation_found": null,
+      "year_expected": 1961,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Mapp v. Ohio' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Terry v. Ohio",
+      "citation_expected": "392 U.S. 1",
+      "citation_found": null,
+      "year_expected": 1968,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Terry v. Ohio' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Katz v. United States",
+      "citation_expected": "389 U.S. 347",
+      "citation_found": null,
+      "year_expected": 1967,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Katz v. United States' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Escobedo v. Illinois",
+      "citation_expected": "378 U.S. 478",
+      "citation_found": null,
+      "year_expected": 1964,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Escobedo v. Illinois' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Weeks v. United States",
+      "citation_expected": "232 U.S. 383",
+      "citation_found": "232 U.S. 383, 34 S. Ct. 341, 58 L. Ed. 652, 1914 U.S. LEXIS 1368",
+      "year_expected": 1914,
+      "year_found": 1914,
+      "status": "added",
+      "opinion_count": 1,
+      "chunk_count": 34,
+      "warnings": []
+    },
+    {
+      "title": "Schmerber v. California",
+      "citation_expected": "384 U.S. 757",
+      "citation_found": "16 L. Ed. 2d 908, 86 S. Ct. 1826, 384 U.S. 757, 1966 U.S. LEXIS 1129",
+      "year_expected": 1966,
+      "year_found": 1966,
+      "status": "added",
+      "opinion_count": 7,
+      "chunk_count": 109,
+      "warnings": []
+    },
+    {
+      "title": "Kyllo v. United States",
+      "citation_expected": "533 U.S. 27",
+      "citation_found": "150 L. Ed. 2d 94, 121 S. Ct. 2038, 533 U.S. 27, 2001 U.S. LEXIS 4487",
+      "year_expected": 2001,
+      "year_found": 2001,
+      "status": "added",
+      "opinion_count": 5,
+      "chunk_count": 127,
+      "warnings": []
+    },
+    {
+      "title": "Riley v. California",
+      "citation_expected": "134 S. Ct. 2473",
+      "citation_found": "134 S. Ct. 2473, 189 L. Ed. 2d 430, 2014 U.S. LEXIS 4497, 82 U.S.L.W. 4558",
+      "year_expected": 2014,
+      "year_found": 2014,
+      "status": "added",
+      "opinion_count": 3,
+      "chunk_count": 103,
+      "warnings": []
+    }
+  ]
+}

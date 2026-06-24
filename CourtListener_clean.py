@@ -24,6 +24,8 @@ import json
 import logging
 import os
 import re
+import hashlib
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -48,9 +50,28 @@ COURTLISTENER_SEARCH_URL = "https://www.courtlistener.com/api/rest/v4/search/"
 COURTLISTENER_OPINION_URL_TEMPLATE = "https://www.courtlistener.com/api/rest/v4/opinions/{opinion_id}/"
 COURTLISTENER_BASE_URL = "https://www.courtlistener.com"
 
+# CourtListener's real limits for this account: 5 requests/minute, 50/hour,
+# 125/day. 5/min is the binding constraint for any sustained run:
+# 60s / 5 requests = 12s minimum spacing to never trip the per-minute cap.
+# +1s safety margin = 13s.
 COURTLISTENER_REQUEST_DELAY_SECONDS = float(
-    os.getenv("COURTLISTENER_REQUEST_DELAY_SECONDS", "30")
+    os.getenv("COURTLISTENER_REQUEST_DELAY_SECONDS", "13")
 )
+
+# Local cache for raw CourtListener API responses. SCOTUS opinions are
+# immutable historical text -- a cached response can never go stale, so
+# there is deliberately no TTL or invalidation logic here. Disable via
+# COURTLISTENER_CACHE_ENABLED=false (e.g. ingest.py's --no-cache) to force
+# a live re-fetch, such as when re-investigating a wrong search match.
+COURTLISTENER_CACHE_DIR = Path("data/cache/courtlistener")
+
+
+def _cache_enabled() -> bool:
+    # Read fresh on every call, not frozen at import -- ingest.py's
+    # --no-cache sets this env var in main(), after CourtListener_clean
+    # has already been imported, so a module-level constant would be too
+    # late to take effect.
+    return os.getenv("COURTLISTENER_CACHE_ENABLED", "true").strip().lower() not in ("0", "false", "no")
 
 COURTLISTENER_TOKEN = os.getenv("COURTLISTENER_TOKEN")
 
@@ -152,6 +173,27 @@ class OllamaEmbeddings(Embeddings):
 # CourtListener ingestion
 # =============================================================================
 
+def _cache_key(url: str, params: Optional[Dict[str, Any]]) -> str:
+    canonical = url + "?" + json.dumps(params or {}, sort_keys=True)
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
+def _cache_path(url: str, params: Optional[Dict[str, Any]]) -> Path:
+    return COURTLISTENER_CACHE_DIR / f"{_cache_key(url, params)}.json"
+
+
+class _CachedResponse:
+    """Stand-in for requests.Response on a cache hit. Every get_with_retry()
+    call site only ever calls .json() on the return value, so that's the
+    only method this needs to implement."""
+
+    def __init__(self, data: Any):
+        self._data = data
+
+    def json(self) -> Any:
+        return self._data
+
+
 def get_with_retry(
     url: str,
     *,
@@ -159,6 +201,14 @@ def get_with_retry(
     timeout: int = 90,
     retries: int = 3,
 ) -> requests.Response:
+    if _cache_enabled():
+        cache_file = _cache_path(url, params)
+        if cache_file.exists():
+            with open(cache_file, "r", encoding="utf-8") as f:
+                entry = json.load(f)
+            logger.info("Cache hit: %s", url)
+            return _CachedResponse(entry["response"])
+
     last_error = None
 
     for attempt in range(1, retries + 1):
@@ -193,6 +243,21 @@ def get_with_retry(
             response.raise_for_status()
 
             time.sleep(COURTLISTENER_REQUEST_DELAY_SECONDS)
+
+            if _cache_enabled():
+                COURTLISTENER_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+                cache_file = _cache_path(url, params)
+                with open(cache_file, "w", encoding="utf-8") as f:
+                    json.dump(
+                        {
+                            "url": url,
+                            "params": params or {},
+                            "response": response.json(),
+                            "cached_at": datetime.now(timezone.utc).isoformat(),
+                        },
+                        f,
+                    )
+
             return response
 
         except requests.exceptions.RequestException as exc:

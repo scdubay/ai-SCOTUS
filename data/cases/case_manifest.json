@@ -51,8 +51,10 @@
   },
   {
     "title": "Riley v. California",
-    "citation": "573 U.S. 373",
+    "citation": "134 S. Ct. 2473",
     "courtlistener_query": "Riley v. California 573 U.S. 373",
-    "expected_decision_year": 2014
+    "courtlistener_opinion_id": 2680439,
+    "expected_decision_year": 2014,
+    "notes": "573 U.S. 373 not in CourtListener database; fetched by opinion ID 2680439. Parallel citation 134 S. Ct. 2473 used for validation."
   }
 ]

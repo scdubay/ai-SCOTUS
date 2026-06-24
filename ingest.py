@@ -31,6 +31,7 @@ Usage:
 import argparse
 import json
 import logging
+import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -342,7 +343,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Manifest-driven SCOTUS case ingestion")
     parser.add_argument("--dry-run", action="store_true", help="Validate only; write nothing")
     parser.add_argument("--case", type=str, default=None, help="Ingest only this manifest case")
+    parser.add_argument("--no-cache", action="store_true", help="Bypass the CourtListener response cache for this run")
     args = parser.parse_args()
+
+    if args.no_cache:
+        os.environ["COURTLISTENER_CACHE_ENABLED"] = "false"
 
     manifest = load_manifest()
 

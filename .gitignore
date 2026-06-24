@@ -50,6 +50,9 @@ Thumbs.db
 # Logs
 *.log
 
+# CourtListener response cache -- raw API responses, local dev artifact only
+data/cache/
+
 # Scratch files
 tree.txt
 _pw_*.py
