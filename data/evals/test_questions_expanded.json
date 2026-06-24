@@ -644,5 +644,364 @@
 "all confessions are barred",
 "no police questioning is allowed"
 ]
+},
+
+{
+"case": "Weeks v. United States",
+"question": "What rule did Weeks v. United States establish for federal criminal prosecutions?",
+"expected_terms": [
+"exclusionary rule",
+"federal",
+"Fourth Amendment",
+"unreasonable search",
+"evidence"
+],
+"forbidden_terms": [
+"applied the exclusionary rule to the states",
+"states were required to exclude evidence",
+"Mapp was decided in Weeks"
+]
+},
+{
+"case": "Weeks v. United States",
+"question": "Why did the Court require exclusion of evidence obtained in violation of the Fourth Amendment?",
+"expected_terms": [
+"Fourth Amendment",
+"unreasonable searches and seizures",
+"evidence",
+"courts",
+"constitutional rights"
+]
+},
+{
+"case": "Weeks v. United States",
+"question": "What limit did Weeks place on federal officers' use of illegally seized evidence?",
+"expected_terms": [
+"federal officers",
+"illegally seized",
+"evidence",
+"Fourth Amendment",
+"return"
+]
+},
+{
+"case": "Weeks v. United States",
+"question": "What did the Court say happens to the right against unreasonable search and seizure if evidence obtained in violation of it can still be used against the accused?",
+"expected_terms": [
+"Fourth Amendment",
+"right",
+"evidence",
+"courts",
+"meaningless"
+],
+"forbidden_terms": [
+"the right is unaffected by admission of illegally seized evidence",
+"courts may use illegally seized evidence without consequence",
+"Fourth Amendment rights are preserved even when evidence is admitted"
+]
+},
+{
+"case": "Weeks v. United States",
+"question": "Did Weeks hold that the exclusionary rule applied to state criminal prosecutions?",
+"expected_terms": [
+"no",
+"federal",
+"state",
+"exclusionary rule",
+"Mapp"
+],
+"forbidden_terms": [
+"Weeks applied the exclusionary rule to the states",
+"Weeks required state courts to exclude evidence",
+"state prosecutions were controlled by Weeks"
+]
+},
+{
+"case": "Weeks v. United States",
+"question": "What constitutional provision was central to the Court's analysis in Weeks?",
+"expected_terms": [
+"Fourth Amendment",
+"searches",
+"seizures",
+"papers",
+"effects"
+]
+},
+
+{
+"case": "Schmerber v. California",
+"question": "Did Schmerber hold that a compelled blood draw violated the Fifth Amendment privilege against self-incrimination?",
+"expected_terms": [
+"no",
+"Fifth Amendment",
+"self-incrimination",
+"testimonial",
+"blood"
+],
+"forbidden_terms": [
+"blood evidence was testimonial",
+"violated the Fifth Amendment privilege",
+"all compelled physical evidence is self-incrimination"
+]
+},
+{
+"case": "Schmerber v. California",
+"question": "How did Schmerber distinguish testimonial evidence from physical evidence for Fifth Amendment purposes?",
+"expected_terms": [
+"testimonial",
+"physical evidence",
+"blood",
+"self-incrimination",
+"Fifth Amendment"
+]
+},
+{
+"case": "Schmerber v. California",
+"question": "What Fourth Amendment question did the Court address in Schmerber?",
+"expected_terms": [
+"Fourth Amendment",
+"blood test",
+"reasonable",
+"search",
+"seizure"
+]
+},
+{
+"case": "Schmerber v. California",
+"question": "Why did the Court find the warrantless blood draw reasonable in Schmerber?",
+"expected_terms": [
+"reasonable",
+"blood alcohol",
+"dissipation",
+"exigent",
+"medical"
+],
+"forbidden_terms": [
+"warrantless blood draws are always reasonable",
+"no Fourth Amendment search occurred",
+"police never need justification for blood tests"
+]
+},
+{
+"case": "Schmerber v. California",
+"question": "Did Schmerber create a blanket rule allowing all nonconsensual blood draws without a warrant?",
+"expected_terms": [
+"no",
+"reasonable",
+"circumstances",
+"blood",
+"Fourth Amendment"
+],
+"forbidden_terms": [
+"blanket rule",
+"all nonconsensual blood draws are valid",
+"blood draws never require Fourth Amendment analysis"
+]
+},
+{
+"case": "Schmerber v. California",
+"question": "What Sixth Amendment argument did Schmerber raise and how did the Court resolve it?",
+"expected_terms": [
+"Sixth Amendment",
+"counsel",
+"blood test",
+"right to counsel",
+"critical stage"
+],
+"forbidden_terms": [
+"the blood draw was a critical stage requiring counsel",
+"Sixth Amendment required counsel before blood could be drawn",
+"Schmerber won on the Sixth Amendment claim"
+]
+},
+
+{
+"case": "Kyllo v. United States",
+"question": "What did Kyllo hold about using thermal imaging to scan a home without a warrant?",
+"expected_terms": [
+"thermal imaging",
+"home",
+"search",
+"Fourth Amendment",
+"warrant"
+],
+"forbidden_terms": [
+"thermal imaging of a home is never a search",
+"no warrant was required because there was no physical entry",
+"home privacy was not implicated"
+]
+},
+{
+"case": "Kyllo v. United States",
+"question": "Why did the Court treat the thermal imaging scan as a Fourth Amendment search?",
+"expected_terms": [
+"home",
+"details",
+"technology",
+"general public use",
+"Fourth Amendment"
+]
+},
+{
+"case": "Kyllo v. United States",
+"question": "What did the dissent argue about the majority's thermal imaging ruling in Kyllo?",
+"expected_terms": [
+"dissent",
+"public",
+"heat",
+"exterior",
+"intimate details"
+],
+"forbidden_terms": [
+"the dissent agreed thermal imaging was a search",
+"the dissent found the warrant requirement satisfied",
+"there was no dissent in Kyllo"
+]
+},
+{
+"case": "Kyllo v. United States",
+"question": "What did Kyllo say about technology not in general public use?",
+"expected_terms": [
+"technology",
+"general public use",
+"home",
+"details",
+"search"
+],
+"forbidden_terms": [
+"all technology surveillance is allowed",
+"technology never affects Fourth Amendment analysis",
+"general public use was irrelevant"
+]
+},
+{
+"case": "Kyllo v. United States",
+"question": "Did Kyllo require physical trespass into the home before a Fourth Amendment search could occur?",
+"expected_terms": [
+"no",
+"physical trespass",
+"thermal imaging",
+"home",
+"search"
+],
+"forbidden_terms": [
+"physical trespass was required",
+"no physical entry meant no search",
+"Fourth Amendment applies only after entry into the home"
+]
+},
+{
+"case": "Kyllo v. United States",
+"question": "How does Kyllo relate to Katz's principle that the Fourth Amendment protects people not places?",
+"expected_terms": [
+"Katz",
+"Fourth Amendment",
+"privacy",
+"home",
+"search"
+],
+"forbidden_terms": [
+"Kyllo overruled Katz",
+"Katz allowed all electronic surveillance",
+"privacy was irrelevant to Kyllo"
+]
+},
+
+{
+"case": "Riley v. California",
+"question": "What did Riley hold about searching a cell phone incident to arrest?",
+"expected_terms": [
+"cell phone",
+"search incident to arrest",
+"warrant",
+"digital",
+"privacy"
+],
+"forbidden_terms": [
+"police may always search a cell phone incident to arrest",
+"cell phones are treated exactly like physical containers",
+"no warrant is required for cell phone data"
+]
+},
+{
+"case": "Riley v. California",
+"question": "Why did the Court distinguish cell phones from other physical items found on an arrestee?",
+"expected_terms": [
+"cell phones",
+"digital data",
+"privacy",
+"quantity",
+"qualitative"
+]
+},
+{
+"case": "Riley v. California",
+"question": "What government interests normally justify a search incident to arrest and why were they insufficient for cell phone data in Riley?",
+"expected_terms": [
+"officer safety",
+"destruction of evidence",
+"cell phone",
+"digital data",
+"warrant"
+]
+},
+{
+"case": "Riley v. California",
+"question": "Did Riley eliminate the search-incident-to-arrest doctrine for all items found on an arrestee?",
+"expected_terms": [
+"no",
+"search incident to arrest",
+"cell phone",
+"digital data",
+"warrant"
+],
+"forbidden_terms": [
+"eliminated search incident to arrest entirely",
+"overruled all searches incident to arrest",
+"police may never search anything after arrest"
+]
+},
+{
+"case": "Riley v. California",
+"question": "What did Riley say police generally must obtain before searching digital information on a cell phone?",
+"expected_terms": [
+"warrant",
+"cell phone",
+"digital information",
+"search",
+"arrest"
+],
+"forbidden_terms": [
+"no warrant needed",
+"verbal permission always sufficient instead of warrant",
+"automatic search allowed incident to arrest"
+]
+},
+{
+"case": "Riley v. California",
+"question": "How did Riley describe the privacy interests in modern cell phones?",
+"expected_terms": [
+"miniaturized computer",
+"vast quantities",
+"nearly every aspect",
+"digital",
+"personal"
+]
+},
+{
+"case": "Riley v. California",
+"question": "Did Riley resolve whether the warrant requirement extends to data stored remotely on cloud servers accessed through a cell phone?",
+"expected_terms": [
+"no",
+"cloud",
+"remote",
+"data",
+"did not resolve"
+],
+"forbidden_terms": [
+"Riley held that cloud data always requires a warrant",
+"Riley fully resolved the cloud storage question",
+"remote server data was squarely decided in Riley"
+]
 }
 ]

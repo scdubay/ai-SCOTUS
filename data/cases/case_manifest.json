@@ -30,5 +30,29 @@
     "citation": "378 U.S. 478",
     "courtlistener_query": "Escobedo v. Illinois 378 U.S. 478",
     "expected_decision_year": 1964
+  },
+  {
+    "title": "Weeks v. United States",
+    "citation": "232 U.S. 383",
+    "courtlistener_query": "Weeks v. United States 232 U.S. 383",
+    "expected_decision_year": 1914
+  },
+  {
+    "title": "Schmerber v. California",
+    "citation": "384 U.S. 757",
+    "courtlistener_query": "Schmerber v. California 384 U.S. 757",
+    "expected_decision_year": 1966
+  },
+  {
+    "title": "Kyllo v. United States",
+    "citation": "533 U.S. 27",
+    "courtlistener_query": "Kyllo v. United States 533 U.S. 27",
+    "expected_decision_year": 2001
+  },
+  {
+    "title": "Riley v. California",
+    "citation": "573 U.S. 373",
+    "courtlistener_query": "Riley v. California 573 U.S. 373",
+    "expected_decision_year": 2014
   }
 ]
