@@ -84,6 +84,81 @@ def _title_tokens(text: str) -> List[str]:
     return [t for t in toks if len(t) > 2 and t not in GENERIC_TITLE_TOKENS]
 
 
+_YEAR_SUFFIX_RE = re.compile(r"\s*\((\d{4})\)\s*$")
+
+
+def _split_year_suffix(title: str) -> Tuple[str, Optional[str]]:
+    """Split a trailing parenthesized year, e.g. "Brown v. Board of
+    Education (1954)" -> ("Brown v. Board of Education", "1954").
+
+    Lets two decisions sharing a case name (Brown I vs. Brown II) be
+    lexically scored on equal footing -- the year only breaks the tie when
+    the question actually mentions it, rather than inflating the title's
+    token denominator and silently biasing scoring toward whichever
+    decision's title happens to be shorter.
+    """
+    m = _YEAR_SUFFIX_RE.search(title)
+    if not m:
+        return title, None
+    return title[: m.start()].rstrip(), m.group(1)
+
+
+_ROMAN_ORDINALS = ("i", "ii", "iii", "iv")
+_ROMAN_NUMERAL_RE = re.compile(r"\b(" + "|".join(sorted(_ROMAN_ORDINALS, key=len, reverse=True)) + r")\b")
+
+
+def _case_year(record: dict) -> Optional[int]:
+    """Parse a 4-digit year from a case record's date_filed (YYYY-MM-DD).
+
+    Returns None if missing or unparseable -- callers must degrade
+    gracefully, not crash, when a case has no usable date.
+    """
+    m = re.match(r"(\d{4})", str(record.get("date_filed") or ""))
+    return int(m.group(1)) if m else None
+
+
+def _ordinal_ranks(case_index: Dict[str, dict]) -> Dict[str, str]:
+    """Map each case title that shares a base name with at least one sibling
+    to its roman-numeral ordinal ("i", "ii", ...), ranked by actual decision
+    date -- not by which title happens to carry a parenthesized year suffix.
+
+    Titles with no usable date, or with no same-named sibling, are omitted
+    entirely and simply don't participate in roman-numeral disambiguation.
+    """
+    groups: Dict[str, List[Tuple[str, int]]] = defaultdict(list)
+    for title, record in case_index.items():
+        base, _ = _split_year_suffix(title)
+        year = _case_year(record)
+        if year is not None:
+            groups[base].append((title, year))
+
+    ranks: Dict[str, str] = {}
+    for members in groups.values():
+        if len(members) < 2:
+            continue
+        members.sort(key=lambda tv: tv[1])  # ascending by year
+        for i, (title, _year) in enumerate(members):
+            if i < len(_ROMAN_ORDINALS):
+                ranks[title] = _ROMAN_ORDINALS[i]
+    return ranks
+
+
+def _roman_numeral_match(question: str, base_title: str) -> Optional[str]:
+    """If the question contains "<a distinctive title word> <roman
+    numeral>" (e.g. "Brown II"), return the lowercased numeral.
+
+    Anchoring to one of the title's own distinctive tokens -- rather than
+    matching a bare "I"/"II" anywhere in the text -- avoids false positives
+    on ordinary words elsewhere in the question.
+    """
+    q_lower = question.lower()
+    for tok in _title_tokens(base_title):
+        m = re.search(rf"\b{re.escape(tok)}\s+(i|ii|iii|iv)\b", q_lower)
+        if m:
+            return m.group(1)
+    return None
+
+
 def _dedup_join(prev: str, nxt: str, max_overlap: int = 320, min_overlap: int = 25) -> str:
     """Concatenate two consecutive (overlapping) chunks, removing the overlap.
 
@@ -141,7 +216,7 @@ def build_case_index(vectorstore: FAISS) -> Dict[str, dict]:
     """Group all stored chunks into per-case records with reconstructed opinions.
 
     Returns: { case_title: {
-        case_title, citation, total_chars,
+        case_title, citation, date_filed, total_chars,
         opinions: [ {opinion_key, role, author, text, char_len, n_chunks,
                      source, chunks: [Document ordered by chunk_id]} ],
     } }
@@ -149,6 +224,7 @@ def build_case_index(vectorstore: FAISS) -> Dict[str, dict]:
     # Group chunks by (case_title, opinion identity).
     groups: Dict[str, Dict[tuple, List[Document]]] = defaultdict(lambda: defaultdict(list))
     citations: Dict[str, str] = {}
+    dates_filed: Dict[str, str] = {}
 
     for doc in vectorstore.docstore._dict.values():
         meta = doc.metadata
@@ -156,6 +232,7 @@ def build_case_index(vectorstore: FAISS) -> Dict[str, dict]:
         if not case_title:
             continue
         citations.setdefault(case_title, meta.get("citation") or "")
+        dates_filed.setdefault(case_title, meta.get("date_filed") or "")
         opinion_key = (
             meta.get("opinion_id"),
             meta.get("section_label"),
@@ -201,6 +278,7 @@ def build_case_index(vectorstore: FAISS) -> Dict[str, dict]:
         index[case_title] = {
             "case_title": case_title,
             "citation": citations.get(case_title, ""),
+            "date_filed": dates_filed.get(case_title, ""),
             "total_chars": sum(o["char_len"] for o in opinions),
             "opinions": opinions,
         }
@@ -239,13 +317,50 @@ def resolve_case(
 
     lexical_scores = {}
     for title in case_index:
-        title_toks = set(_title_tokens(title))
+        base_title, year = _split_year_suffix(title)
+        title_toks = set(_title_tokens(base_title))
         if not title_toks:
             lexical_scores[title] = 0.0
             continue
         hits = len(title_toks & q_tokens)
         # Fraction of the title's distinctive tokens named in the question.
-        lexical_scores[title] = hits / len(title_toks) if hits else 0.0
+        score = hits / len(title_toks) if hits else 0.0
+        # A parenthesized year disambiguates same-named decisions but must
+        # not count against the title just because most questions don't
+        # mention it. If the question DOES name the year explicitly, that's
+        # a strong signal -- reward it directly instead.
+        if year and year in q_tokens:
+            score = max(score, 1.0)
+        lexical_scores[title] = score
+
+    # Same-named decisions (e.g. Brown I vs. Brown II) tie on base tokens by
+    # design above -- neither title should win just because it's shorter.
+    # But when the question clearly names ONE of them (an explicit year, or
+    # "Brown II"), that's a strong signal that must decide the tie outright,
+    # not just nudge a score that was already tied at the max.
+    ordinal_ranks = _ordinal_ranks(case_index)
+    sibling_groups: Dict[str, List[str]] = defaultdict(list)
+    for title in case_index:
+        base, _ = _split_year_suffix(title)
+        sibling_groups[base].append(title)
+
+    for base, members in sibling_groups.items():
+        if len(members) < 2:
+            continue
+        roman_match = _roman_numeral_match(question, base)
+        named = []
+        for title in members:
+            _, year = _split_year_suffix(title)
+            year_hit = bool(year and year in q_tokens)
+            roman_hit = bool(roman_match and ordinal_ranks.get(title) == roman_match)
+            if year_hit or roman_hit:
+                named.append(title)
+        if len(named) == 1:
+            winner = named[0]
+            for title in members:
+                if title != winner:
+                    lexical_scores[title] = 0.0
+            lexical_scores[winner] = max(lexical_scores[winner], 1.0)
 
     ranked = sorted(lexical_scores.items(), key=lambda kv: kv[1], reverse=True)
     if ranked and ranked[0][1] > 0:

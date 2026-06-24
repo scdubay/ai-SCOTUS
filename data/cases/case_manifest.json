@@ -1,11 +1,11 @@
 [
   {
-    "title": "Brown v. Board of Education",
+    "title": "Brown v. Board of Education (1954)",
     "citation": "347 U.S. 483",
     "courtlistener_query": "Brown v. Board of Education 347 U.S. 483",
     "courtlistener_opinion_id": 105221,
     "expected_decision_year": 1954,
-    "notes": "Brown I merits decision — not Brown II which is already indexed. Free-text search reliably returns Brown II (349 U.S. 294) instead, so this entry is fetched directly by opinion ID rather than by search."
+    "notes": "Brown I merits decision — not Brown II which is already indexed. Free-text search reliably returns Brown II (349 U.S. 294) instead, so this entry is fetched directly by opinion ID rather than by search. Title carries an explicit year so it doesn't collide with Brown II's case_title metadata."
   },
   {
     "title": "Mapp v. Ohio",
@@ -24,5 +24,11 @@
     "citation": "389 U.S. 347",
     "courtlistener_query": "Katz v. United States 389 U.S. 347",
     "expected_decision_year": 1967
+  },
+  {
+    "title": "Escobedo v. Illinois",
+    "citation": "378 U.S. 478",
+    "courtlistener_query": "Escobedo v. Illinois 378 U.S. 478",
+    "expected_decision_year": 1964
   }
 ]

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-24T17:21:00.153361+00:00",
+  "vectorstore_path": "data\\vectors\\rag_vectorstore_scotus_010_cases",
+  "previous_vectorstore_path": "data/vectors/rag_vectorstore_scotus_009_cases",
+  "cases_requested": [
+    "Escobedo v. Illinois"
+  ],
+  "cases_added": [
+    "Escobedo v. Illinois"
+  ],
+  "cases_skipped": [],
+  "cases_failed": [],
+  "details": [
+    {
+      "title": "Escobedo v. Illinois",
+      "citation_expected": "378 U.S. 478",
+      "citation_found": "12 L. Ed. 2d 977, 84 S. Ct. 1758, 378 U.S. 478, 1964 U.S. LEXIS 827, 4 Ohio Misc. 197, 32 Ohio Op. 2d 31",
+      "year_expected": 1964,
+      "year_found": 1964,
+      "status": "added",
+      "opinion_count": 3,
+      "chunk_count": 112,
+      "warnings": []
+    }
+  ]
+}

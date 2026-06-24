@@ -316,6 +316,15 @@ def process_case(
         logger.warning("[%s] %s", title, detail["warnings"][-1])
         return "failed_fetch", detail, []
 
+    # The manifest's title is authoritative, not whatever CourtListener's API
+    # happens to call the case. This matters when two distinct decisions share
+    # an identical case_name (e.g. Brown I vs. Brown II) -- without this, two
+    # decisions can end up tagged with the same case_title metadata and get
+    # merged together by case_store.py's build_case_index(), which groups
+    # purely by that field.
+    for doc in case_docs:
+        doc.metadata["case_title"] = title
+
     detail["opinion_count"] = len(case_docs)
 
     chunks = smart_legal_chunking(case_docs)

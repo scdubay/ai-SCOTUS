@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-24T17:24:52.940438+00:00",
+  "vectorstore_path": "data\\vectors\\rag_vectorstore_scotus_011_cases",
+  "previous_vectorstore_path": "data/vectors/rag_vectorstore_scotus_010_cases",
+  "cases_requested": [
+    "Brown v. Board of Education (1954)"
+  ],
+  "cases_added": [
+    "Brown v. Board of Education (1954)"
+  ],
+  "cases_skipped": [],
+  "cases_failed": [],
+  "details": [
+    {
+      "title": "Brown v. Board of Education (1954)",
+      "citation_expected": "347 U.S. 483",
+      "citation_found": "347 U.S. 483, 74 S. Ct. 686, 1954 U.S. LEXIS 2094, 38 A.L.R. 2d 1180, 53 Ohio Op. 326, 98 L. Ed. 873",
+      "year_expected": 1954,
+      "year_found": 1954,
+      "status": "added",
+      "opinion_count": 1,
+      "chunk_count": 30,
+      "warnings": []
+    }
+  ]
+}
