@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-06-23T22:56:20.829038+00:00",
+  "vectorstore_path": "data\\vectors\\rag_vectorstore_scotus_009_cases",
+  "previous_vectorstore_path": "data/vectors/rag_vectorstore_courtlistener_demo",
+  "cases_requested": [
+    "Brown v. Board of Education",
+    "Mapp v. Ohio",
+    "Terry v. Ohio",
+    "Katz v. United States"
+  ],
+  "cases_added": [
+    "Mapp v. Ohio",
+    "Terry v. Ohio",
+    "Katz v. United States"
+  ],
+  "cases_skipped": [],
+  "cases_failed": [
+    "Brown v. Board of Education"
+  ],
+  "details": [
+    {
+      "title": "Brown v. Board of Education",
+      "citation_expected": "347 U.S. 483",
+      "citation_found": "99 L. Ed. 2d 1083, 75 S. Ct. 753, 349 U.S. 294, 1955 U.S. LEXIS 734, 71 Ohio Law. Abs. 584, 99 L. Ed. 1083, 57 Ohio Op. 253",
+      "year_expected": 1954,
+      "year_found": 1955,
+      "status": "failed_validation",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "Expected citation '347 U.S. 483' not found in returned citations ['99 L. Ed. 2d 1083', '75 S. Ct. 753', '349 U.S. 294', '1955 U.S. LEXIS 734', '71 Ohio Law. Abs. 584', '99 L. Ed. 1083', '57 Ohio Op. 253']"
+      ]
+    },
+    {
+      "title": "Mapp v. Ohio",
+      "citation_expected": "367 U.S. 643",
+      "citation_found": "6 L. Ed. 2d 1081, 81 S. Ct. 1684, 367 U.S. 643, 1961 U.S. LEXIS 812",
+      "year_expected": 1961,
+      "year_found": 1961,
+      "status": "added",
+      "opinion_count": 5,
+      "chunk_count": 224,
+      "warnings": []
+    },
+    {
+      "title": "Terry v. Ohio",
+      "citation_expected": "392 U.S. 1",
+      "citation_found": "20 L. Ed. 2d 889, 88 S. Ct. 1868, 392 U.S. 1, 1968 U.S. LEXIS 1345, 44 Ohio Op. 2d 383",
+      "year_expected": 1968,
+      "year_found": 1968,
+      "status": "added",
+      "opinion_count": 5,
+      "chunk_count": 184,
+      "warnings": []
+    },
+    {
+      "title": "Katz v. United States",
+      "citation_expected": "389 U.S. 347",
+      "citation_found": "19 L. Ed. 2d 576, 88 S. Ct. 507, 389 U.S. 347, 1967 U.S. LEXIS 2",
+      "year_expected": 1967,
+      "year_found": 1967,
+      "status": "added",
+      "opinion_count": 6,
+      "chunk_count": 141,
+      "warnings": []
+    }
+  ]
+}
