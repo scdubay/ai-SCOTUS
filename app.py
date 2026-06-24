@@ -91,14 +91,8 @@ _DEFAULT_PRICE = {"input": 1.00, "output": 5.00}  # haiku-tier fallback
 # Indexed case titles, as built by case_store.build_case_index(). Selecting a
 # case in the sidebar biases routing via a "Regarding X:" prefix folded into
 # the question text sent to resolve_case() -- a nudge, not a guarantee.
-CASES = [
-    "Brown v. Board of Education",
-    "Gideon v. Wainwright",
-    "Marbury v. Madison",
-    "Meyer v. Nebraska",
-    "Miranda v. Arizona",
-    "United States v. James Daniel Good Real Property",
-]
+# CASES itself is derived from the live index at startup (see below), not
+# hardcoded here, so newly ingested cases appear with no code change.
 ANY_CASE = "Any / Let the system decide"
 
 EXAMPLE_QUESTIONS = [
@@ -549,6 +543,9 @@ with col2:
         "- Cases outside the 6 indexed opinions\n"
         "- Non-legal questions"
     )
+
+_vectorstore, _case_index = load_resources()
+CASES = sorted(_case_index.keys())
 
 with st.sidebar:
     st.subheader("Options")
