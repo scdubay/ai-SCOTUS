@@ -728,6 +728,16 @@ with col2:
         "- Non-legal questions"
     )
 
+st.info(
+    "Legal research is harder than general Q&A — "
+    "opinions run hundreds of pages, citations must "
+    "be exact, and the same case name can refer to "
+    "different decisions across different years. "
+    "This system addresses each of those problems "
+    "explicitly. See **How it works** in the sidebar "
+    "for the engineering decisions behind it."
+)
+
 _vectorstore, _case_index = load_resources()
 CASES = sorted(_case_index.keys())
 
