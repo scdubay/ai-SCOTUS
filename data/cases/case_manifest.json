@@ -5,49 +5,73 @@
     "courtlistener_query": "Brown v. Board of Education 347 U.S. 483",
     "courtlistener_opinion_id": 105221,
     "expected_decision_year": 1954,
+    "court_era": "Warren Court",
+    "topics": ["equal protection", "Fourteenth Amendment"],
+    "decision_year": 1954,
     "notes": "Brown I merits decision — not Brown II which is already indexed. Free-text search reliably returns Brown II (349 U.S. 294) instead, so this entry is fetched directly by opinion ID rather than by search. Title carries an explicit year so it doesn't collide with Brown II's case_title metadata."
   },
   {
     "title": "Mapp v. Ohio",
     "citation": "367 U.S. 643",
     "courtlistener_query": "Mapp v. Ohio 367 U.S. 643",
-    "expected_decision_year": 1961
+    "expected_decision_year": 1961,
+    "court_era": "Warren Court",
+    "topics": ["Fourth Amendment", "exclusionary rule", "criminal procedure", "Fourteenth Amendment"],
+    "decision_year": 1961
   },
   {
     "title": "Terry v. Ohio",
     "citation": "392 U.S. 1",
     "courtlistener_query": "Terry v. Ohio 392 U.S. 1",
-    "expected_decision_year": 1968
+    "expected_decision_year": 1968,
+    "court_era": "Warren Court",
+    "topics": ["Fourth Amendment", "search and seizure", "criminal procedure"],
+    "decision_year": 1968
   },
   {
     "title": "Katz v. United States",
     "citation": "389 U.S. 347",
     "courtlistener_query": "Katz v. United States 389 U.S. 347",
-    "expected_decision_year": 1967
+    "expected_decision_year": 1967,
+    "court_era": "Warren Court",
+    "topics": ["Fourth Amendment", "search and seizure", "privacy"],
+    "decision_year": 1967
   },
   {
     "title": "Escobedo v. Illinois",
     "citation": "378 U.S. 478",
     "courtlistener_query": "Escobedo v. Illinois 378 U.S. 478",
-    "expected_decision_year": 1964
+    "expected_decision_year": 1964,
+    "court_era": "Warren Court",
+    "topics": ["right to counsel", "Sixth Amendment", "criminal procedure", "custodial interrogation"],
+    "decision_year": 1964
   },
   {
     "title": "Weeks v. United States",
     "citation": "232 U.S. 383",
     "courtlistener_query": "Weeks v. United States 232 U.S. 383",
-    "expected_decision_year": 1914
+    "expected_decision_year": 1914,
+    "court_era": "Early Court",
+    "topics": ["Fourth Amendment", "exclusionary rule", "search and seizure"],
+    "decision_year": 1914
   },
   {
     "title": "Schmerber v. California",
     "citation": "384 U.S. 757",
     "courtlistener_query": "Schmerber v. California 384 U.S. 757",
-    "expected_decision_year": 1966
+    "expected_decision_year": 1966,
+    "court_era": "Warren Court",
+    "topics": ["Fifth Amendment", "self-incrimination", "Fourth Amendment", "search and seizure"],
+    "decision_year": 1966
   },
   {
     "title": "Kyllo v. United States",
     "citation": "533 U.S. 27",
     "courtlistener_query": "Kyllo v. United States 533 U.S. 27",
-    "expected_decision_year": 2001
+    "expected_decision_year": 2001,
+    "court_era": "Rehnquist Court",
+    "topics": ["Fourth Amendment", "search and seizure", "privacy", "digital privacy"],
+    "decision_year": 2001
   },
   {
     "title": "Riley v. California",
@@ -55,6 +79,69 @@
     "courtlistener_query": "Riley v. California 573 U.S. 373",
     "courtlistener_opinion_id": 2680439,
     "expected_decision_year": 2014,
+    "court_era": "Roberts Court",
+    "topics": ["Fourth Amendment", "digital privacy", "search and seizure", "criminal procedure"],
+    "decision_year": 2014,
     "notes": "573 U.S. 373 not in CourtListener database; fetched by opinion ID 2680439. Parallel citation 134 S. Ct. 2473 used for validation."
+  },
+  {
+    "title": "Brown v. Board of Education",
+    "citation": "349 U.S. 294",
+    "courtlistener_query": "Brown v. Board of Education 349 U.S. 294",
+    "expected_decision_year": 1955,
+    "court_era": "Warren Court",
+    "topics": ["equal protection", "Fourteenth Amendment", "due process"],
+    "decision_year": 1955,
+    "notes": "Brown II — implementation decision. Original 6-case corpus, predates manifest system."
+  },
+  {
+    "title": "Gideon v. Wainwright",
+    "citation": "372 U.S. 335",
+    "courtlistener_query": "Gideon v. Wainwright 372 U.S. 335",
+    "expected_decision_year": 1963,
+    "court_era": "Warren Court",
+    "topics": ["right to counsel", "Sixth Amendment", "criminal procedure", "Fourteenth Amendment"],
+    "decision_year": 1963,
+    "notes": "Original 6-case corpus, predates manifest system."
+  },
+  {
+    "title": "Marbury v. Madison",
+    "citation": "5 U.S. 137",
+    "courtlistener_query": "Marbury v. Madison 5 U.S. 137",
+    "expected_decision_year": 1803,
+    "court_era": "Marshall Court",
+    "topics": ["judicial review", "federalism", "due process"],
+    "decision_year": 1803,
+    "notes": "Original 6-case corpus, predates manifest system."
+  },
+  {
+    "title": "Meyer v. Nebraska",
+    "citation": "262 U.S. 390",
+    "courtlistener_query": "Meyer v. Nebraska 262 U.S. 390",
+    "expected_decision_year": 1923,
+    "court_era": "Lochner Era",
+    "topics": ["Fourteenth Amendment", "liberty interest", "due process"],
+    "decision_year": 1923,
+    "notes": "Original 6-case corpus, predates manifest system."
+  },
+  {
+    "title": "Miranda v. Arizona",
+    "citation": "384 U.S. 436",
+    "courtlistener_query": "Miranda v. Arizona 384 U.S. 436",
+    "expected_decision_year": 1966,
+    "court_era": "Warren Court",
+    "topics": ["Fifth Amendment", "custodial interrogation", "criminal procedure", "right to counsel"],
+    "decision_year": 1966,
+    "notes": "Original 6-case corpus, predates manifest system."
+  },
+  {
+    "title": "United States v. James Daniel Good Real Property",
+    "citation": "510 U.S. 43",
+    "courtlistener_query": "United States v. James Daniel Good Real Property 510 U.S. 43",
+    "expected_decision_year": 1993,
+    "court_era": "Rehnquist Court",
+    "topics": ["due process", "property rights", "civil forfeiture", "Fifth Amendment"],
+    "decision_year": 1993,
+    "notes": "Original 6-case corpus, predates manifest system."
   }
 ]

@@ -19,10 +19,12 @@ Run with:
     streamlit run app.py
 """
 
+import json
 import os
 import secrets
 from datetime import datetime, timezone
-from typing import Optional
+from pathlib import Path
+from typing import List, Optional
 
 import streamlit as st
 
@@ -77,6 +79,7 @@ from case_store import (
 
 ACCESS_KEY = get_config("ACCESS_KEY", "")
 DAILY_COST_CAP = float(get_config("DAILY_COST_CAP", "2.00"))
+COMPARATIVE_MODEL = get_config("COMPARATIVE_MODEL", "claude-sonnet-4-6")
 
 SESSION_LIMIT_ANON = 20
 SESSION_LIMIT_KEYED = 100
@@ -116,6 +119,33 @@ def load_resources():
     )
     case_index = build_case_index(vectorstore)
     return vectorstore, case_index
+
+
+CASE_MANIFEST_PATH = Path("data/cases/case_manifest.json")  # mirrors ingest.py's MANIFEST_PATH
+
+
+@st.cache_resource
+def load_case_metadata() -> dict:
+    """Read era/topics/decision_year out of the case manifest, keyed on the
+    manifest's "title" field so it lines up with build_case_index()'s keys."""
+    with open(CASE_MANIFEST_PATH, encoding="utf-8") as f:
+        manifest = json.load(f)
+    return {
+        entry["title"]: {
+            "era": entry.get("court_era"),
+            "topics": entry.get("topics", []),
+            "year": entry.get("decision_year"),
+        }
+        for entry in manifest
+    }
+
+
+def cases_by_topic(topic: str, metadata: dict) -> List[str]:
+    return [title for title, meta in metadata.items() if topic in meta.get("topics", [])]
+
+
+def cases_by_era(era: str, metadata: dict) -> List[str]:
+    return [title for title, meta in metadata.items() if meta.get("era") == era]
 
 
 @st.cache_resource
@@ -191,12 +221,12 @@ def daily_cap_reached() -> bool:
     return tracker["total"] >= DAILY_COST_CAP
 
 
-def record_estimated_cost(prompt_text: str, answer_text: str) -> None:
+def record_estimated_cost(prompt_text: str, answer_text: str, model: str = ANTHROPIC_MODEL) -> None:
     if BACKEND != "anthropic":
         return
     tracker = get_cost_tracker()
     _reset_cost_if_new_day(tracker)
-    prices = _MODEL_PRICE_PER_MTOK.get(ANTHROPIC_MODEL, _DEFAULT_PRICE)
+    prices = _MODEL_PRICE_PER_MTOK.get(model, _DEFAULT_PRICE)
     # Heuristic ~4 chars/token estimate -- a safety guard, not a billing figure.
     input_tokens = len(prompt_text) / 4
     output_tokens = len(answer_text) / 4
@@ -359,25 +389,72 @@ OVERVIEW_SYSTEM_PROMPT = (
 
 _CLASSIFY_SYSTEM_PROMPT = (
     "You are a router for a legal research app about U.S. Supreme Court cases.\n"
-    "Classify the user's question into exactly one of three categories:\n\n"
-    "META — the question is about the app itself, its purpose, who built it, \n"
-    "how it works, what it can do, what cases it covers, or anything about \n"
-    "the system rather than about legal content. Examples: questions about \n"
-    "purpose, capabilities, design, creator, scope, or how to use the app.\n\n"
-    "OVERVIEW — the question asks for a general summary, description, or \n"
-    "comparison of one or more Supreme Court cases without requiring precise \n"
-    "retrieval of specific legal text. Examples: summarize a case, describe \n"
-    "what happened, compare two cases, give an overview of cases on a topic.\n\n"
-    "RESEARCH — the question asks about specific legal holdings, tests, \n"
-    "reasoning, precedents, dissents, or doctrine that requires searching \n"
-    "the actual opinion text. Examples: what standard did the Court apply, \n"
-    "what did Justice X argue, what were the exact holdings.\n\n"
-    "When in doubt between META and OVERVIEW, choose META.\n"
-    "When in doubt between OVERVIEW and RESEARCH, choose RESEARCH.\n\n"
-    "Reply with exactly one word: META, OVERVIEW, or RESEARCH."
+    "Classify the user's question into exactly one of four categories:\n\n"
+    "META — questions about the APP ITSELF: its purpose, who built it, how it \n"
+    "works technically, what technology it uses, what its limitations are, or \n"
+    "whether a specific case is covered. The answer describes the system, not \n"
+    "legal content.\n"
+    "Examples: \"why does this exist\", \"who built you\", \"what is RAG\", \n"
+    "\"is Roe v Wade in your database\", \"what cases do you have\"\n\n"
+    "OVERVIEW — questions that want ACTUAL CASE CONTENT delivered in summary \n"
+    "form: asking to describe, explain, or summarize what one or more cases \n"
+    "held, decided, or reasoned. The answer contains legal substance from the \n"
+    "cases themselves.\n"
+    "Examples: \"summarize all the cases\", \"tell me about Miranda\", \n"
+    "\"give me an overview of each case\", \"describe what Marbury v Madison decided\"\n\n"
+    "COMPARATIVE — questions asking to COMPARE, CONTRAST, or TRACE EVOLUTION \n"
+    "across multiple cases, court eras, or time periods. The answer synthesizes \n"
+    "patterns or changes across cases.\n"
+    "Examples: \"how has Fourth Amendment doctrine evolved\", \"compare Warren \n"
+    "Court to Rehnquist Court\", \"what themes connect Miranda Gideon and \n"
+    "Escobedo\", \"how did the exclusionary rule develop over time\"\n\n"
+    "RESEARCH — questions requiring SPECIFIC LEGAL TEXT retrieved from a \n"
+    "particular opinion: specific holdings, tests, reasoning, dissents, or \n"
+    "doctrine from one case.\n"
+    "Examples: \"what balancing test did Good Real Property apply\", \"what did \n"
+    "Justice White argue in Miranda\", \"what standard did Terry establish for \n"
+    "a stop\"\n\n"
+    "Tie-break rules:\n"
+    "- META vs OVERVIEW: if the answer would contain actual legal holdings or \n"
+    "case reasoning, choose OVERVIEW\n"
+    "- OVERVIEW vs COMPARATIVE: if multiple cases or time periods are implied, \n"
+    "choose COMPARATIVE\n"
+    "- COMPARATIVE vs RESEARCH: if asking about trends or evolution rather \n"
+    "than a specific holding, choose COMPARATIVE\n"
+    "- When genuinely uncertain, prefer RESEARCH\n\n"
+    "Reply with exactly one word: META, OVERVIEW, RESEARCH, or COMPARATIVE."
 )
 
-_VALID_CLASSES = ("META", "OVERVIEW", "RESEARCH")
+_VALID_CLASSES = ("META", "OVERVIEW", "RESEARCH", "COMPARATIVE")
+
+_COMPARATIVE_SELECT_SYSTEM_PROMPT = (
+    "You are helping a legal research system identify relevant cases. "
+    "Given a question and a list of indexed cases with their topics and eras, "
+    "return a JSON list of the 3-6 most relevant case titles. "
+    "Return only a JSON array of strings, nothing else."
+)
+
+_COMPARATIVE_SYNTHESIS_SYSTEM_PROMPT = (
+    "You are a legal research assistant analyzing how Supreme Court doctrine "
+    "has evolved across multiple cases. Use only the provided case excerpts "
+    "to support your analysis. Organize your answer chronologically where "
+    "relevant. Cite specific cases by name when making claims about doctrine."
+)
+
+
+def _format_case_metadata_block(case_metadata: dict) -> str:
+    lines = []
+    for title, meta in case_metadata.items():
+        topics = ", ".join(meta.get("topics", []))
+        lines.append(f"- {title} ({meta.get('year', 'n.d.')}, {meta.get('era', 'unknown era')}): {topics}")
+    return "\n".join(lines)
+
+
+def _comparative_case_block(case_title: str, case_metadata: dict, segments: list) -> str:
+    meta = case_metadata.get(case_title, {})
+    header = f"=== {case_title} ({meta.get('year', 'n.d.')}, {meta.get('era', 'unknown era')}) ==="
+    body = "\n\n".join(seg.page_content for seg in segments)
+    return f"{header}\n{body}"
 
 
 def classify_question(question: str) -> str:
@@ -492,6 +569,72 @@ def handle_research(question: str, case_hint: Optional[str] = None) -> dict:
     }
 
 
+def handle_comparative(question: str, case_metadata: dict) -> dict:
+    vectorstore, case_index = load_resources()
+
+    # 4a -- identify relevant cases with a fast Haiku call.
+    select_user_msg = f"Question: {question}\n\nIndexed cases:\n{_format_case_metadata_block(case_metadata)}"
+    select_response = _get_meta_anthropic_client().messages.create(
+        model=ANTHROPIC_MODEL,
+        max_tokens=256,
+        system=_COMPARATIVE_SELECT_SYSTEM_PROMPT,
+        messages=[{"role": "user", "content": select_user_msg}],
+    )
+    raw = "".join(b.text for b in select_response.content if b.type == "text").strip()
+    record_estimated_cost(_COMPARATIVE_SELECT_SYSTEM_PROMPT + select_user_msg, raw, model=ANTHROPIC_MODEL)
+
+    cleaned = raw.strip()
+    if cleaned.startswith("```"):
+        cleaned = cleaned.strip("`")
+        cleaned = cleaned[4:] if cleaned.lower().startswith("json") else cleaned
+
+    try:
+        relevant_cases = json.loads(cleaned)
+        if not isinstance(relevant_cases, list) or not all(isinstance(c, str) for c in relevant_cases):
+            raise ValueError("response was not a JSON array of strings")
+    except Exception:
+        relevant_cases = list(case_metadata.keys())
+
+    relevant_cases = [c for c in relevant_cases if c in case_index] or list(case_metadata.keys())
+
+    # 4b -- multi-case retrieval, up to 3 segments per case.
+    blocks = []
+    sources = []
+    for case_title in relevant_cases:
+        record = case_index.get(case_title)
+        if record is None:
+            continue
+        _context, segments, _mode = build_case_scoped_context(case_title, case_index, question, vectorstore)
+        segments = segments[:3]
+        if not segments:
+            continue
+        blocks.append(_comparative_case_block(case_title, case_metadata, segments))
+        meta = case_metadata.get(case_title, {})
+        sources.append(f"{case_title} ({meta.get('era', 'unknown era')}, {meta.get('year', 'n.d.')})")
+
+    combined_context = "\n\n".join(blocks)
+
+    # 4c -- synthesis with COMPARATIVE_MODEL.
+    synthesis_user_msg = f"Question: {question}\n\nCase excerpts:\n{combined_context}"
+    synthesis_response = _get_meta_anthropic_client().messages.create(
+        model=COMPARATIVE_MODEL,
+        max_tokens=1536,
+        system=_COMPARATIVE_SYNTHESIS_SYSTEM_PROMPT,
+        messages=[{"role": "user", "content": synthesis_user_msg}],
+    )
+    answer = "".join(b.text for b in synthesis_response.content if b.type == "text").strip()
+    record_estimated_cost(_COMPARATIVE_SYNTHESIS_SYSTEM_PROMPT + synthesis_user_msg, answer, model=COMPARATIVE_MODEL)
+
+    return {
+        "answer": answer,
+        "case_name": None,
+        "routing_method": "comparative",
+        "faithful": True,
+        "sources": sources,
+        "flagged_reason": None,
+    }
+
+
 # ---------------------------------------------------------------------------
 # UI
 # ---------------------------------------------------------------------------
@@ -585,11 +728,15 @@ if submitted:
             else:
                 with st.spinner("Researching..."):
                     try:
+                        case_metadata = load_case_metadata()
+
                         question_type = classify_question(sent_question)
                         if question_type == "META":
                             data = handle_meta(sent_question)
                         elif question_type == "OVERVIEW":
                             data = handle_overview(sent_question)
+                        elif question_type == "COMPARATIVE":
+                            data = handle_comparative(sent_question, case_metadata)
                         else:
                             case_hint = selected_case if selected_case != ANY_CASE else None
                             data = handle_research(sent_question, case_hint)
@@ -619,6 +766,8 @@ if st.session_state.last_response:
         st.caption("ℹ️ About this app")
     elif routing_method == "overview":
         st.caption("ℹ️ Case overview")
+    elif routing_method == "comparative":
+        st.caption("Cross-case analysis")
     else:
         st.caption(f"Case: {case_name or 'Unresolved'} | Routing: {routing_method}")
         if not case_name:
