@@ -703,48 +703,58 @@ if st.session_state.pending_case_reset:
 st.set_page_config(page_title="SCOTUS Legal Aid", page_icon="⚖️")
 
 st.title("SCOTUS Legal Aid")
-st.caption(
-    "Retrieval-augmented Q&A over a small, fixed set of indexed U.S. Supreme Court opinions."
-)
-st.caption(
-    "Not legal advice, not a comprehensive legal database, and not a reflection of current law beyond these opinions."
-)
-
-col1, col2 = st.columns(2)
-with col1:
-    st.caption("In scope, e.g.:")
-    st.markdown(
-        "- What liberty interest did *Meyer v. Nebraska* recognize?\n"
-        "- Why did the Court strike down the Nebraska statute?\n"
-        "- What right did *Gideon v. Wainwright* establish?\n"
-        "- What test did the Court apply in *Miranda v. Arizona*?"
-    )
-with col2:
-    st.caption("Out of scope, e.g.:")
-    st.markdown(
-        "- Current or pending Supreme Court cases\n"
-        "- General legal advice for your own situation\n"
-        "- Cases outside the 6 indexed opinions\n"
-        "- Non-legal questions"
-    )
-
-st.info(
-    "Legal research is harder than general Q&A — "
-    "opinions run hundreds of pages, citations must "
-    "be exact, and the same case name can refer to "
-    "different decisions across different years. "
-    "This system addresses each of those problems "
-    "explicitly. See **How it works** in the sidebar "
-    "for the engineering decisions behind it."
-)
+st.caption("Retrieval-augmented Q&A over 15 indexed U.S. Supreme Court opinions.")
 
 _vectorstore, _case_index = load_resources()
 CASES = sorted(_case_index.keys())
+
+# ---------------------------------------------------------------------------
+# Sidebar — Options + Engineering highlights
+# ---------------------------------------------------------------------------
+
+_ENGINEERING_HIGHLIGHTS = [
+    (
+        "Same-name routing",
+        "Chronological ordinals from real date metadata — not string parsing",
+    ),
+    (
+        "Embedding model at scale",
+        "BGE-small: retrieval-trained, 384-dim fits 200K chunks in free-tier memory",
+    ),
+    (
+        "Cross-case contamination",
+        "Case-scoped retrieval eliminates bleed between indexed opinions",
+    ),
+    (
+        "Hallucination in legal context",
+        "Faithfulness guard flags any authority not present in retrieved text",
+    ),
+    (
+        "Comparative query scaling",
+        "FAISS-first retrieval with size-normalized scoring — no model call needed to select relevant cases",
+    ),
+]
 
 with st.sidebar:
     st.subheader("Options")
     selected_case = st.selectbox("Case", [ANY_CASE] + CASES, key="selected_case")
     access_key = st.text_input("Access key (optional)", type="password")
+
+    st.divider()
+    st.subheader("Engineering highlights")
+    for _label, _resolution in _ENGINEERING_HIGHLIGHTS:
+        st.markdown(
+            f'<div style="border-left: 3px solid #4A90D9; padding-left: 10px; margin-bottom: 12px;">'
+            f'<div style="font-size: 13px; font-weight: 600; color: inherit;">{_label}</div>'
+            f'<div style="font-size: 12px; color: gray; margin-top: 2px;">{_resolution}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+    st.caption("→ Full engineering details in How it works")
+
+# ---------------------------------------------------------------------------
+# Question form + answer display (top of main content)
+# ---------------------------------------------------------------------------
 
 with st.form("ask_form"):
     question = st.text_input("Your question")
@@ -842,3 +852,104 @@ if st.session_state.last_response:
                 st.write(f"- {src}")
         else:
             st.write("No sources returned.")
+
+# ---------------------------------------------------------------------------
+# Explanatory content (below the fold)
+# ---------------------------------------------------------------------------
+
+st.divider()
+
+# ROW 1 — What this is / What this is not
+_hero_left, _hero_right = st.columns([3, 2])
+with _hero_left:
+    st.subheader("What this is")
+    st.write(
+        "AI-powered legal research over 15 indexed U.S. Supreme Court opinions. "
+        "The system uses retrieval-augmented generation (RAG): before generating "
+        "an answer, it retrieves the relevant passages from the actual opinion text, "
+        "so answers are grounded in the opinion — not general legal knowledge. "
+        "Built as a portfolio demonstration by Stephen Dubay, Azure and AI engineer."
+    )
+with _hero_right:
+    st.subheader("What this is not")
+    st.markdown(
+        "- Not legal advice\n"
+        "- Not a comprehensive legal database\n"
+        "- Not current law (indexed opinions only, no amendments or subsequent rulings)\n"
+        "- Not a substitute for a licensed attorney"
+    )
+
+# ROW 2 — How to use it (three query types)
+st.divider()
+
+_qt1, _qt2, _qt3 = st.columns(3)
+with _qt1:
+    st.markdown("#### ⚖️ Case research")
+    st.write(
+        "Ask about specific holdings, tests, dissents, or reasoning "
+        "from a particular case."
+    )
+    st.caption('"What balancing test did Good Real Property apply?"')
+with _qt2:
+    st.markdown("#### 🔍 Cross-case analysis")
+    st.write(
+        "Ask how doctrine evolved over time or compare how different "
+        "courts approached the same issue."
+    )
+    st.caption('"How did Fourth Amendment doctrine evolve from Weeks to Riley?"')
+with _qt3:
+    st.markdown("#### 📋 Case overviews")
+    st.write(
+        "Ask for summaries or general descriptions of one or more "
+        "indexed cases."
+    )
+    st.caption('"Give me an overview of all the criminal procedure cases."')
+
+# ROW 3 — What makes this hard
+st.divider()
+
+st.info(
+    "Legal research is harder than general Q&A. "
+    "Opinions run hundreds of pages. Citations must be exact. "
+    "The same case name refers to different decisions across different years — "
+    "both Brown I (1954 merits) and Brown II (1955 implementation) are indexed "
+    "here and correctly distinguished. "
+    "A hallucinated legal authority is not just wrong — it is specifically harmful. "
+    "See **How it works** in the sidebar for the engineering decisions behind "
+    "each of these problems."
+)
+
+# ROW 4 — Indexed cases (3-column grid, grouped by court era)
+st.divider()
+st.subheader("Indexed cases")
+
+_ERA_ORDER = {
+    "Marshall Court": 0,
+    "Early Court": 1,
+    "Lochner Era": 2,
+    "Warren Court": 3,
+    "Rehnquist Court": 4,
+    "Roberts Court": 5,
+}
+
+_case_meta_for_grid = load_case_metadata()
+_ordered_cases = sorted(
+    _case_meta_for_grid.items(),
+    key=lambda x: (_ERA_ORDER.get(x[1].get("era", ""), 99), x[1].get("year") or 9999),
+)
+
+_n = len(_ordered_cases)
+_split1 = (_n + 2) // 3
+_split2 = 2 * (_n + 2) // 3
+_grid_splits = [_ordered_cases[:_split1], _ordered_cases[_split1:_split2], _ordered_cases[_split2:]]
+_grid_cols = st.columns(3)
+for _col_widget, _col_cases in zip(_grid_cols, _grid_splits):
+    with _col_widget:
+        _current_era = None
+        for _case_title, _case_meta in _col_cases:
+            _era = _case_meta.get("era") or "Unknown"
+            if _era != _current_era:
+                st.caption(_era)
+                _current_era = _era
+            _year = _case_meta.get("year") or "n.d."
+            st.write(f"{_case_title} ({_year})")
