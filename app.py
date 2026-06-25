@@ -753,8 +753,58 @@ with st.sidebar:
     st.caption("→ Full engineering details in How it works")
 
 # ---------------------------------------------------------------------------
-# Question form + answer display (top of main content)
+# ROW 1 — What this is / What this is not
 # ---------------------------------------------------------------------------
+
+_hero_left, _hero_right = st.columns([3, 2])
+with _hero_left:
+    st.subheader("What this is")
+    st.markdown("""
+- AI-powered legal research over 15 indexed U.S. Supreme Court opinions
+- Uses retrieval-augmented generation (RAG): retrieves relevant passages from actual opinion text before generating an answer
+- Answers are grounded in the opinion text — not general legal knowledge
+- Built as a portfolio demonstration by Stephen Dubay, Azure and AI engineer
+""")
+with _hero_right:
+    st.subheader("What this is not")
+    st.markdown(
+        "- Not legal advice\n"
+        "- Not a comprehensive legal database\n"
+        "- Not current law (indexed opinions only, no amendments or subsequent rulings)\n"
+        "- Not a substitute for a licensed attorney"
+    )
+
+# ROW 2 — How to use it (three query types)
+st.divider()
+
+_qt1, _qt2, _qt3 = st.columns(3)
+with _qt1:
+    st.markdown("#### ⚖️ Case research")
+    st.write(
+        "Ask about specific holdings, tests, dissents, or reasoning "
+        "from a particular case."
+    )
+    st.caption('"What balancing test did Good Real Property apply?"')
+with _qt2:
+    st.markdown("#### 🔍 Cross-case analysis")
+    st.write(
+        "Ask how doctrine evolved over time or compare how different "
+        "courts approached the same issue."
+    )
+    st.caption('"How did Fourth Amendment doctrine evolve from Weeks to Riley?"')
+with _qt3:
+    st.markdown("#### 📋 Case overviews")
+    st.write(
+        "Ask for summaries or general descriptions of one or more "
+        "indexed cases."
+    )
+    st.caption('"Give me an overview of all the criminal procedure cases."')
+
+# ---------------------------------------------------------------------------
+# Question form + answer display
+# ---------------------------------------------------------------------------
+
+st.divider()
 
 with st.form("ask_form"):
     question = st.text_input("Your question")
@@ -852,58 +902,6 @@ if st.session_state.last_response:
                 st.write(f"- {src}")
         else:
             st.write("No sources returned.")
-
-# ---------------------------------------------------------------------------
-# Explanatory content (below the fold)
-# ---------------------------------------------------------------------------
-
-st.divider()
-
-# ROW 1 — What this is / What this is not
-_hero_left, _hero_right = st.columns([3, 2])
-with _hero_left:
-    st.subheader("What this is")
-    st.write(
-        "AI-powered legal research over 15 indexed U.S. Supreme Court opinions. "
-        "The system uses retrieval-augmented generation (RAG): before generating "
-        "an answer, it retrieves the relevant passages from the actual opinion text, "
-        "so answers are grounded in the opinion — not general legal knowledge. "
-        "Built as a portfolio demonstration by Stephen Dubay, Azure and AI engineer."
-    )
-with _hero_right:
-    st.subheader("What this is not")
-    st.markdown(
-        "- Not legal advice\n"
-        "- Not a comprehensive legal database\n"
-        "- Not current law (indexed opinions only, no amendments or subsequent rulings)\n"
-        "- Not a substitute for a licensed attorney"
-    )
-
-# ROW 2 — How to use it (three query types)
-st.divider()
-
-_qt1, _qt2, _qt3 = st.columns(3)
-with _qt1:
-    st.markdown("#### ⚖️ Case research")
-    st.write(
-        "Ask about specific holdings, tests, dissents, or reasoning "
-        "from a particular case."
-    )
-    st.caption('"What balancing test did Good Real Property apply?"')
-with _qt2:
-    st.markdown("#### 🔍 Cross-case analysis")
-    st.write(
-        "Ask how doctrine evolved over time or compare how different "
-        "courts approached the same issue."
-    )
-    st.caption('"How did Fourth Amendment doctrine evolve from Weeks to Riley?"')
-with _qt3:
-    st.markdown("#### 📋 Case overviews")
-    st.write(
-        "Ask for summaries or general descriptions of one or more "
-        "indexed cases."
-    )
-    st.caption('"Give me an overview of all the criminal procedure cases."')
 
 # ROW 3 — What makes this hard
 st.divider()
