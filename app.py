@@ -427,6 +427,10 @@ _CLASSIFY_SYSTEM_PROMPT = (
 
 _VALID_CLASSES = ("META", "OVERVIEW", "RESEARCH", "COMPARATIVE")
 
+# NOTE: superseded by FAISS-first retrieval in
+# handle_comparative() -- kept for reference.
+# _COMPARATIVE_SELECT_SYSTEM_PROMPT and
+# _format_case_metadata_block() are no longer called.
 _COMPARATIVE_SELECT_SYSTEM_PROMPT = (
     "You are helping a legal research system identify relevant cases. "
     "Given a question and a list of indexed cases with their topics and eras, "
@@ -572,30 +576,67 @@ def handle_research(question: str, case_hint: Optional[str] = None) -> dict:
 def handle_comparative(question: str, case_metadata: dict) -> dict:
     vectorstore, case_index = load_resources()
 
-    # 4a -- identify relevant cases with a fast Haiku call.
-    select_user_msg = f"Question: {question}\n\nIndexed cases:\n{_format_case_metadata_block(case_metadata)}"
-    select_response = _get_meta_anthropic_client().messages.create(
-        model=ANTHROPIC_MODEL,
-        max_tokens=256,
-        system=_COMPARATIVE_SELECT_SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": select_user_msg}],
-    )
-    raw = "".join(b.text for b in select_response.content if b.type == "text").strip()
-    record_estimated_cost(_COMPARATIVE_SELECT_SYSTEM_PROMPT + select_user_msg, raw, model=ANTHROPIC_MODEL)
+    # 4a -- FAISS-first semantic search to identify relevant cases. Cost and
+    # accuracy now scale with index size, not with how many case names have
+    # to be enumerated in a prompt -- works the same at 200+ cases.
+    docs_and_scores = vectorstore.similarity_search_with_score(question, k=50)
 
-    cleaned = raw.strip()
-    if cleaned.startswith("```"):
-        cleaned = cleaned.strip("`")
-        cleaned = cleaned[4:] if cleaned.lower().startswith("json") else cleaned
+    hit_counts = {}
+    best_scores = {}
+    for doc, score in docs_and_scores:
+        title = doc.metadata.get("case_title")
+        if not title:
+            continue
+        hit_counts[title] = hit_counts.get(title, 0) + 1
+        score = float(score)
+        if title not in best_scores or score < best_scores[title]:
+            best_scores[title] = score
 
-    try:
-        relevant_cases = json.loads(cleaned)
-        if not isinstance(relevant_cases, list) or not all(isinstance(c, str) for c in relevant_cases):
-            raise ValueError("response was not a JSON array of strings")
-    except Exception:
+    # Normalize hits by each case's total chunk count before scoring --
+    # without this, a long opinion with many chunks (e.g. Mapp, which
+    # directly quotes and discusses Weeks at length) structurally dominates
+    # hit_count over a short, single-opinion case regardless of which one
+    # the question actually names.
+    case_chunk_counts = {}
+    for doc in vectorstore.docstore._dict.values():
+        title = doc.metadata.get("case_title")
+        if title:
+            case_chunk_counts[title] = case_chunk_counts.get(title, 0) + 1
+
+    # Rewards cases whose *proportion* of chunks hit in the top-50 is high
+    # AND that have at least one very close match.
+    case_scores = {
+        title: (hit_counts[title] / case_chunk_counts.get(title, 1)) / (1 + best_scores[title])
+        for title in hit_counts
+    }
+
+    # Explicit title-matching bonus: a case named directly in the question
+    # (e.g. "Weeks" in "from Weeks to Riley") should win regardless of how
+    # its normalized semantic score compares to other cases.
+    q_tokens = set(question.lower().split())
+    for title in case_scores:
+        title_words = set(title.lower().split()) - {"v", "v.", "united", "states", "of"}
+        if title_words & q_tokens:
+            case_scores[title] *= 2.0
+
+    ranked = sorted(case_scores.items(), key=lambda kv: kv[1], reverse=True)
+
+    if len(ranked) < 3:
+        # Too few distinct cases even showed up in the top-50 -- an unusual
+        # question. Fall back to the full corpus rather than guess.
         relevant_cases = list(case_metadata.keys())
+    else:
+        top_score = ranked[0][1]
+        relevant_cases = [title for title, score in ranked if score >= 0.5 * top_score][:6]
+        if len(relevant_cases) < 3:
+            relevant_cases = [title for title, _ in ranked[:3]]
 
     relevant_cases = [c for c in relevant_cases if c in case_index] or list(case_metadata.keys())
+
+    print(
+        f"[comparative] selected {len(relevant_cases)} case(s): "
+        + ", ".join(f"{t} ({case_scores.get(t, 0):.3f})" for t in relevant_cases)
+    )
 
     # 4b -- multi-case retrieval, up to 3 segments per case.
     blocks = []
