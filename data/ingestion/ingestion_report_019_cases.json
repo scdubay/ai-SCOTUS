@@ -1,0 +1,291 @@
+{
+  "timestamp": "2026-06-25T22:10:01.001523+00:00",
+  "vectorstore_path": "data\\vectors\\rag_vectorstore_scotus_019_cases",
+  "previous_vectorstore_path": "data/vectors/rag_vectorstore_scotus_015_cases",
+  "cases_requested": [
+    "Brown v. Board of Education (1954)",
+    "Mapp v. Ohio",
+    "Terry v. Ohio",
+    "Katz v. United States",
+    "Escobedo v. Illinois",
+    "Weeks v. United States",
+    "Schmerber v. California",
+    "Kyllo v. United States",
+    "Riley v. California",
+    "Brown v. Board of Education",
+    "Gideon v. Wainwright",
+    "Marbury v. Madison",
+    "Meyer v. Nebraska",
+    "Miranda v. Arizona",
+    "United States v. James Daniel Good Real Property",
+    "Tinker v. Des Moines Independent Community School District",
+    "New York Times Co. v. Sullivan",
+    "Engel v. Vitale",
+    "Citizens United v. Federal Election Commission"
+  ],
+  "cases_added": [
+    "Tinker v. Des Moines Independent Community School District",
+    "New York Times Co. v. Sullivan",
+    "Engel v. Vitale",
+    "Citizens United v. Federal Election Commission"
+  ],
+  "cases_skipped": [
+    "Brown v. Board of Education (1954)",
+    "Mapp v. Ohio",
+    "Terry v. Ohio",
+    "Katz v. United States",
+    "Escobedo v. Illinois",
+    "Weeks v. United States",
+    "Schmerber v. California",
+    "Kyllo v. United States",
+    "Riley v. California",
+    "Brown v. Board of Education",
+    "Gideon v. Wainwright",
+    "Marbury v. Madison",
+    "Meyer v. Nebraska",
+    "Miranda v. Arizona",
+    "United States v. James Daniel Good Real Property"
+  ],
+  "cases_failed": [],
+  "details": [
+    {
+      "title": "Brown v. Board of Education (1954)",
+      "citation_expected": "347 U.S. 483",
+      "citation_found": null,
+      "year_expected": 1954,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Brown v. Board of Education (1954)' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Mapp v. Ohio",
+      "citation_expected": "367 U.S. 643",
+      "citation_found": null,
+      "year_expected": 1961,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Mapp v. Ohio' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Terry v. Ohio",
+      "citation_expected": "392 U.S. 1",
+      "citation_found": null,
+      "year_expected": 1968,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Terry v. Ohio' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Katz v. United States",
+      "citation_expected": "389 U.S. 347",
+      "citation_found": null,
+      "year_expected": 1967,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Katz v. United States' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Escobedo v. Illinois",
+      "citation_expected": "378 U.S. 478",
+      "citation_found": null,
+      "year_expected": 1964,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Escobedo v. Illinois' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Weeks v. United States",
+      "citation_expected": "232 U.S. 383",
+      "citation_found": null,
+      "year_expected": 1914,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Weeks v. United States' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Schmerber v. California",
+      "citation_expected": "384 U.S. 757",
+      "citation_found": null,
+      "year_expected": 1966,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Schmerber v. California' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Kyllo v. United States",
+      "citation_expected": "533 U.S. 27",
+      "citation_found": null,
+      "year_expected": 2001,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Kyllo v. United States' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Riley v. California",
+      "citation_expected": "134 S. Ct. 2473",
+      "citation_found": null,
+      "year_expected": 2014,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Riley v. California' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Brown v. Board of Education",
+      "citation_expected": "349 U.S. 294",
+      "citation_found": null,
+      "year_expected": 1955,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Brown v. Board of Education' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Gideon v. Wainwright",
+      "citation_expected": "372 U.S. 335",
+      "citation_found": null,
+      "year_expected": 1963,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Gideon v. Wainwright' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Marbury v. Madison",
+      "citation_expected": "5 U.S. 137",
+      "citation_found": null,
+      "year_expected": 1803,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Marbury v. Madison' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Meyer v. Nebraska",
+      "citation_expected": "262 U.S. 390",
+      "citation_found": null,
+      "year_expected": 1923,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Meyer v. Nebraska' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Miranda v. Arizona",
+      "citation_expected": "384 U.S. 436",
+      "citation_found": null,
+      "year_expected": 1966,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'Miranda v. Arizona' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "United States v. James Daniel Good Real Property",
+      "citation_expected": "510 U.S. 43",
+      "citation_found": null,
+      "year_expected": 1993,
+      "year_found": null,
+      "status": "skipped_duplicate",
+      "opinion_count": 0,
+      "chunk_count": 0,
+      "warnings": [
+        "'United States v. James Daniel Good Real Property' already present in the index; skipped"
+      ]
+    },
+    {
+      "title": "Tinker v. Des Moines Independent Community School District",
+      "citation_expected": "393 U.S. 503",
+      "citation_found": "21 L. Ed. 2d 731, 89 S. Ct. 733, 393 U.S. 503, 1969 U.S. LEXIS 2443, 49 Ohio Op. 2d 222",
+      "year_expected": 1969,
+      "year_found": 1969,
+      "status": "added",
+      "opinion_count": 6,
+      "chunk_count": 118,
+      "warnings": []
+    },
+    {
+      "title": "New York Times Co. v. Sullivan",
+      "citation_expected": "376 U.S. 254",
+      "citation_found": "11 L. Ed. 2d 686, 84 S. Ct. 710, 376 U.S. 254, 1964 U.S. LEXIS 1655, 1 Media L. Rep. (BNA) 1527, 95 A.L.R. 2d 1412",
+      "year_expected": 1964,
+      "year_found": 1964,
+      "status": "added",
+      "opinion_count": 4,
+      "chunk_count": 272,
+      "warnings": []
+    },
+    {
+      "title": "Engel v. Vitale",
+      "citation_expected": "370 U.S. 421",
+      "citation_found": "8 L. Ed. 2d 601, 82 S. Ct. 1261, 370 U.S. 421, 1962 U.S. LEXIS 847, 20 Ohio Op. 2d 328, 86 A.L.R. 2d 1285",
+      "year_expected": 1962,
+      "year_found": 1962,
+      "status": "added",
+      "opinion_count": 4,
+      "chunk_count": 166,
+      "warnings": []
+    },
+    {
+      "title": "Citizens United v. Federal Election Commission",
+      "citation_expected": "558 U.S. 310",
+      "citation_found": "175 L. Ed. 2d 753, 130 S. Ct. 876, 558 U.S. 310, 2010 U.S. LEXIS 766, 22 Fla. L. Weekly Fed. S 73, 78 U.S.L.W. 4078, 187 L.R.R.M. (BNA) 2961, 159 Lab. Cas. (CCH) 10,166",
+      "year_expected": 2010,
+      "year_found": 2010,
+      "status": "added",
+      "opinion_count": 18,
+      "chunk_count": 974,
+      "warnings": []
+    }
+  ]
+}

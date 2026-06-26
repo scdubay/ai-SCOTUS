@@ -28,7 +28,7 @@ load_dotenv()
 
 VECTORSTORE_PATH = os.getenv(
     "SCOTUS_VECTORSTORE_PATH",
-    "data/vectors/rag_vectorstore_scotus_015_cases",
+    "data/vectors/rag_vectorstore_scotus_019_cases",
 )
 # Query-time/index-time embedding model. Switched from Ollama's nomic-embed-text
 # (required a local Ollama server reachable at OLLAMA_EMBED_ENDPOINT, which does
